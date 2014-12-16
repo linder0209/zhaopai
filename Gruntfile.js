@@ -18,7 +18,8 @@ module.exports = function (grunt) {
 
   // Configurable paths
   var config = {
-    app: 'app',
+    // configurable paths
+    app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
 
@@ -61,6 +62,10 @@ module.exports = function (grunt) {
           '.tmp/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
+      },
+      less: {
+        files: ['<%= config.app %>/less/{,**/}*.less'],
+        tasks: ['less']
       }
     },
 
@@ -325,13 +330,29 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    // 把less 转换为 css 任务
+    less: {
+      options: {
+        paths: ['<%= config.app %>/']
+      },
+      publish: {
+        options: {
+          paths: ['<%= config.app %>/']
+        },
+        files: {
+          '<%= config.app %>/styles/header-footer.css': '<%= config.app %>/less/header-footer.less',
+          '<%= config.app %>/styles/index.css': '<%= config.app %>/less/index.less'
+        }
+      }
     }
   });
 
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
-      grunt.config.set('connect.options.hostname', '0.0.0.0');
+      grunt.config.set('connect.options.hostname', 'localhost');
     }
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -339,6 +360,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'less:publish',//把less转换为css
       'wiredep',
       'concurrent:server',
       'autoprefixer',
@@ -369,6 +391,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'less:publish',//把less转换为css
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
