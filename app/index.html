@@ -17,8 +17,8 @@
 
       </li>
       <li class="nav-login" style="position:relative">
-			<a href="#" style="z-index:999">登录</a>
-			<div class="login">
+			<a href="#" style="z-index:999" id="login">登录</a>
+			<div class="login" id="loginPanel" style="display:none;">
 				<table cellpadding="0" cellspacing="0">
 					<tbody>
 						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
@@ -26,7 +26,7 @@
 						<tr><td><button type="submit" class="loginBtn">登录</button></td><td><label><input type="radio"> 下次自动登录</label></td></tr>
 						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="#">立即注册</a></td></tr>
 					</tbody>
-					
+
 				</table>
 			</div>
 			</li>
@@ -34,8 +34,8 @@
     <ul class="top-nav-cor">
       <li><a href="#">客服咨询</a></li>
 			<li class="pos-r" >
-			<a href="#">关于找拍 <i class="white-downArrow"></i></a>
-			<div class="dropDown" style=" display:block;">
+			<a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+			<div id="aboutMenu" class="dropDown" style=" display:none;">
 				<ul class="ulList">
 					<li><a href="#">关于我们</a></li>
 					<li><a href="#">加入收藏</a></li>
@@ -74,10 +74,22 @@
 		</div>
 		<ul class="menNav-ullist right">
 			<li><a href="#">首页</a></li>
-			<li><a href="#">任务专区<i class="gray-downArrow"></i></a></li>
-			<li><a href="#">资讯活动<i class="gray-downArrow"></i></a></li>
-			<li class="pos-r">
-				<a href="#" class="current">兑换中心<i class="gray-downArrow"></i></a>
+			<li>
+        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <div>
+          <a href="#">当前任务</a>
+          <a href="#">历史任务</a>
+        </div>
+      </li>
+			<li>
+        <a href="">资讯活动<i class="gray-downArrow"></i></a>
+        <div>
+          <a href="#">新闻资讯</a>
+          <a href="#">活动信息</a>
+        </div>
+      </li>
+			<li>
+				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
 				<div>
 					<a href="#">当前兑换</a>
 					<a href="#">历史兑换</a>
@@ -85,7 +97,7 @@
 			</li>
 			<li><a href="#">我的找拍</a></li>
 		</ul>
-	
+
 	</div>
 
   <!--header end-->
@@ -148,7 +160,7 @@
 			  </li>
 			</ul>
         </div>
-        
+
         </div>
     <!--rolling img end-->
     <!--tabs start-->
@@ -240,5 +252,14 @@
   </div>
   <!--footer end-->
 </div>
+
+<script src="./scripts/components/jquery/jquery.js"></script>
+<script src="./scripts/views/common.js"></script>
+<script src="./scripts/views/index.js"></script>
+<script>
+  $(function () {
+    ZP_View.index.init();
+  });
+</script>
 </body>
 </html>
