@@ -7,7 +7,6 @@ li {list-style-type: none;}
 img{border:none; vertical-align:top;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: normal;}
 a {color: #393939;text-decoration: none; cursor:pointer;}
-a:visited {text-decoration: none;}
 a:hover {color: #e58024;text-decoration: none;}
 a:active {color: #e58024;}
 button{
@@ -23,7 +22,7 @@ button{
 
 
 .wrap{width:1440px; margin:0 auto; overflow:hidden; background:#eeeeee;}
-
+.wrap * a:hover{color: #e58024;}
 /*========header=============*/
 .topfixed{ background:#E58024; height:31px;left: 0;line-height:31px;margin: 0 auto;position: fixed;top: 0;width: 100%;z-index: 9999;}
 .top-nav{ width:1440px; margin:0 auto; color:#ffffff }
@@ -129,8 +128,35 @@ ul.slides li.hero_img img{ height:447px; width:1284px;}
 .banner{background:url(images/banner-bg.jpg) no-repeat; width:1440px; height:428px;}
 .paihang-title{background:url(images/title-01.jpg) no-repeat; width:343px; height:64px;}
 .app-smallbox h3{background:url(images/banner-title.png) no-repeat; width:489px; height:86px; cursor:pointer;}
-.app-smallbox div a.ios{background:url(images/ios_03.png) no-repeat; width:268px; height:94px; display:block; margin:20px 0;}
-.app-smallbox div a.android{background:url(images/android_03.png) no-repeat; width:268px; height:94px; display:block;}
+.app-smallbox .ios a{background:url(images/ios_03.png) no-repeat; width:268px; height:94px; display:block; margin:20px 0;}
+.app-smallbox .ios a:hover{ border:5px solid #fff;background:#fff url(images/ios_03.png) no-repeat;}
+.app-smallbox .android a{background:url(images/android_03.png) no-repeat; width:268px; height:94px; display:block;}
+.app-smallbox .android a:hover{ border:5px solid #fff;background:#fff url(images/android_03.png) no-repeat; }
+/*========任务，推荐， 软件=============*/
+.bigbox{ padding:67px 249px 50px 249px; overflow:hidden;}
+.renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
+.renwu ul li{ float:left; padding:24px 22px;width:270px; text-align:left;}
+.mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}
+.map-icon{background:url(images/sprites-icon.png) no-repeat; background-position:-142px 0; width:18px; height:29px; display:inline-block; vertical-align:middle; float:left; margin:5px 5px 0 0}
+.map-title{width:190px; float:left; margin:10px 0;}
+.money-iocn,.flower-iocn{background:url(images/sprites-icon.png) no-repeat; width:14px; height:16px; display:inline-block; vertical-align:middle; margin:0 2px;}
+.money-iocn{background-position:-167px 0; }
+.flower-iocn{background-position:-187px 0; }
+p.digit{font-size:20px; color:#e58024;}
+p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
+.renwu a.map-content{font-size:14px; color:#7e7e7e}
+.tuijian{ background:#fff; overflow:hidden;}
+.tuijian ul li{float:left; padding:24px 14px; text-align:center;}
+.ruanjian ul li{float:left; padding:24px 31px; text-align:center;}
+.tuijian ul li a{ font-size:14px;}
+.ruanjian01,.ruanjian02,.ruanjian03,.ruanjian04,.ruanjian05,.ruanjian06{ background:url(images/ruanjian-icon.png) no-repeat; width:95px; height:94px; display:block; margin-bottom:5px;}
+.ruanjian01{ background-position:0 0;}
+.ruanjian02{ background-position:-100px 0;}
+.ruanjian03{ background-position:-205px 0;}
+.ruanjian04{ background-position:-305px 0;}
+.ruanjian05{ background-position:-405px 0;}
+.ruanjian06{ background-position:-505px 0;}
+
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
 .partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto;}
