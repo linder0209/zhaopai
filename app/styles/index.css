@@ -1,4 +1,4 @@
-*{padding:0; margin:0; list-style:none; font:normal 12px/24px Arial, Helvetica, sans-serif;color:#7e7e7e; }
+*{padding:0; margin:0; list-style:none; font:normal 12px/24px Arial, Helvetica, sans-serif; }
 html,body{padding:0; margin:0;}
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {margin: 0;padding: 0;}
 table, td, tr, th {font-size: 12px;}
@@ -6,7 +6,7 @@ ol, ul {list-style: outside none none;}
 li {list-style-type: none;}
 img{border:none; vertical-align:top;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: normal;}
-a {color: #252525;text-decoration: none;}
+a {color: #393939;text-decoration: none; cursor:pointer;}
 a:visited {text-decoration: none;}
 a:hover {color: #e58024;text-decoration: none;}
 a:active {color: #e58024;}
@@ -20,8 +20,6 @@ a:active {color: #e58024;}
 
 
 .wrap{width:1440px; margin:0 auto; overflow:hidden; background:#eeeeee;}
-
-div.wrap * a:hover{color:#e58024; text-decoration:none;}
 
 /*========header=============*/
 .topfixed{ background:#E58024; height:31px;left: 0;line-height:31px;margin: 0 auto;position: fixed;top: 0;width: 100%;z-index: 9999;}
@@ -90,9 +88,45 @@ ul.slides li.hero_img img{ height:447px; width:1284px;}
 .raw div{ color:#393939; font-size:18px; padding:5px 12px;}
 .raw div.current,.raw div:hover{background:#e58024;color:#fff; cursor:pointer;}
 .raw p{color:#7e7e7e;}
+
+/*========tabs=============*/
+.tab{ padding:0 300px; margin-top:100px; overflow:hidden; color:#1c1a18;}
+.tab ul.title{ height:147px;}
+.zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 70px; float:left;}
+.zixun{ background-position:0 0;}
+.hot{background-position:-140px 0;}
+.zhaopai{background-position:-280px 0;}
+.zixun:hover,.zixun.current{ background-position:0 -160px;}
+.hot:hover,.hot.current{background-position:-140px -160px;}
+.zhaopai:hover,.zhaopai.current{background-position:-280px -160px;}
+.tab-content{background:url(../images/tab/tab-bg.jpg) repeat-x; height:350px; width:905px; border-top:1px solid #7E7E7E; margin-top:-1px;}
+.tab-content ul li a{padding:12px 110px; font-size:14px; display:block;}
+.tab-content ul li a i,.tab-content ul li a i:hover,.paihang a i,.paihang a:hover i{display:inline-block; margin-right:5px; vertical-align:middle;}
+.tab-content ul li a i,.paihang a i{background:url(../images/tab/fk.png) no-repeat; width:4px; height:4px; }
+.tab-content ul li a:hover{background:#e58024; padding:12px 100px; color:#fff;}
+.paihang a:hover{background:#e58024; color:#fff;}
+.tab-content ul li a:hover i,.paihang a:hover i{background:url(../images/tab/fk-select.png) no-repeat; width:5px; height:5px;}
+.tab-content ul li a span{font-size:14px;}
+.tab-content ul li a:hover span,.paihang a:hover span{color:#fff;}
+.tab-arrow01{background:url(../images/tab/01.png) no-repeat; width:66px; height:45px; left:125px;}
+.tab-arrow02{background:url(../images/tab/02.png) no-repeat; width:131px; height:45px; left:322px;}
+.tab-arrow03{background:url(../images/tab/03.png) no-repeat; width:66px; height:45px; left:580px;}
+
+.paihang{width:343px; background:#FFFFFF;filter:alpha(opacity=50); moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
+.paihang li{ padding:5px 0;}
+.paihang a{ padding:0 15px; display:block; color:#1c1a18;}
+.paihang a span{ padding:0 8px; float:right;}
+.banner-smallbox{padding:50px 280px; overflow:hidden;}
+
+.banner{background:url(images/banner-bg.jpg) no-repeat; width:1440px; height:428px;}
+.paihang-title{background:url(images/title-01.jpg) no-repeat; width:343px; height:64px;}
+.app-smallbox h3{background:url(images/banner-title.png) no-repeat; width:489px; height:86px; cursor:pointer;}
+.app-smallbox div a.ios{background:url(images/ios_03.png) no-repeat; width:268px; height:94px; display:block; margin:20px 0;}
+.app-smallbox div a.android{background:url(images/android_03.png) no-repeat; width:268px; height:94px; display:block;}
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
 .partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto;}
+.partners a{ padding:0 10px;}
 .partners p{padding-top:37px;}
 .conns{ height:62px; line-height:62px;}
 .copyright{background:#A0A0A0; height:52px; line-height:52px; position: }
