@@ -69,15 +69,27 @@ div.wrap * a:hover{color:#e58024; text-decoration:none;}
 .gray-downArrow{background-position:-123px -22px; margin-top:10px; margin-left:0px;}
 .gray-upArrow{background-position:-110px -22px; margin-top:10px; margin-left:0px;}
 /*========sliders=============*/
-#newsSlider .container {overflow: hidden;position: relative; height:447px; width:1284px; margin:0 auto;}
+#newsSlider .container {position: relative; height:447px; width:1284px; margin:0 auto;}
 #newsSlider div.slides {left: 0px; position: absolute; top: 0px}
 #newsSlider ul.slides {padding:0;margin: 0px; left: 0px;   list-style-type: none; position: absolute; top: 0px;}
 #newsSlider div.slides div {display: none; padding:0; margin: 0px; width:1284px;  position: absolute; top: 0px;}
 ul.slides li { display:block; padding:0;  margin: 0px; width:960px; position: absolute; top: 0px;}
 ul.slides li.hero_img img{ height:447px; width:1284px;}
 #newsSlider #loopedSlider {clear: both; margin: 0px auto; width:1284px; position: relative;}
-#newsSlider {clear: both; margin: 0px auto; width:1440px; position: relative; overflow:hidden;}
+#newsSlider {clear: both; margin: 0px auto; width:1440px; position: relative;}
 #newsSlider ul.pagination { height:33px; width:1440px; background:#fff; }
+.pagination{ width:1440px; padding:16px 0; background:#fff; }
+.pagination div.line{ border-top:1px solid #959595; width:1440px;}
+.pagination ul{ width:1440px; display:block; position:absolute; padding-left:130px; top:5px;}
+.pagination ul li{ float:left;}
+.pagination ul li a{ margin:0 110px; background:url(../images/scorllImg/dot-icon.png) no-repeat; height:19px; width:19px; display:block;}
+.pagination ul li a.select,.pagination ul li a:hover{background:url(../images/scorllImg/select-dot-icon.png) no-repeat;height:29px; width:29px; margin-top:-2px; }
+
+.raw{color:#393939;left:50px; text-align:center;}
+.raw i{background:url(../images/scorllImg/arrow.png) no-repeat; width:10px; height:9px; display:block;margin-left: 69px;}
+.raw div{ color:#393939; font-size:18px; padding:5px 12px;}
+.raw div.current,.raw div:hover{background:#e58024;color:#fff; cursor:pointer;}
+.raw p{color:#7e7e7e;}
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
 .partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto;}
