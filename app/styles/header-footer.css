@@ -434,6 +434,9 @@ a:hover {
 a:active {
   color: #e58024;
 }
+button {
+  cursor: pointer;
+}
 /**
  * 清除浮层
 **/
