@@ -68,6 +68,16 @@ div.wrap * a:hover{color:#e58024; text-decoration:none;}
 .white-upArrow{background-position:-110px -31px;}
 .gray-downArrow{background-position:-123px -22px; margin-top:10px; margin-left:0px;}
 .gray-upArrow{background-position:-110px -22px; margin-top:10px; margin-left:0px;}
+/*========sliders=============*/
+#newsSlider .container {overflow: hidden;position: relative; height:447px; width:1284px; margin:0 auto;}
+#newsSlider div.slides {left: 0px; position: absolute; top: 0px}
+#newsSlider ul.slides {padding:0;margin: 0px; left: 0px;   list-style-type: none; position: absolute; top: 0px;}
+#newsSlider div.slides div {display: none; padding:0; margin: 0px; width:1284px;  position: absolute; top: 0px;}
+ul.slides li { display:block; padding:0;  margin: 0px; width:960px; position: absolute; top: 0px;}
+ul.slides li.hero_img img{ height:447px; width:1284px;}
+#newsSlider #loopedSlider {clear: both; margin: 0px auto; width:1284px; position: relative;}
+#newsSlider {clear: both; margin: 0px auto; width:1440px; position: relative; overflow:hidden;}
+#newsSlider ul.pagination { height:33px; width:1440px; background:#fff; }
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
 .partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto;}

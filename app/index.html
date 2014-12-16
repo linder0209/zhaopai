@@ -89,10 +89,44 @@
 	</div>
 
   <!--header end-->
+  <style>
+.pagination{ width:1440px; padding:16px 0; background:#fff; }
+.pagination div.line{ border-top:1px solid #959595; width:1440px;}
+.pagination ul{ width:1440px; display:block; position:absolute; padding-left:260px; top:5px;}
+.pagination ul li{ float:left;}
+.pagination ul li a{ padding:0 110px; background:url(images/scorllImg/dot-icon.png) no-repeat; height:19px; width:19px; display:block;}
+.pagination ul li a.select{background:url(images/scorllImg/select-dot-icon.png) no-repeat;height:29px; width:29px; margin-top:-2px; }
+  </style>
   <!--main start-->
   <div class="main">
     <!--rolling img start-->
-    <div></div>
+    <div id="newsSlider">
+		<div class="container">
+			<ul class="slides">
+			  <li class="hero_img"><a href="#"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
+			  <li><a href="#" target="_blank"><img src="images/scorllImg/02.jpg" height="447" width="1284"></a></li>
+			  <li class="hero_img"><a href="#"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
+			  <li><a href="#" target="_blank"><img src="images/scorllImg/02.jpg" height="447" width="1284"></a></li>
+			  <li><a href="#" target="_blank"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
+			</ul>
+		</div>
+        <div class="validate_Slider"></div>
+        <div class="pagination pos-r">
+			<div class="line"></div>
+			<ul>
+			  <li>
+			  	<a href="#" class="select"></a>
+				<div>
+				</div>
+			  </li>
+			  <li><a href="#"></a> </li>
+			  <li><a href="#"></a> </li>
+			  <li><a href="#"></a> </li>
+			  <li><a href="#"></a> </li>
+			</ul>
+        </div>
+        
+        </div>
     <!--rolling img end-->
     <!--tabs start-->
     <div></div>
