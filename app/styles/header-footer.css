@@ -430,11 +430,11 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #ba2636;
-  text-decoration: underline;
+  color: #e58024;
+  text-decoration: none;
 }
 a:active {
-  color: #ba2636;
+  color: #e58024;
 }
 /**
  * 清除浮层
@@ -452,6 +452,12 @@ a:active {
 }
 .right {
   float: right;
+}
+.pos-r {
+  position: relative;
+}
+.pos-a {
+  position: absolute;
 }
 /**
 * 外边距
@@ -484,12 +490,13 @@ a:active {
   background: #eeeeee;
 }
 .wrap * a:hover {
-  color: #29a99a;
+  color: #e58024;
   text-decoration: underline;
 }
 /**
  * 页面头部样式
 **/
+/*
 /*========header=============*/
 .topfixed {
   background: #E58024;
@@ -517,6 +524,10 @@ a:active {
 .top-nav-cor {
   float: right;
   padding-right: 260px;
+  border-left: 1px solid #fff;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 7px;
 }
 .top-nav-col li {
   float: left;
@@ -536,13 +547,16 @@ a:active {
   border-bottom: 4px solid #72A6A4;
 }
 .top-nav-cor li {
-  float: right;
+  float: left;
   color: #ffffff;
-  height: 31px;
-  line-height: 31px;
 }
-.top-nav-cor a {
-  padding: 0 34px;
+.top-nav-cor li a {
+  border-right: 1px solid #fff;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 30px;
+  display: block;
+  float: left;
 }
 /*========footer=============*/
 .footer-assist {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>找拍</title>
   <meta name="keywords" content=""/>
   <link type="text/css" rel="stylesheet" href="styles/index.css"/>
 </head>
@@ -16,30 +16,77 @@
         <a href="#">欢迎来到找拍</a>
 
       </li>
-      <li class="nav-login"><a href="#">登录</a></li>
+      <li class="nav-login" style="position:relative">
+			<a href="#" style="z-index:999">登录</a>
+			<div class="login">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
+						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
+						<tr><td><button type="submit" class="loginBtn">登录</button></td><td><label><input type="radio"> 下次自动登录</label></td></tr>
+						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="#">立即注册</a></td></tr>
+					</tbody>
+					
+				</table>
+			</div>
+			</li>
     </ul>
     <ul class="top-nav-cor">
-      <li>
-        |
-        <a href="#">客服咨询</a>
-        |
-        <a href="#">关于找拍</a>
-        |
-        <a href="#">每日签到</a>
-        |
-        <a href="#">手机找拍</a>
-        |
-      </li>
-
+      <li><a href="#">客服咨询</a></li>
+			<li class="pos-r" >
+			<a href="#">关于找拍 <i class="white-downArrow"></i></a>
+			<div class="dropDown" style=" display:block;">
+				<ul class="ulList">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="pos-r" >
+						<a href="#" class="current">找拍微信</a>
+						<div style="position:absolute; right:121px;"><img src="images/qr-code.jpg" height="120" width="120"></div>
+					</li>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">百度贴吧</a></li>
+				</ul>
+			</div>
+			</li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
     </ul>
-
   </div>
 </div>
 <!--top-->
-<div class="wrap" style=" height:2000px;">
+<style>
+
+</style>
+<div class="wrap clearfix">
   <!--header start-->
-  <div>
+  <div class="search">
+		<form>
+			<div>
+				<input type="text" placeholder="请输入点位关键字" class="input-search">
+				<i class="searchBtn"></i>
+			</div>
+		</form>
   </div>
+	<div class="menNav" style="height:60px; background:#fff; padding-left:270px;">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul class="menNav-ullist right">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">任务专区<i class="gray-downArrow"></i></a></li>
+			<li><a href="#">资讯活动<i class="gray-downArrow"></i></a></li>
+			<li class="pos-r">
+				<a href="#" class="current">兑换中心<i class="gray-downArrow"></i></a>
+				<div>
+					<a href="#">当前兑换</a>
+					<a href="#">历史兑换</a>
+				</div>
+			</li>
+			<li><a href="#">我的找拍</a></li>
+		</ul>
+	
+	</div>
 
   <!--header end-->
   <!--main start-->
@@ -64,37 +111,36 @@
     <!--软件推荐 end-->
   </div>
   <!--main end-->
-</div>
-
-<!--footer start-->
-<div class="footer">
-  <div class="partners">
-    <p>友情链接</p>
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
-    |
-    <a href="#" target="_blank">合作伙伴</a>
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="#">商务洽谈</a>
+      |
+      <a href="#">免责条款</a>
+      |
+      <a href="#">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
   </div>
-  <div class="conns">
-    <a href="#">商务洽谈</a>
-    |
-    <a href="#">免责条款</a>
-    |
-    <a href="#">关于我们</a>
-  </div>
-  <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  <!--footer end-->
 </div>
-<!--footer end-->
 </body>
 </html>
