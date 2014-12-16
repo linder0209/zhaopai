@@ -6,6 +6,8 @@
   <title>找拍</title>
   <meta name="keywords" content=""/>
   <link type="text/css" rel="stylesheet" href="styles/index.css"/>
+  <link type="text/css" rel="stylesheet" href="scripts/components/flexslider/css/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="styles/flexslider.css"/>
 </head>
 <body>
 <!--top-->
@@ -72,28 +74,34 @@
 		<div class="logo left">
 			<a href="#" title="找拍"></a>
 		</div>
-		<ul class="menNav-ullist right">
+		<ul id="menuList" class="menNav-ullist right">
 			<li><a href="#">首页</a></li>
 			<li>
         <a href="">任务专区<i class="gray-downArrow"></i></a>
-        <div>
-          <a href="#">当前任务</a>
-          <a href="#">历史任务</a>
+        <div class="sub-menu">
+          <div>
+            <a href="#">当前任务</a>
+            <a href="#">历史任务</a>
+          </div>
         </div>
       </li>
 			<li>
         <a href="">资讯活动<i class="gray-downArrow"></i></a>
-        <div>
-          <a href="#">新闻资讯</a>
-          <a href="#">活动信息</a>
-        </div>
+        <div class="sub-menu">
+          <div>
+            <a href="#">新闻资讯</a>
+            <a href="#">活动信息</a>
+          </div>
+          </div>
       </li>
 			<li>
 				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
 				<div>
 					<a href="#">当前兑换</a>
 					<a href="#">历史兑换</a>
 				</div>
+        </div>
 			</li>
 			<li><a href="#">我的找拍</a></li>
 		</ul>
@@ -254,11 +262,12 @@
 </div>
 
 <script src="./scripts/components/jquery/jquery.js"></script>
+<script src="scripts/components/flexslider/js/jquery.flexslider.js"></script>
 <script src="./scripts/views/common.js"></script>
 <script src="./scripts/views/index.js"></script>
 <script>
   $(function () {
-    ZP_View.index.init();
+    hopeView.index.init();
   });
 </script>
 </body>
