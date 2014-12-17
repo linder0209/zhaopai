@@ -31,6 +31,43 @@ button{
 .top-nav-col { float:left; padding-left:270px;}
 .top-nav-cor { float:right; padding-right:260px;border-left:1px solid #fff; height:18px; line-height:18px;margin-top:7px; }
 .top-nav-col li{ float:left; margin-right:30px; height:31px; line-height:31px;}
+.top-nav-col li:nth-of-type(3) > a, .top-nav-col li:nth-last-of-type(2) > a{
+  height: 18px;
+  line-height: 18px;
+  display: inline-block;
+  border-left: 1px solid;
+  padding-left: 15px;
+}
+.top-nav-col li:first-child > a{
+  border-left: 0 none;
+}
+.top-nav-col li >a.logout{
+  color: #B93131;
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: middle;
+  letter-spacing: 2px;
+}
+.top-nav-col li .email{
+  display: inline-block;
+  background: url("images/email-icon.png");
+  width: 23px;
+  height: 15px;
+  vertical-align: middle;
+}
+.top-nav-col li .email-count{
+  position: absolute;
+  color: #fff;
+  background-color: #E70012;
+  padding: 0 1px;
+  top: 0;
+  left: 13px;
+  height: 15px;
+  line-height: 16px;
+  font-size: 10px;
+}
+
+
 .top-nav-col .nav-login{ background-color: #8FC5B8;  float: left;margin-bottom: -6px;position: relative; text-align: center; z-index: 10;border-bottom: 4px solid #72A6A4;}
 .top-nav-col .nav-login >a{
   height:31px;
@@ -80,11 +117,11 @@ button{
 .menNav-ullist li div a{ width:120px; text-align:center; height:29px; display:block; padding:0}
 .menNav-ullist li div a:hover{ border:none; background:#fff; border-bottom:none; padding:0}
 /*========icon=============*/
-.white-downArrow,.white-upArrow,.gray-downArrow,.gray-upArrow{vertical-align:top; background:url(images/sprites-icon.png) no-repeat; background-position:-123px -31px; width:8px; height:4px; display:inline-block; float:right; margin:7px 0 0 5px; }
+.white-downArrow,.white-upArrow,.gray-downArrow,.gray-upArrow{vertical-align:top; background:url(images/sprites-icon.png) no-repeat; background-position:-123px -31px; width:8px; height:4px; display:inline-block; margin:7px 0 0 5px; }
 .white-downArrow{background-position:-123px -31px;}
 .white-upArrow{background-position:-110px -31px;}
-.gray-downArrow{background-position:-123px -22px; margin-top:10px; margin-left:0px;}
-.gray-upArrow{background-position:-110px -22px; margin-top:10px; margin-left:0px;}
+.gray-downArrow{background-position:-123px -22px; margin-top:10px;}
+.gray-upArrow{background-position:-110px -22px; margin-top:10px;}
 
 .raw{color:#393939;left:50px; text-align:center;}
 .raw i{background:url(../images/scorllImg/arrow.png) no-repeat; width:10px; height:9px; display:block;margin-left: 69px;}
@@ -130,6 +167,16 @@ button{
 .app-smallbox .android a:hover{ border:5px solid #fff;background:#fff url(images/android_03.png) no-repeat; }
 /*========�����Ƽ��� ���=============*/
 .bigbox{ padding:67px 249px 50px 249px; overflow:hidden;}
+.bigbox > h3 > .more{
+  display: inline-block;
+  background: url("images/more.png");
+  width: 27px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
 .renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
 .renwu ul li{ float:left; padding:24px 22px;width:270px; text-align:left;}
 .mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}

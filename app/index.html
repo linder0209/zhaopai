@@ -13,7 +13,7 @@
 <!--top-->
 <div class="topfixed">
   <div class="top-nav clearfix">
-    <ul class="top-nav-col">
+    <ul class="top-nav-col" id="loginNav">
       <li>
         <a href="#">欢迎来到找拍</a>
 
@@ -25,7 +25,7 @@
 					<tbody>
 						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
 						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
-						<tr><td><button type="submit" class="loginBtn">登录</button></td><td><label><input type="radio"> 下次自动登录</label></td></tr>
+						<tr><td><button type="submit" class="loginBtn" id="loginBtn">登录</button></td><td><label><input type="radio"> 下次自动登录</label></td></tr>
 						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="#">立即注册</a></td></tr>
 					</tbody>
 
@@ -33,6 +33,17 @@
 			</div>
 			</li>
     </ul>
+
+    <ul class="top-nav-col" id="afterLoginNav" style="display: none;">
+      <li>
+        <a href="#">欢迎来到找拍</a>
+      </li>
+      <li class="pos-r"><a href="#"><i class="email"></i> <i class="email-count">99</i></a></li>
+      <li><a href="#">北京 <i class="white-downArrow"></i></a></li>
+      <li><a href="#" style="text-transform:uppercase;">itachix</a></li>
+      <li><a href="" id="logout" class="logout">退出</a></li>
+    </ul>
+
     <ul class="top-nav-cor">
       <li><a href="#">客服咨询</a></li>
 			<li class="pos-r" >
@@ -355,7 +366,10 @@
     <!--任务专区 end-->
     <!--礼品推荐 start-->
     <div class="bigbox tuijian">
-    	<h3><img src="styles/images/title-03.jpg" title="推荐礼品"></h3>
+    	<h3 class="pos-r">
+        <img src="styles/images/title-03.jpg" title="推荐礼品">
+        <i class="more"></i>
+      </h3>
         <ul>
         	<li>
             	<a href="#"><img src="images/img-02.jpg" height="110" width="160" alt=""></a>
@@ -398,7 +412,10 @@
     <!--礼品推荐 end-->
     <!--软件推荐 start-->
     <div class="bigbox ruanjian">
-    	<h3><img src="styles/images/title-04.jpg" title="软件推荐"></h3>
+    	<h3 class="pos-r">
+        <img src="styles/images/title-04.jpg" title="软件推荐">
+        <i class="more"></i>
+      </h3>
         <ul>
         	<li>
             	<a href="#" class="ruanjian01" title=""></a>

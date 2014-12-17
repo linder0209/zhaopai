@@ -16,6 +16,26 @@
         $('#about').find('i').removeClass().addClass('white-downArrow');
       });
 
+      $('#loginBtn').click(function(){
+        $.ajax({
+          type: 'post',
+          dataType: 'json',
+          url:'json/login.json',
+          success : function (data) {
+            if (data.success === true) {
+              console.info('登录成功！');
+              $('#afterLoginNav').show();
+              $('#loginNav').hide();
+            }
+          }
+        });
+      });
+
+      $('#logout').click(function(){
+        $('#afterLoginNav').hide();
+        $('#loginNav').show();
+      });
+
       $('#about').click(function (e) {
         e.preventDefault();
         e.stopPropagation();
