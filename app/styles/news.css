@@ -1,0 +1,9 @@
+.toupiao-ullist{width:350px; margin:0 auto; text-align:center;}
+.toupiao-ullist li{ float:left; width:30%; text-align:center;}
+.toupiao-table div,.toupiao-table{color:#7e7e7e; font-size:14px}
+.toupiao h4{font-size:18px; font-weight:bold;}
+.toupiao p{color:#7e7e7e;}
+table.toupiao-table td{ padding:10px 0;}
+table.toupiao-table td label{margin-right:20px}
+table.toupiao-table div.city{ width:600px;}
+table.toupiao-table div.city label{ width:120px; display:inline-block;}
