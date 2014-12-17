@@ -1,0 +1,85 @@
+.flexslider{
+  border-radius: 0;
+  box-shadow: none;
+  border-width: 4px 0 0;
+  background-color: #eee;
+  margin: 0px;
+}
+.flex-viewport{
+  width: 1284px;
+  margin: 0 auto;
+}
+
+.flex-controls-container{
+  padding: 15px 0 0;
+  background-color: #fff;
+  .line{
+    border-top:1px solid #959595;
+    width:1440px;
+    padding: 0px 0px 15px;
+  }
+}
+
+.flex-control-customer {
+  background-color: #eee;
+  width: 1440px;
+  margin: 0 auto;
+  li {
+    width: 20%;
+    > .item-container {
+      > a {
+        background: url(../images/scorllImg/dot-icon.png) no-repeat;
+        height: 19px;
+        width: 19px;
+        display: inline-block;
+        position: absolute;
+        margin-top: -35px;
+        margin-left: -6.5px;
+      }
+      .header{
+        padding: 5px 12px;
+        font-size: 18px;
+        color: #393939;
+        margin: 10px 50px 0;
+      }
+      >p{
+        color: #7E7E7E;
+      }
+    }
+
+    &.flex-active,&:hover {
+      .item-container{
+        > a {
+          background: url("../images/scorllImg/select-dot-icon.png") no-repeat scroll 0% 0% transparent;
+          height: 29px;
+          width: 29px;
+          margin-top: -40px;
+          margin-left: -11px;
+          display: inline-block;
+        }
+        .header {
+          position: relative;
+          background-color: #e58024;
+          color: #fff;
+          cursor: pointer;
+          &:before,
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -1.4em;
+            left: 48%;
+            border-width: 0.8em 0.6em;
+            border-style: solid;
+            border-color: transparent transparent #E58024 transparent;
+            font-size: 12px;
+          }
+          &:after {
+            margin-top: .201em;
+            border-color: transparent transparent #E58024;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>找拍</title>
   <meta name="keywords" content="首页，任务专区，咨询活动，兑换中心， 我的找拍"/>
-  <link type="text/css" rel="stylesheet" href="styles/index.css"/>
-  <link type="text/css" rel="stylesheet" href="scripts/components/flexslider/css/flexslider.css"/>
-  <link type="text/css" rel="stylesheet" href="styles/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="./styles/index.css"/>
+  <link type="text/css" rel="stylesheet" href="./scripts/components/flexslider/css/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="./styles/flex-control-customer.css"/>
 </head>
 <body>
 <!--top-->
@@ -112,114 +112,126 @@
   <!--main start-->
   <div class="main">
     <!--rolling img start-->
-    <div id="newsSlider">
-		<div class="container">
-			<ul class="slides">
-			  <li class="hero_img"><a href="#"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
-			  <li><a href="#" target="_blank"><img src="images/scorllImg/02.jpg" height="447" width="1284"></a></li>
-			  <li class="hero_img"><a href="#"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
-			  <li><a href="#" target="_blank"><img src="images/scorllImg/02.jpg" height="447" width="1284"></a></li>
-			  <li><a href="#" target="_blank"><img src="images/scorllImg/01.jpg" height="447" width="1284"></a></li>
-			</ul>
-		</div>
-        <div class="validate_Slider"></div>
-        <div class="pagination pos-r">
-			<div class="line"></div>
-			<ul>
-			  <li class="pos-r">
-			  	<a href="#" class="select"></a>
-				<div class="pos-a raw">
-					<i></i>
-					<div class="current">RAW 2014.04.22</div>
-					<p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
-				</div>
-			  </li>
-			  <li class="pos-r">
-			  	<a href="#"></a>
-				<div class="pos-a raw">
-				    <i style="display:none;"></i>
-					<div>RAW 2014.04.22</div>
-					<p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
-				</div>
-			  </li>
-			  <li class="pos-r">
-			  	<a href="#"></a>
-				<div class="pos-a raw">
-				    <i style="display:none;"></i>
-					<div>RAW 2014.04.22</div>
-					<p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
-				</div>
-			  </li>
-			  <li class="pos-r">
-			  	<a href="#"></a>
-				<div class="pos-a raw">
-				    <i style="display:none;"></i>
-					<div>RAW 2014.04.22</div>
-					<p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
-				</div>
-			  </li>
-			  <li class="pos-r">
-			  	<a href="#"></a>
-				<div class="pos-a raw">
-				    <i style="display:none;"></i>
-					<div>RAW 2014.04.22</div>
-					<p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
-				</div>
-			  </li>
-			</ul>
-        </div>
+    <div id="flexSlider" class="flexslider" data-cutomer-nav="#cutomerNav">
+      <ul class="slides">
+        <li>
+          <img src="images/scorllImg/01.jpg" height="447" width="1284"/>
+        </li>
+        <li>
+          <img src="images/scorllImg/02.jpg" height="447" width="1284"/>
+        </li>
+        <li>
+          <img src="images/scorllImg/01.jpg" height="447" width="1284"/>
+        </li>
+        <li>
+          <img src="images/scorllImg/02.jpg" height="447" width="1284"/>
+        </li>
+        <li>
+          <img src="images/scorllImg/01.jpg" height="447" width="1284"/>
+        </li>
+      </ul>
+    </div>
+    <div id="controlsContainer" class="flex-controls-container">
+      <div class="line"></div>
+    </div>
+    <ol id="cutomerNav" style="display: none;">
+      <li>
+        <div class="item-container">
+          <a href="#"></a>
 
+          <div class="header">RAW 2014.04.22</div>
+          <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
         </div>
+      </li>
+      <li>
+        <div class="item-container">
+          <a href="#"></a>
+
+          <div class="header">RAW 2014.04.22</div>
+          <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+        </div>
+      </li>
+      <li>
+        <div class="item-container">
+          <a href="#"></a>
+
+
+          <div class="header">RAW 2014.04.22</div>
+          <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+        </div>
+      </li>
+      <li>
+        <div class="item-container">
+          <a href="#"></a>
+
+          <div class="header">RAW 2014.04.22</div>
+          <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="item-container">
+          <a href="#"></a>
+
+          <div class="header">RAW 2014.04.22</div>
+          <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+        </div>
+      </li>
+    </ol>
     <!--rolling img end-->
+
     <!--tabs start-->
     <div class="tab">
-		<ul class="title">
-			<li><a href="#" class="zixun current" title="咨询圆桌"></a></li>
-			<li><a href="#" class="hot" title="热门任务"></a></li>
-			<li><a href="#" class="zhaopai" title="找拍秘籍"></a></li>
+		<ul class="title" id="tabMenu">
+			<li><a href="" data-sub-tab="#consultTab" class="zixun current" title="咨询圆桌"></a></li>
+			<li><a href="" data-sub-tab="#taskTab" class="hot" title="热门任务"></a></li>
+			<li><a href="" data-sub-tab="#cheatsTab" class="zhaopai" title="找拍秘籍"></a></li>
 		</ul>
-        <div style="display:block;">
-            <div class="tab-arrow01 pos-r"></div>
-            <div class="tab-content">
-                <ul>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                </ul>
-            </div>
+
+      <div id="subTabContainer">
+        <div style="display:block;" id="consultTab">
+          <div class="tab-arrow01 pos-r"></div>
+          <div class="tab-content">
+            <ul>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+            </ul>
+          </div>
         </div>
-        <div style="display:none;">
-            <div class="tab-arrow02 pos-r"></div>
-            <div class="tab-content">
-                <ul>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                </ul>
-            </div>
+        <div style="display:none;" id="taskTab">
+          <div class="tab-arrow02 pos-r"></div>
+          <div class="tab-content">
+            <ul>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+            </ul>
+          </div>
         </div>
-        <div style="display:none;">
-            <div class="tab-arrow03 pos-r"></div>
-            <div class="tab-content">
-                <ul>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                    <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
-                </ul>
-            </div>
+        <div style="display:none;" id="cheatsTab">
+          <div class="tab-arrow03 pos-r"></div>
+          <div class="tab-content">
+            <ul>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+              <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+            </ul>
+          </div>
         </div>
+      </div>
 	</div>
     <!--tabs end-->
     <!--banner start-->
@@ -380,7 +392,7 @@
                     <p style="font-size:14px;">1000积分</p>
                 </div>
             </li>
-            
+
         </ul>
     </div>
     <!--礼品推荐 end-->
@@ -412,7 +424,7 @@
             	<a href="#" class="ruanjian06" title=""></a>
                 <div><a href="#" title="#">吃货大食堂</a></div>
             </li>
-            
+
         </ul>
     </div>
     <!--软件推荐 end-->

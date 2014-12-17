@@ -47,7 +47,7 @@ button{
 .dropDown .ulList a.current{color:#e58024; background:#fff;}
 
 .login{width:295px; height:244px; background:url(../images/login-bg.jpg) no-repeat; border:1px solid #6a6a6a; position:absolute; z-index:0;}
-.login table{padding:30px; text-align:left; font:14px;}
+.login table{padding:30px; text-align:left; font-size:14px;}
 .login table td{padding-bottom:15px;}
 .login table td input[type="text"]{width:214px; height:20px; line-height:40px; border:none; border:1px solid #959595; padding:10px 8px}
 .loginBtn{width:93px; height:41px; border:none; background:#e58024; color:#fff;}
@@ -63,8 +63,20 @@ button{
 .menNav-ullist li{ float:left; padding:0 20px; margin-top:18px;position: relative;}
 .menNav-ullist li a{ padding:0 10px; color:#7e7e7e;}
 .menNav-ullist li a.current{ color:#e58024;}
-.menNav-ullist li a:hover{ border-bottom:2px solid #e58024; padding-bottom:10px;}
-.menNav-ullist li div{ background:url(../images/dh-centerbg.jpg) repeat-y; width:120px; height:58px; position:absolute;z-index: 100; top:35px; left:0; border:1px solid #6a6a6a;}
+.menNav-ullist li a:hover{ border-bottom:2px solid #e58024; padding-bottom:5px;}
+.menNav-ullist .sub-menu{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  padding-top: 10px;
+  display: none;
+}
+.menNav-ullist .sub-menu>div{
+  background: url(../images/dh-centerbg.jpg) repeat-y;
+  width: 120px;
+  height: 58px;
+  border: 1px solid #6a6a6a;
+}
 .menNav-ullist li div a{ width:120px; text-align:center; height:29px; display:block; padding:0}
 .menNav-ullist li div a:hover{ border:none; background:#fff; border-bottom:none; padding:0}
 /*========icon=============*/
@@ -73,22 +85,6 @@ button{
 .white-upArrow{background-position:-110px -31px;}
 .gray-downArrow{background-position:-123px -22px; margin-top:10px; margin-left:0px;}
 .gray-upArrow{background-position:-110px -22px; margin-top:10px; margin-left:0px;}
-/*========sliders=============*/
-#newsSlider .container {position: relative; height:447px; width:1284px; margin:0 auto;}
-#newsSlider div.slides {left: 0px; position: absolute; top: 0px}
-#newsSlider ul.slides {padding:0;margin: 0px; left: 0px;   list-style-type: none; position: absolute; top: 0px;}
-#newsSlider div.slides div {display: none; padding:0; margin: 0px; width:1284px;  position: absolute; top: 0px;}
-ul.slides li { display:block; padding:0;  margin: 0px; width:960px; position: absolute; top: 0px;}
-ul.slides li.hero_img img{ height:447px; width:1284px;}
-#newsSlider #loopedSlider {clear: both; margin: 0px auto; width:1284px; position: relative;}
-#newsSlider {clear: both; margin: 0px auto; width:1440px; position: relative;}
-#newsSlider ul.pagination { height:33px; width:1440px; background:#fff; }
-.pagination{ width:1440px; padding:16px 0; background:#fff; }
-.pagination div.line{ border-top:1px solid #959595; width:1440px;}
-.pagination ul{ width:1440px; display:block; position:absolute; padding-left:130px; top:5px;}
-.pagination ul li{ float:left;}
-.pagination ul li a{ margin:0 110px; background:url(../images/scorllImg/dot-icon.png) no-repeat; height:19px; width:19px; display:block;}
-.pagination ul li a.select,.pagination ul li a:hover{background:url(../images/scorllImg/select-dot-icon.png) no-repeat;height:29px; width:29px; margin-top:-2px; }
 
 .raw{color:#393939;left:50px; text-align:center;}
 .raw i{background:url(../images/scorllImg/arrow.png) no-repeat; width:10px; height:9px; display:block;margin-left: 69px;}
@@ -97,7 +93,7 @@ ul.slides li.hero_img img{ height:447px; width:1284px;}
 .raw p{color:#7e7e7e;}
 
 /*========tabs=============*/
-.tab{ padding:0 300px; margin-top:100px; overflow:hidden; color:#1c1a18;}
+.tab{ padding:0 300px; margin-top:30px; overflow:hidden; color:#1c1a18;}
 .tab ul.title{ height:147px;}
 .zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 70px; float:left;}
 .zixun{ background-position:0 0;}
@@ -132,7 +128,7 @@ ul.slides li.hero_img img{ height:447px; width:1284px;}
 .app-smallbox .ios a:hover{ border:5px solid #fff;background:#fff url(images/ios_03.png) no-repeat;}
 .app-smallbox .android a{background:url(images/android_03.png) no-repeat; width:268px; height:94px; display:block;}
 .app-smallbox .android a:hover{ border:5px solid #fff;background:#fff url(images/android_03.png) no-repeat; }
-/*========ÈÎÎñ£¬ÍÆ¼ö£¬ Èí¼þ=============*/
+/*========ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½=============*/
 .bigbox{ padding:67px 249px 50px 249px; overflow:hidden;}
 .renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
 .renwu ul li{ float:left; padding:24px 22px;width:270px; text-align:left;}

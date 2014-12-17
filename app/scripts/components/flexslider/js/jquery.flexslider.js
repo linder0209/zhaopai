@@ -207,15 +207,20 @@
               item,
               slide;
 
-          slider.controlNavScaffold = $('<ol class="'+ namespace + 'control-nav ' + namespace + type + '"></ol>');
+          var cutomerNav = $($(slider.context).attr('data-cutomer-nav'));
+          slider.controlNavScaffold = $('<ol class="' + (cutomerNav.length > 0 ? 'flex-control-customer ': '') + namespace + 'control-nav ' + namespace + type + '"></ol>');
 
           if (slider.pagingCount > 1) {
             for (var i = 0; i < slider.pagingCount; i++) {
               slide = slider.slides.eq(i);
-              item = (slider.vars.controlNav === "thumbnails") ? '<img src="' + slide.attr( 'data-thumb' ) + '"/>' : '<a>' + j + '</a>';
-              if ( 'thumbnails' === slider.vars.controlNav && true === slider.vars.thumbCaptions ) {
-                var captn = slide.attr( 'data-thumbcaption' );
-                if ( '' != captn && undefined != captn ) item += '<span class="' + namespace + 'caption">' + captn + '</span>';
+              if(cutomerNav.length > 0){
+                item = cutomerNav.children(':eq(' + i + ')').html();
+              }else{
+                item = (slider.vars.controlNav === "thumbnails") ? '<img src="' + slide.attr( 'data-thumb' ) + '"/>' : '<a>' + j + '</a>';
+                if ( 'thumbnails' === slider.vars.controlNav && true === slider.vars.thumbCaptions ) {
+                  var captn = slide.attr( 'data-thumbcaption' );
+                  if ( '' != captn && undefined != captn ) item += '<span class="' + namespace + 'caption">' + captn + '</span>';
+                }
               }
               slider.controlNavScaffold.append('<li>' + item + '</li>');
               j++;
@@ -228,7 +233,8 @@
 
           methods.controlNav.active();
 
-          slider.controlNavScaffold.delegate('a, img', eventType, function(event) {
+          var clickSelector = cutomerNav.length > 0 ? 'li':'a, img';
+          slider.controlNavScaffold.delegate(clickSelector, eventType, function(event) {
             event.preventDefault();
 
             if (watchedEvent === "" || watchedEvent === event.type) {
@@ -274,7 +280,11 @@
           });
         },
         set: function() {
-          var selector = (slider.vars.controlNav === "thumbnails") ? 'img' : 'a';
+          var cutomerNav = $($(slider.context).attr('data-cutomer-nav'));
+          var selector = '';
+          if(cutomerNav.length == 0){
+            selector = (slider.vars.controlNav === "thumbnails") ? 'img' : 'a';
+          }
           slider.controlNav = $('.' + namespace + 'control-nav li ' + selector, (slider.controlsContainer) ? slider.controlsContainer : slider);
         },
         active: function() {

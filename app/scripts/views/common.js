@@ -1,6 +1,6 @@
 (function (global) {
   'use strict';
-  global.hopeCommon = {
+  var hopeCommon = {
     version: '0.0.1',
     versionDetail: {
       major: 0,
@@ -16,11 +16,12 @@
       var check = function (r) {
         return r.test(navigator.userAgent.toLowerCase());
       };
-      var doc = document, isOpera = check(/opera/), isIE = !isOpera && check(/msie/), isStrict = doc.compatMode == 'CSS1Compat';
+      var doc = document, isOpera = check(/opera/), isIE = !isOpera && check(/msie/), isStrict = doc.compatMode === 'CSS1Compat';
 
       var element = {
         //return the page viewport width
         getViewportWidth: function () {
+          /*jshint -W117 */
           return !isStrict && !isOpera ? doc.body.clientWidth : isIE ? doc.documentElement.clientWidth : self.innerWidth;
         }, //return the page viewport height
         getViewportHeight: function () {
@@ -46,15 +47,17 @@
 
   hopeCommon.getViewportWidth = hopeCommon.Element.getViewportWidth;
 
+  global.hopeCommon = hopeCommon;
+
   //ie7 ie8 compatibility
   if (!Array.prototype.indexOf) {
     Array.prototype.indexOf = function (item) {
       var me = this;
-      if (me.length == 0) {
+      if (me.length === 0) {
         return -1;
       }
       for (var i = 0, len = me.length; i < len; i++) {
-        if (item == me[i]) {
+        if (item === me[i]) {
           return i;
         }
       }
@@ -64,6 +67,7 @@
 })(window);
 
 $(function () {
+  'use strict';
   $(document.body).on('click', 'a', function (e) {
     if ($(e.target).attr('href') === '') {
       e.preventDefault();
