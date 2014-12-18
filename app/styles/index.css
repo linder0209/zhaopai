@@ -35,6 +35,29 @@ button{
 .vertical-align-middle{
   vertical-align: middle;
 }
+
+/**
+* 外边距
+**/
+.margin-top-md {
+  margin-top: 10px;
+}
+.margin-top-vl {
+  margin-top: 30px;
+}
+.margin-top-hg {
+  margin-top: 50px;
+}
+.margin-left-md {
+  margin-left: 10px;
+}
+.margin-left-lg {
+  margin-left: 20px;
+}
+.margin-rigth-xs{
+  margin-right: 5px;
+}
+
 .wrap{width:1440px; margin:0 auto; overflow:hidden; background:#eeeeee;}
 .wrap * a:hover{color: #e58024;}
 /*========header=============*/
@@ -96,6 +119,9 @@ button{
 .dropDown .ulList a{ border:none; color:#393939; width:120px; padding:11px 0; text-align:center; }
 .dropDown .ulList a:hover{color: #e58024;}
 .dropDown .ulList a.current{color:#e58024; background:#fff;}
+.dropDown .ulList .qrcode{
+  position:absolute; right:121px;
+}
 
 .login{width:295px; height:244px; background:url(../images/login-bg.jpg) no-repeat; border:1px solid #6a6a6a; position:absolute; z-index:0;}
 .login table{padding:30px; text-align:left; font-size:14px;}
@@ -231,5 +257,21 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
   border-radius: 50%;
 }
 
+.register-form .radio-label{
+  font-size:16px; margin-right:20px
+}
+.register-form .select{
+  width:135px; margin-right:5px;
+}
+.register-form .checkcode-input{
+  width: 200px;
+}
+.register-form .reload-checkcode{
+  display: inline-block;
+  background: url("images/reload-checkcode.png");
+  width: 37px;
+  height: 37px;
+  vertical-align: middle;
+}
 
 

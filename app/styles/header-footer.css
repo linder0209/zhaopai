@@ -478,6 +478,9 @@ button {
 .margin-left-lg {
   margin-left: 20px;
 }
+.margin-rigth-xs {
+  margin-right: 20px;
+}
 /**
 * 段落
 **/
