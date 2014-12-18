@@ -168,7 +168,7 @@ button{
 .tab-arrow03{background:url(../images/tab/03.png) no-repeat; width:66px; height:45px; left:580px;}
 
 .paihang{width:343px; background:#FFFFFF;filter:alpha(opacity=50); moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
-.paihang li{ padding:5px 0;}
+.paihang li{ padding:9px 0;}
 .paihang a{ padding:0 15px; display:block; color:#1c1a18;}
 .paihang a span{ padding:0 8px; float:right;}
 .banner-smallbox{padding:50px 280px; overflow:hidden;}
@@ -213,9 +213,9 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
 
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
-.partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto;}
-.partners a{ padding:0 10px;}
-.partners p{padding-top:37px;}
+.partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto; color:#393939;}
+.partners a,.conns a{ padding:0 10px;}
+.partners p{padding:35px 0 10px 0;}
 .conns{ height:62px; line-height:62px;}
 .copyright{background:#A0A0A0; height:52px; line-height:52px;}
 
