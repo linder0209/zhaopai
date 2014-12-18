@@ -1,9 +1,5 @@
-html,body{
-  padding:0;
-  margin:0;
-  font:normal 12px Arial, Helvetica, sans-serif;
-  line-height: 2em;
-}
+*{padding:0; margin:0; list-style:none; font:normal 12px/24px Arial, Helvetica, sans-serif; }
+html,body{padding:0; margin:0;}
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {margin: 0;padding: 0;}
 table, td, tr, th {font-size: 12px;}
 ol, ul {list-style: outside none none;}

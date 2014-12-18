@@ -1,12 +1,12 @@
 @import url(common.css);
 .left-panel{
-  float:left;
+  position: absolute;
   width: 300px;
   background-color: #fff;
+  margin: 10px auto;
 }
 .right-paenl{
-  float:left;
-  width: 800px;
+  margin-left: 300px;
 }
 
 .img-head-portrait{
