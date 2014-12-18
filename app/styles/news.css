@@ -9,3 +9,33 @@ table.toupiao-table td{ padding:10px 0;}
 table.toupiao-table td label{margin-right:20px}
 table.toupiao-table div.city{ width:600px;}
 table.toupiao-table div.city label{ width:120px; display:inline-block;}
+
+.consult-inner .c-img{float:left; width:360px; height:245px;}
+.consult-inner .c-img img{ height:245px; width:360px;}
+.consult-inner .c-r{float:right; width:540px; color:#393939;}
+.consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939; margin-top:10px; }
+.consult-inner .c-r p{ font-size:14px;color:#393939;}
+  
+.c-r{height:350px; width:540px;}
+.c-r div{ border-bottom:1px solid #bfbfbf; padding-bottom:10px; margin-bottom:10px;}
+.c-r ul li a{padding:3px 20px; font-size:14px; display:block;}
+.c-r ul li a i,.tab-content ul li a i:hover{display:inline-block; margin-right:5px; vertical-align:middle;}
+.c-r ul li a i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-215px 0; width:9px; height:9px; }
+.c-r ul li a:hover{background:#e58024; padding:3px 10px; color:#fff; font-size:18px;}
+.c-r ul li a:hover i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-235px 0; width:13px; height:13px;}
+.c-r ul li a span{font-size:14px;}
+.c-r ul li a:hover span{color:#fff;font-size:18px;}
+
+/*img-slide*/
+.img-slide{ margin-bottom:35px;}
+.img-slide li{ padding:10px; float:left; }
+.img-slide li a.img-slide-i{ width:290px; height:245px; display:block;filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
+-moz-box-shadow: 2px 2px 10px #a7a6a6;/*firefox*/
+-webkit-box-shadow: 2px 2px 10px #a7a6a6;/*safari或chrome*/
+box-shadow:2px 2px 10px #a7a6a6;/*opera或ie9*/}
+.img-slide .img-slide-d{position:absolute;bottom:10px; height:35px; line-height:35px; background:#755f4a; width:290px;filter:alpha(opacity:80);-moz-opacity:0.8; opacity:0.8; color:#fff; cursor:pointer;}
+.img-slide .img-slide-d h4{ text-align:center; font-size:20px; font-weight:bold;height:35px; line-height:35px;}
+.img-slide .img-slide-d.img-slide-h,.img-slide .img-slide-d:hover{ height:245px;}
+.img-slide .img-slide-d.img-slide-h h4{padding-top:20px;}
+.img-slide .img-slide-d.img-slide-h div{ padding:10px;height:160px; overflow:hidden;}
+
