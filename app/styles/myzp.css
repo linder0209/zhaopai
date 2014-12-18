@@ -1,15 +1,129 @@
 @import url(common.css);
-.left-panel{
-  position: absolute;
-  width: 300px;
+@import url(other.css);
+
+.myzp-container {
   background-color: #fff;
-  margin: 10px auto;
-}
-.right-paenl{
-  margin-left: 300px;
+  padding-bottom: 20px;
 }
 
-.img-head-portrait{
+.left-panel {
+  position: absolute;
+  width: 300px;
+}
+
+.personal-info-panel {
+  margin-left: 50px;
+  color: #393939;
+  font-size: 16px;
+  text-align: center;
+}
+
+.personal-info {
+  margin-top: 10px;
+}
+
+.img-head-portrait {
   width: 100px;
   height: 100px;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.right-paenl {
+  margin-left: 300px;
+  position: relative;
+  background-color: #eee;
+}
+
+.nav-line {
+  position: absolute;
+  left: -20px;
+  border: 1px solid #949494;
+  height: 100%;
+}
+
+.nav-point {
+  position: absolute;
+}
+
+.nav-point li{
+  position: absolute;
+  left: -28.5px;
+  width: 150px;
+}
+.nav-point li a {
+  background: url(../images/scorllImg/dot-icon.png) no-repeat;
+  height: 19px;
+  width: 19px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.nav-point li span {
+  color: #939393;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.nav-point li.active a,
+.nav-point li:hover a {
+  background: url("../images/scorllImg/select-dot-icon.png");
+  height: 29px;
+  width: 29px;
+  left: -5px;
+}
+.nav-point li.active span,
+.nav-point li:hover span{
+  background-color: #e58024;
+  color: #fff;
+  top: -6px;
+}
+
+.nav-point li.active span:before,
+.nav-point li.active span:after,
+.nav-point li:hover span:before,
+.nav-point li:hover span:after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 26%;
+  left: -1.2em;
+  border-width: 0.6em 0.7em;
+  border-style: solid;
+  border-color: transparent #E58024 transparent transparent;
+  font-size: 12px;
+}
+
+.personal-datum-panel{
+  position: relative;
+  left: 200px;
+  width: 940px;
+  padding: 20px 0;
+}
+.personal-datum{
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+.personal-datum h1{
+  font-weight: bold;
+  font-size: 20px;
+  color: #e58024;
+  border-bottom: 2px solid #e58024;
+  text-align: center;
+  width: 300px;
+  padding-bottom: 10px;
+  margin-left: 100px;
+}
+.form-items li{
+  margin-bottom: 30px;
+}
+
+.split-area{
+  height: 50px;
+  background-color: #fff;
 }

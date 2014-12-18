@@ -13,3 +13,13 @@ label.global-label{font-size:20px;}
 .others h3{width:300px;padding: 0 50px 12px 50px; text-align:center}
 .others div{ font-size:14px; color:#7e7e7e; padding-bottom:30px}
 .others div strong{font-size:18px;color:#393939; }
+
+.global-button {
+  font-size: 18px;
+  width: 422px;
+  height: 46px;
+  line-height: 46px;
+  background: #E58024;
+  color: #fff;
+  border: 0 none;
+}
