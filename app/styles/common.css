@@ -15,6 +15,8 @@ button{cursor: pointer;}
 .pos-r{position:relative}
 .pos-a{position:absolute;}
 .dis-inlineB{ display:inline-block;}
+.text-right{text-align:right;}
+.bg-fff{ background:#fff;}
 /*========clear=============*/
 /**
  * 清除浮层
@@ -221,7 +223,7 @@ button{cursor: pointer;}
 .app-smallbox .android a:hover{ border:5px solid #fff;background:#fff url(images/android_03.png) no-repeat; }
 /*========�����Ƽ��� ���=============*/
 .bigbox{ padding:67px 249px 50px 249px; overflow:hidden;}
-.bigbox > h3 > .more{
+.bigbox > h3 > .more,.consult > h3 > .more{
   display: inline-block;
   background: url("images/more.png");
   width: 27px;

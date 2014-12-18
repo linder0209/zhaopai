@@ -10,7 +10,7 @@ label.global-label{font-size:20px;}
 .link-blue{font-size:18px;color:#8ec5b9;}
 
 .others{ min-height:600px;}
-.others h3{width:300px;padding: 0 50px 12px 50px; text-align:center}
+.others h3，consult h3{width:300px;padding: 0 50px 12px 50px; text-align:center}
 .others div{ font-size:14px; color:#7e7e7e; padding-bottom:30px}
 .others div strong{font-size:18px;color:#393939; }
 

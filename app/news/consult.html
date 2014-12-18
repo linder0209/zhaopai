@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>找拍</title>
+  <meta name="keywords" content="首页，任务专区，咨询活动，兑换中心， 我的找拍"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+  <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="../styles/flex-control-customer.css"/>
+</head>
+<body>
+<!--top-->
+<div class="topfixed">
+  <div class="top-nav clearfix">
+    <ul class="top-nav-col" id="loginNav">
+      <li>欢迎来到找拍</li>
+      <li class="nav-login" style="position:relative">
+			<a href="#" style="z-index:999" id="login">登录</a>
+			<div class="login" id="loginPanel" style="display:none;">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
+						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
+						<tr><td><button type="submit" class="loginBtn" id="loginBtn">登录</button></td><td>
+              <label class="font-black auto-login"><input type="radio" class="vertical-align-middle">下次自动登录</label></td></tr>
+						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="../register.html">立即注册</a></td></tr>
+					</tbody>
+
+				</table>
+			</div>
+			</li>
+    </ul>
+
+    <ul class="top-nav-col" id="afterLoginNav" style="display: none;">
+      <li>
+        <a href="#">欢迎来到找拍</a>
+      </li>
+      <li class="pos-r"><a href="#"><i class="email"></i> <i class="email-count">99</i></a></li>
+      <li><a href="#">北京 <i class="white-downArrow"></i></a></li>
+      <li><a href="#" style="text-transform:uppercase;">itachix</a></li>
+      <li><a href="" id="logout" class="logout">退出</a></li>
+    </ul>
+
+    <ul class="top-nav-cor">
+      <li><a href="#">客服咨询</a></li>
+			<li class="pos-r" >
+			<a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+			<div id="aboutMenu" class="dropDown" style=" display:none;">
+				<ul class="ulList">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="pos-r" >
+						<a href="#" class="current">找拍微信</a>
+						<div style="position:absolute; right:121px;"><img src="../images/qr-code.jpg" height="120" width="120"></div>
+					</li>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">百度贴吧</a></li>
+				</ul>
+			</div>
+			</li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
+    </ul>
+  </div>
+</div>
+<!--top-->
+<div class="wrap clearfix">
+  <!--header start-->
+  <div class="search">
+		<form>
+			<div>
+				<input type="text" placeholder="请输入点位关键字" class="input-search">
+				<i class="searchBtn"></i>
+			</div>
+		</form>
+  </div>
+	<div class="menNav">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="../index.html">首页</a></li>
+			<li>
+        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div>
+            <a href="#">当前任务</a>
+            <a href="#">历史任务</a>
+          </div>
+        </div>
+      </li>
+			<li>
+        <a href="consult.html" class="current">资讯活动<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div>
+            <a href="#">新闻资讯</a>
+            <a href="#">活动信息</a>
+          </div>
+          </div>
+      </li>
+			<li>
+				<a href="">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+				<div>
+					<a href="#">当前兑换</a>
+					<a href="#">历史兑换</a>
+				</div>
+        </div>
+			</li>
+			<li><a href="#">我的找拍</a></li>
+		</ul>
+
+	</div>
+  <!--header end-->
+  <style>
+  .consult-inner .c-img{float:left; width:360px; height:245px;}
+  .consult-inner .c-img img{ height:245px; width:360px;}
+  .consult-inner .c-r{float:right; width:540px; color:#393939;}
+  .consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939; margin-top:10px; }
+  .consult-inner .c-r p{ font-size:14px;color:#393939;}
+  
+.c-r{height:350px; width:540px;}
+.c-r div{ border-bottom:1px solid #bfbfbf; padding-bottom:10px; margin-bottom:10px;}
+.c-r ul li a{padding:3px 20px; font-size:14px; display:block;}
+.c-r ul li a i,.tab-content ul li a i:hover{display:inline-block; margin-right:5px; vertical-align:middle;}
+.c-r ul li a i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-215px 0; width:9px; height:9px; }
+.c-r ul li a:hover{background:#e58024; padding:3px 10px; color:#fff; font-size:18px;}
+.c-r ul li a:hover i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-235px 0; width:13px; height:13px;}
+.c-r ul li a span{font-size:14px;}
+.c-r ul li a:hover span{color:#fff;font-size:18px;}
+  </style>
+  <!--main start-->
+  <div class="main clearfix">
+    <!--调查活动start-->
+	<div class="clearfix">
+		<div class="bigTitle consult">
+			<h3 class="pos-r">调查活动<a href="consult-list.html" class="more"></a></h3>
+			<div class="consult-inner">
+				<div class="c-img">
+					<a href="#" title=""><img src="../images/zixunImg/img-01.jpg" height="245" width="360"></a>
+				</div>
+				<div class="c-r">
+					<div>
+						<h4>香奈儿coco小姐唇膏</h4>
+						<p>
+						快节奏的生活和工作压缩着每个人的时间成本，碎片化多终端交互式媒体接触行为和追求体验的消费者诉求牵引着品牌营销策略的走向...
+						<a href="#" class="font-orange right font-size-large">[详细]</a>
+						</p>
+					</div>
+					<ul class="c-r-u">
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <!--调查活动end-->
+  	<!--活动信息start-->
+	<div class="clearfix bg-fff">
+		<div class="bigTitle consult">
+			<h3 class="pos-r">活动信息<a href="consult-list.html" class="more"></a></h3>
+			<div class="consult-inner">
+				<div class="c-img">
+					<a href="#" title=""><img src="../images/zixunImg/img-02.jpg" height="245" width="360"></a>
+				</div>
+				<div class="c-r">
+					<div>
+						<h4>香奈儿coco小姐唇膏</h4>
+						<p>
+						快节奏的生活和工作压缩着每个人的时间成本，碎片化多终端交互式媒体接触行为和追求体验的消费者诉求牵引着品牌营销策略的走向...
+						<a href="#" class="font-orange right font-size-large">[详细]</a>
+						</p>
+					</div>
+					<ul class="c-r-u">
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--活动信息end-->
+	<!--资讯信息start-->
+	<div class="clearfix">
+		<div class="bigTitle consult">
+			<h3 class="pos-r">资讯信息<a href="consult-list.html" class="more"></a></h3>
+			<div class="consult-inner">
+				<div class="c-img">
+					<a href="#" title=""><img src="../images/zixunImg/img-03.jpg" height="245" width="360"></a>
+				</div>
+				<div class="c-r">
+					<div>
+						<h4>香奈儿coco小姐唇膏</h4>
+						<p>
+						快节奏的生活和工作压缩着每个人的时间成本，碎片化多终端交互式媒体接触行为和追求体验的消费者诉求牵引着品牌营销策略的走向...
+						<a href="#" class="font-orange right font-size-large">[详细]</a>
+						</p>
+					</div>
+					<ul class="c-r-u">
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--资讯信息end-->
+	<!--相关培训start-->
+	<div class="clearfix bg-fff">
+		<div class="bigTitle consult">
+			<h3 class="pos-r">资讯信息<a href="consult-list.html" class="more"></a></h3>
+			<div class="consult-inner">
+				<div class="c-img">
+					<a href="#" title=""><img src="../images/zixunImg/img-04.jpg" height="245" width="360"></a>
+				</div>
+				<div class="c-r">
+					<div>
+						<h4>香奈儿coco小姐唇膏</h4>
+						<p>
+						快节奏的生活和工作压缩着每个人的时间成本，碎片化多终端交互式媒体接触行为和追求体验的消费者诉求牵引着品牌营销策略的走向...
+						<a href="#" class="font-orange right font-size-large">[详细]</a>
+						</p>
+					</div>
+					<ul class="c-r-u">
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>品牌与广告传播<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					  <li><a href="#"><i></i>媒介经营管理<span class="right">04-17</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--相关培训end-->
+</div>
+  <!--main end-->
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="../others/business.html">商务洽谈</a>
+      |
+      <a href="../others/exception.html">免责条款</a>
+      |
+      <a href="../others/AboutUs.html">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  </div>
+  <!--footer end-->
+</div>
+
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
+<script src="../scripts/views/common.js"></script>
+<script src="../scripts/views/platform.js"></script>
+<script src="../scripts/views/index.js"></script>
+<script>
+  $(function () {
+    hopeView.platform.init();
+    hopeView.index.init();
+  });
+</script>
+</body>
+</html>
