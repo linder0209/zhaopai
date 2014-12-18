@@ -75,3 +75,16 @@ $(function () {
   });
 });
 
+
+$(function(){
+	$(".img-slide-d").mouseover(function(){
+		$(this).find("div").show();
+		$(this).find("h4").animate({"padding-top":"20px"},0);
+		$(this).animate({height:"245px"},200);					 
+	}).mouseleave(function(){
+		$(this).find("h4").animate({"padding-top":"0px"},0);
+		$(this).animate({height:"35px"},100,function(){$(this).find("div").hide();});
+	});
+	
+	
+});

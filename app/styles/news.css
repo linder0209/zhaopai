@@ -35,7 +35,12 @@ table.toupiao-table div.city label{ width:120px; display:inline-block;}
 box-shadow:2px 2px 10px #a7a6a6;/*opera或ie9*/}
 .img-slide .img-slide-d{position:absolute;bottom:10px; height:35px; line-height:35px; background:#755f4a; width:290px;filter:alpha(opacity:80);-moz-opacity:0.8; opacity:0.8; color:#fff; cursor:pointer;}
 .img-slide .img-slide-d h4{ text-align:center; font-size:20px; font-weight:bold;height:35px; line-height:35px;}
-.img-slide .img-slide-d.img-slide-h,.img-slide .img-slide-d:hover{ height:245px;}
-.img-slide .img-slide-d.img-slide-h h4{padding-top:20px;}
-.img-slide .img-slide-d.img-slide-h div{ padding:10px;height:160px; overflow:hidden;}
+.img-slide .img-slide-d div{ padding:10px;height:160px; overflow:hidden;}
+/**/
+ul.page{ margin-left:350px; margin-bottom:20px;}
+ul.page li{ float:left;}
+ul.page li a.arrow{font-size:30px; margin:0 5px;}
+ul.page li a.current-page{color:#fff; background:#fff;}
+ul.page li a.default-page div{border-radius:50%; background:#7e7e7e; width:5px; height:5px; margin:10px 2px;}
+ul.page li a.current-page div{border-radius:50%; background:#e58024; width:25px; height:25px; text-align:center; color:5px;}
 
