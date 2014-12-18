@@ -4,7 +4,7 @@ input[type="radio"],input[type="checkbox"]{ margin-right:5px;}
 .global-input:focus{border:1px solid #e58024; background:#fff;box-shadow:none;}
 .bigTitle{width:940px; margin:0 auto; padding-top:55px;}
 .bigTitle h3{font-size:24px; font-weight:bold; color:#e58024; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; width:100px; margin:0 auto; margin-bottom:50px;}
-.register table td{ padding:20px;} 
+.register table td{ padding:20px;}
 label.global-label{font-size:20px;}
 .link-blue{font-size:18px;color:#8ec5b9;}
 
