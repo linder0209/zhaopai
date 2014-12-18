@@ -1,0 +1,15 @@
+@import url(common.css);
+.left-panel{
+  position: absolute;
+  width: 300px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+.right-paenl{
+  margin-left: 300px;
+}
+
+.img-head-portrait{
+  width: 100px;
+  height: 100px;
+}
