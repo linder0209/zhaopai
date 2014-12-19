@@ -36,12 +36,17 @@ button{cursor: pointer;}
 .font-black{
   color: #393939;
 }
-
+.font-gray{
+  color: #7e7e7e;
+}
 .font-size-large{
   font-size: 14px;
 }
 .font-size-xlarge{
   font-size: 16px;
+}
+.font-size-xxlarge{
+  font-size: 20px;
 }
 .font-weight{
   font-weight: bold;
@@ -49,12 +54,17 @@ button{cursor: pointer;}
 .vertical-align-middle{
   vertical-align: middle;
 }
-
+.text-center{
+  text-align: center;
+}
 /**
 * 外边距
 **/
 .margin-top-md {
   margin-top: 10px;
+}
+.margin-top-lg {
+  margin-top: 20px;
 }
 .margin-top-vl {
   margin-top: 30px;
@@ -68,7 +78,10 @@ button{cursor: pointer;}
 .margin-left-lg {
   margin-left: 20px;
 }
-.margin-rigth-xs{
+.margin-left-hg{
+  margin-left: 50px;
+}
+.margin-right-xs{
   margin-right: 5px;
 }
 
@@ -287,5 +300,4 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
   height: 37px;
   vertical-align: middle;
 }
-
 
