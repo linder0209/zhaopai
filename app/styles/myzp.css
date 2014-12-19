@@ -3,16 +3,16 @@
 
 .myzp-container {
   background-color: #fff;
-  padding: 20px 0;
+  padding:50px 0 20px 0;
 }
 
 .left-panel {
   position: absolute;
-  width: 300px;
+  width: 190px;
 }
 
 .personal-info-panel {
-  margin-left: 50px;
+  margin-left:0;
   color: #393939;
   font-size: 16px;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .right-paenl {
-  margin-left: 300px;
+  margin-left: 190px;
   position: relative;
   background-color: #eee;
   min-height: 600px;
@@ -105,6 +105,7 @@
   left: 200px;
   width: 940px;
   padding: 20px 0;
+  top: -40px;
 }
 .personal-datum{
   margin-bottom: 20px;
@@ -114,7 +115,7 @@
   font-weight: bold;
   font-size: 20px;
   color: #e58024;
-  border-bottom: 2px solid #e58024;
+  border-bottom:2px solid #e58024;
   text-align: center;
   width: 300px;
   padding-bottom: 10px;

@@ -17,6 +17,7 @@ button{cursor: pointer;}
 .dis-inlineB{ display:inline-block;}
 .text-right{text-align:right;}
 .bg-fff{ background:#fff;}
+.color-7e{ color:#7e7e7e;}
 /*========clear=============*/
 /**
  * 清除浮层
@@ -43,6 +44,9 @@ button{cursor: pointer;}
 .font-size-xlarge{
   font-size: 16px;
 }
+.font-size-xxlarge{
+  font-size: 18px;
+}
 .font-weight{
   font-weight: bold;
 }
@@ -67,6 +71,9 @@ button{cursor: pointer;}
 }
 .margin-left-lg {
   margin-left: 20px;
+}
+.margin-right-lg {
+  margin-right: 20px;
 }
 .margin-rigth-xs{
   margin-right: 5px;

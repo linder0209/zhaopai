@@ -1,0 +1,29 @@
+@import url(common.css);
+@import url(other.css);
+@import url(myzp.css);
+@import url(news.css);
+
+.exchange-center .personal-datum-panel{left:0; width:1090px}
+.exchange-center .control-nav-horizontal{width:1090px;}
+.researchBtn{background:#aaaaaa;border:none; height:48px; width:48px; top:-3px; position:relative; }
+.researchBtn i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-280px 0;  height:30px; width:30px; display:inline-block; vertical-align:middle;}
+.exchange-ul li{ width:200px;padding:30px; overflow:hidden; color:#7e7e7e; float:left;}
+.exchange-ul li a img{ width:200px; height:200px;}
+.bigflower-iocn{ background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-255px 0; width:18px; height:18px; vertical-align:middle; margin:0 2px; display:inline-block}
+.exchange-divb span{ font-size:18px; color:#e58024; height:34px; line-height:34px;}
+.exchange-divb a,.c-r ul li .a-change{width:100px; height:33px;  font-size:18px; border:1px solid #7E7E7E; color:#7e7e7e; text-align:center; float:right; display:inline-block; line-height:33px; padding:0}
+.exchange-divb a:hover,.c-r ul li .a-change:hover{ background:#e58024; color:#fff;padding:0}
+.duihuan{margin-top:35px;}
+.duihuan a{ font-size:14px; font-weight:bold; color:#e58024; margin:20px 20px 0 0; float:right;}
+.exchange-details-tiltle{border-bottom:1px solid #ababab; margin-top:20px;}
+.exchange-details-tiltle h3{font-size:20px; font-weight:bold;background: none repeat scroll 0 0 #eee;
+font-size: 20px;
+font-weight: bold;
+margin: 0 auto;
+position: relative;
+text-align: center;
+top: 10px;
+width: 650px;}
+.c-r.exchange-deatils{height:auto; }
+.c-r.exchange-deatils li{ color:#7e7e7e; margin-bottom:10px;font-size:14px;}
+.c-r.exchange-deatils li p{color:#7e7e7e;}
