@@ -3,7 +3,7 @@
 
 .myzp-container {
   background-color: #fff;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .left-panel {
@@ -33,6 +33,7 @@
   margin-left: 300px;
   position: relative;
   background-color: #eee;
+  min-height: 600px;
 }
 
 .nav-line {
@@ -126,4 +127,71 @@
 .split-area{
   height: 50px;
   background-color: #fff;
+}
+
+.control-nav-horizontal{
+   width: 700px;
+}
+.control-nav-horizontal .line{
+  border-top: 1px solid #959595;
+  padding: 0px 0px 15px;
+}
+.control-nav-horizontal-items {
+  position: relative;
+}
+
+.control-nav-horizontal-items > li{
+  position: absolute;
+  top: -25px;
+  text-align: center;
+}
+
+.control-nav-horizontal-items > li a{
+  background: url(../images/scorllImg/dot-icon.png) no-repeat;
+  height: 19px;
+  width: 19px;
+  display: inline-block;
+}
+
+.control-nav-horizontal-items > li .content{
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #393939;
+  margin: 10px 10px 0;
+  cursor: pointer;
+}
+
+.control-nav-horizontal-items > li:hover,
+.control-nav-horizontal-items > li.active{
+  top: -30px;
+}
+
+.control-nav-horizontal-items > li:hover a,
+.control-nav-horizontal-items > li.active a{
+  background-image: url("../images/scorllImg/select-dot-icon.png");
+  height: 29px;
+  width: 29px;
+}
+
+.control-nav-horizontal-items > li:hover .content,
+.control-nav-horizontal-items > li.active .content{
+  position: relative;
+  background-color: #e58024;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.control-nav-horizontal-items > li:hover .content:before,
+.control-nav-horizontal-items > li.active .content:before,
+.control-nav-horizontal-items > li:hover .content:after,
+.control-nav-horizontal-items > li.active .content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.4em;
+  left: 45%;
+  border-width: 0.8em 0.6em;
+  border-style: solid;
+  border-color: transparent transparent #E58024 transparent;
+  font-size: 12px;
 }
