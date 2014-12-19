@@ -1,6 +1,86 @@
 @import url(common.css);
 @import url(other.css);
+@import url(news.css);
 
+.common-panel-ct{
+  background-color: #fff;
+  padding: 30px 0;
+  min-height: 500px;
+}
+.common-panel{
+  background-color: #EDEDED;
+  margin-left: 190px;
+}
+.header-title{
+  font-weight: bolder;
+  font-size: 22px;
+  color: #e58024;
+  border-bottom: 3px solid #e58024;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.panel-content{
+  width: 80%;
+  margin: 0 auto;
+}
+.img-container.camera-img{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.camera-img-eare{
+  text-align: center;
+  padding: 50px;
+}
+.icon-area{
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.icon-andriod{
+  display: inline-block;
+  background: url("images/android.png");
+  width: 48px;
+  height: 52px;
+}
+.icon-ios{
+  display: inline-block;
+  background: url("images/ios.png");
+  width: 47px;
+  height: 52px;
+}
+
+.product-introduce{
+  border-bottom: 2px solid #7D7D7D;
+  color: #7e7e7e;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  text-indent: 2em;
+}
+
+.product-info{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+.product-info td{
+  padding: 5px;
+}
+.product-info td:first-child{
+  font-weight: bold;
+  color: #393939;
+}
+.product-pic{
+  margin-top: 20px;
+}
+.product-pic li{
+  float: left;
+  margin-right: 25px;
+}
 .myzp-container {
   background-color: #fff;
   padding:50px 0 20px 0;
@@ -29,8 +109,10 @@
   display: inline-block;
 }
 
+
 .right-paenl {
   margin-left: 190px;
+  padding-bottom: 20px;
   position: relative;
   background-color: #eee;
   min-height: 600px;
@@ -102,8 +184,8 @@
 
 .personal-datum-panel{
   position: relative;
-  left: 200px;
-  width: 940px;
+  left: 180px;
+  width: 800px;
   padding: 20px 0;
   top: -40px;
 }
@@ -111,15 +193,9 @@
   margin-bottom: 20px;
   padding-top: 30px;
 }
-.personal-datum h1{
-  font-weight: bold;
-  font-size: 20px;
-  color: #e58024;
-  border-bottom:2px solid #e58024;
-  text-align: center;
+
+.personal-datum h2{
   width: 300px;
-  padding-bottom: 10px;
-  margin-left: 100px;
 }
 .form-items li{
   margin-bottom: 30px;
@@ -195,4 +271,69 @@
   border-style: solid;
   border-color: transparent transparent #E58024 transparent;
   font-size: 12px;
+}
+
+.map-title.info{
+  float: none;
+  width: auto;
+}
+.map-title{
+  position: relative;
+}
+.map-title .title-shim{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #e58024;
+  font-weight: bold;
+}
+.map-title .title-shim.potato{
+  background: url("images/sprites-icon.png") -258px 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.record-list{
+  padding-top: 50px;
+  margin: 10px 150px 0 50px;
+}
+.record-list > li{
+  border-bottom: 2px solid #7D7D7D;
+  margin: 30px 0;
+  position: relative;
+}
+.record-list > li h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.record-list > li .title-shim{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #e58024;
+  font-weight: bold;
+}
+.record-list > li .date{
+  margin: 10px 0;
+  color: #7e7e7e;
+}
+
+.my-head-portrait{
+  position: absolute;
+  top: 120px;
+  right: 70px;
+  text-align: center;
+}
+
+.img-container.head-portrait-img{
+  width: 150px;
+  height: 150px;
+}
+
+.link-orange{
+  font-size: 20px;
+  color: #e58024;
+  display: inline-block;
+  margin-top: 15px;
 }
