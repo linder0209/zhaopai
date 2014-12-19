@@ -83,16 +83,15 @@
 }
 .myzp-container {
   background-color: #fff;
-  padding:50px 0 20px 0;
+  padding: 20px 0;
 }
 
 .left-panel {
   position: absolute;
-  width: 190px;
+  width: 210px;
 }
 
 .personal-info-panel {
-  margin-left:0;
   color: #393939;
   font-size: 16px;
   text-align: center;
@@ -109,9 +108,8 @@
   display: inline-block;
 }
 
-
-.right-paenl {
-  margin-left: 190px;
+.right-panel {
+  margin-left: 210px;
   padding-bottom: 20px;
   position: relative;
   background-color: #eee;
@@ -187,13 +185,11 @@
   left: 180px;
   width: 800px;
   padding: 20px 0;
-  top: -40px;
 }
 .personal-datum{
   margin-bottom: 20px;
   padding-top: 30px;
 }
-
 .personal-datum h2{
   width: 300px;
 }
@@ -288,7 +284,7 @@
   font-weight: bold;
 }
 .map-title .title-shim.potato{
-  background: url("images/sprites-icon.png") -258px 0;
+  background: url("images/sprites-icon.png") -319px 0;
   display: inline-block;
   width: 18px;
   height: 18px;
