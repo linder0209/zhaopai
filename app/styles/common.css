@@ -86,7 +86,11 @@ button{cursor: pointer;}
 .margin-right-xs{
   margin-right: 5px;
 }
-
+.margin200-l{ margin-left:200px;}
+/**
+* 内边距
+**/
+.padding200-lr{ padding:0 200px}
 .wrap{width:1280px; margin:0 auto; overflow:hidden; background:#eeeeee;}
 .wrap * a:hover{color: #e58024;}
 /*========header=============*/

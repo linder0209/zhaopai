@@ -1,1 +1,3 @@
-@import url(common.css);
+.task-tab{padding-top:20px; background:#fff;}
+.task-tab .control-nav-horizontal{width:1280px;}
+.task-tab.task-tab2{ position:relative; background:none; top:-40px;}
