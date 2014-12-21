@@ -10,8 +10,8 @@
 .exchange-ul li a img{ width:200px; height:200px;}
 .bigflower-iocn{ background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-255px 0; width:18px; height:18px; vertical-align:middle; margin:0 2px; display:inline-block}
 .exchange-divb span{ font-size:18px; color:#e58024; height:34px; line-height:34px;}
-.exchange-divb a,.c-r ul li .a-change{width:100px; height:33px;  font-size:18px; border:1px solid #7E7E7E; color:#7e7e7e; text-align:center; float:right; display:inline-block; line-height:33px; padding:0}
-.exchange-divb a:hover,.c-r ul li .a-change:hover{ background:#e58024; color:#fff;padding:0}
+.exchange-divb a,.c-r ul li .a-change,a.a-change{width:100px; height:33px;  font-size:18px; border:1px solid #7E7E7E; color:#7e7e7e; text-align:center; float:right; display:inline-block; line-height:33px; padding:0}
+.exchange-divb a:hover,.c-r ul li .a-change:hover,a.a-change:hover{ background:#e58024; color:#fff;padding:0}
 .duihuan{margin-top:35px;}
 .duihuan a{ font-size:14px; font-weight:bold; color:#e58024; margin:20px 20px 0 0; float:right;}
 .exchange-details-tiltle{border-bottom:1px solid #ababab; margin-top:20px;}

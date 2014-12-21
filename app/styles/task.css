@@ -1,3 +1,25 @@
 .task-tab{padding-top:20px; background:#fff;}
 .task-tab .control-nav-horizontal{width:1280px;}
 .task-tab.task-tab2{ position:relative; background:none; top:-40px;}
+.task-dotBox{background:url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
+.task-dotBox-a{width:910px; margin:0 auto; background:#eee;}
+.task-dotBox-a1{overflow:hidden; width:960px; position:relative; margin-left:-30px;}
+.task-ullist{ margin-bottom:20px;}
+.task-ullist li{padding:5px 10px; }
+.task-ullist li a{color:#7e7e7e; font-size:18px; display:block;height:40px; line-height:40px; margin:0 20px 5px 40px;}
+.task-ullist span {width:90px; height:40px; line-height:40px; text-align:center; font-size:14px; background:#84ccc9; display:inline-block; color:#fff; font-weight:bold; float:right }
+.task-ullist span.give-up{background:#f05654;}
+.task-ullist li a:hover,.task-ullist li a.current{ background:#e58024; font-size:18px; color:#fff; margin-left:0; padding-left:40px;}
+.task-ullist li a:hover span,.task-ullist li a.current span{background:#fff; font-size:18px; color:#84ccc9; margin-right:-20px;}
+.task-ullist li a:hover span.give-up,.task-ullist li a.current span{background:#fff; font-size:18px; color:#f05654; margin-right:-20px;}
+
+.task-bigBox-a{padding:40px 0;}
+.task-bigBox-a .task-bigBox-a1{text-align:center;}
+.task-bigBox-a .task-bigBox-a1 a{text-align:center; float:none;}
+.task-bigBox-a .task-bigBox-a2 h3{background:#fff;}
+.task-bigBox-a .task-bigBox-a3{ padding:50px 200px 20px 200px;}
+.task-bigBox-a .task-bigBox-a3 li{ padding:5px 0}
+
+.task-banner{background:url(../images/task/bg-01.jpg) no-repeat; height:177px; width:1280px; text-align:center;}
+.task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px;}
+.task-banner-title li div{font-size:18px;  margin-bottom:10px;}
