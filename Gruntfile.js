@@ -342,7 +342,7 @@ module.exports = function (grunt) {
           paths: ['<%= config.app %>/']
         },
         files: {
-          '<%= config.app %>/styles/header-footer.css': '<%= config.app %>/less/header-footer.less',
+          '<%= config.app %>/views/styles/header-footer.css': '<%= config.app %>/less/header-footer.less',
           '<%= config.app %>/styles/flex-control-customer.css': '<%= config.app %>/less/flex-control-customer.less'
         }
       }
