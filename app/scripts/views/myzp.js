@@ -9,10 +9,11 @@
         var el = $(e.currentTarget);
         el.addClass('active').siblings().removeClass('active');
         var link = el.data('link');
+        document.location.hash = link;
         $.ajax({
           type: 'get',
           dataType: 'text',
-          url:'./templates/'+link,
+          url:'./templates/'+link + '.html',
           success : function (html) {
             $('#panelContent').html(html);
             if(link === 'exchange-records.html'){
@@ -42,7 +43,9 @@
         });
       });
 
-      $('#navController >li:eq(0)').click();
+      var link = document.location.hash;
+      link = link ? link.substring(1):  'information';
+      $('#navController >li[data-link="' + link + '"]').click();
     }
 
   });
