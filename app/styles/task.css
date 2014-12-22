@@ -1,7 +1,7 @@
 .task-tab{padding-top:20px; background:#fff;}
 .task-tab .control-nav-horizontal{width:1280px;}
 .task-tab.task-tab2{ position:relative; background:none; top:-40px;}
-.task-dotBox{background:url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
+.task-dotBox{background:#fff url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
 .task-dotBox-a{width:910px; margin:0 auto; background:#eee;}
 .task-dotBox-a1{overflow:hidden; width:960px; position:relative; margin-left:-30px;}
 .task-ullist{ margin-bottom:20px;}
@@ -17,11 +17,11 @@
 .task-bigBox-a .task-bigBox-a1{text-align:center;}
 .task-bigBox-a .task-bigBox-a1 a{text-align:center; float:none;}
 .task-bigBox-a .task-bigBox-a2 h3{ width:300px;}
-.task-bigBox-a .task-bigBox-a3{ padding:50px 200px 20px 200px;}
+.task-bigBox-a .task-bigBox-a3{ padding:50px 200px 20px 200px; color:#7e7e7e;}
 .task-bigBox-a .task-bigBox-a3 li{ padding:5px 0}
 
 .task-banner{background:url(../images/task/bg-01.jpg) no-repeat; height:177px; width:1280px; text-align:center;}
-.task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px;}
+.task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px; font-weight:bold;}
 .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
 
 .task-banner img,.task-banner { width:1280px; height:589px;}
@@ -97,3 +97,8 @@
   font-weight: bold;
   text-align: center;
 }
+
+.task-banner-titleBox{position:relative; top:-100px;}
+.task-banner-titleBox .task-banner-title li{font-size:30px; color:#fff; margin-bottom:10px;}
+.task-banner-titleBox .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
+

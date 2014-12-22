@@ -103,8 +103,10 @@ button{cursor: pointer;}
 * 内边距
 **/
 .padding200-lr{ padding:0 200px}
+.padding20-tb{ padding:20px 0;}
 .wrap{width:1280px; margin:0 auto; overflow:hidden; background:#eeeeee;}
 .wrap * a:hover{color: #e58024;}
+
 /*========header=============*/
 .topfixed{ background:#E58024; height:31px;left: 0;line-height:31px;margin: 0 auto;position: fixed;top: 0;width: 100%;z-index: 9999;}
 .top-nav{ width:1280px; margin:0 auto; color:#ffffff }
@@ -269,9 +271,9 @@ button{cursor: pointer;}
 .mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}
 .map-icon{background:url(images/sprites-icon.png) no-repeat; background-position:-142px 0; width:18px; height:29px; display:inline-block; vertical-align:middle; float:left; margin:5px 5px 0 0}
 .map-title{width:190px; float:left; margin:10px 0;}
-.money-iocn,.flower-iocn{background:url(images/sprites-icon.png) no-repeat; width:14px; height:16px; display:inline-block; vertical-align:middle; margin:0 2px;}
+.money-iocn,.flower-iocn{background:url(images/sprites-icon.png) no-repeat; width:14px; height:17px; display:inline-block; vertical-align:middle; margin:0 2px;}
 .money-iocn{background-position:-167px 0; }
-.flower-iocn{background-position:-187px 0; }
+.flower-iocn{background-position:-187px 0; height:18px; width:17px; }
 p.digit{font-size:20px; color:#e58024;}
 p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
 .renwu a.map-content{font-size:14px; color:#7e7e7e}
