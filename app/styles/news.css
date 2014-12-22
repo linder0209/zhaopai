@@ -1,5 +1,3 @@
-@import url(common.css);
-@import url(other.css);
 .toupiao-ullist{width:350px; margin:0 auto; text-align:center;}
 .toupiao-ullist li{ float:left; width:30%; text-align:center;}
 .toupiao-table div,.toupiao-table{color:#7e7e7e; font-size:14px}
@@ -15,7 +13,7 @@ table.toupiao-table div.city label{ width:120px; display:inline-block;}
 .consult-inner .c-r{float:right; width:540px; color:#393939;}
 .consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939; margin-top:10px; }
 .consult-inner .c-r p{ font-size:14px;color:#393939;}
-  
+
 .c-r{height:350px; width:540px;}
 .c-r div{ border-bottom:1px solid #bfbfbf; padding-bottom:10px; margin-bottom:10px;}
 .c-r ul li a{padding:3px 20px; font-size:14px; display:block;}

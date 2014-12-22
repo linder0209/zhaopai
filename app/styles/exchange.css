@@ -1,7 +1,3 @@
-@import url(common.css);
-@import url(other.css);
-@import url(myzp.css);
-@import url(news.css);
 .right-paenl.exchange-center .personal-datum-panel{left:180px; width:1090px}
 .right-paenl.exchange-center .control-nav-horizontal{width:1090px;}
 .researchBtn{background:#aaaaaa;border:none; height:48px; width:48px; top:-3px; position:relative; }
