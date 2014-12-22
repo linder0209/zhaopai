@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>找拍-任务专区</title>
+  <meta name="keywords" content="首页，任务专区，咨询活动，兑换中心， 我的找拍"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+  <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="../styles/flex-control-customer.css"/>
+</head>
+<body>
+<!--top-->
+<div class="topfixed">
+  <div class="top-nav clearfix">
+    <ul class="top-nav-col" id="loginNav">
+      <li>欢迎来到找拍</li>
+      <li class="nav-login" style="position:relative">
+			<a href="#" style="z-index:999" id="login">登录</a>
+			<div class="login" id="loginPanel" style="display:none;">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
+						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
+						<tr><td><button type="submit" class="loginBtn" id="loginBtn">登录</button></td><td>
+              <label class="font-black auto-login"><input type="radio" class="vertical-align-middle">下次自动登录</label></td></tr>
+						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="../register.html">立即注册</a></td></tr>
+					</tbody>
+
+				</table>
+			</div>
+			</li>
+    </ul>
+
+    <ul class="top-nav-col" id="afterLoginNav" style="display: none;">
+      <li>
+        <a href="#">欢迎来到找拍</a>
+      </li>
+      <li class="pos-r"><a href="#"><i class="email"></i> <i class="email-count">99</i></a></li>
+      <li><a href="#">北京 <i class="white-downArrow"></i></a></li>
+      <li><a href="#" style="text-transform:uppercase;">itachix</a></li>
+      <li><a href="" id="logout" class="logout">退出</a></li>
+    </ul>
+
+    <ul class="top-nav-cor">
+      <li><a href="#">客服咨询</a></li>
+			<li class="pos-r" >
+			<a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+			<div id="aboutMenu" class="dropDown" style=" display:none;">
+				<ul class="ulList">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="pos-r" >
+						<a href="#" class="current">找拍微信</a>
+						<div style="position:absolute; right:121px;"><img src="../images/qr-code.jpg" height="120" width="120"></div>
+					</li>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">百度贴吧</a></li>
+				</ul>
+			</div>
+			</li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
+    </ul>
+  </div>
+</div>
+<!--top-->
+<div class="wrap clearfix">
+  <!--header start-->
+  <div class="search">
+		<form>
+			<div>
+				<input type="text" placeholder="请输入点位关键字" class="input-search">
+				<i class="searchBtn"></i>
+			</div>
+		</form>
+  </div>
+	<div class="menNav">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="../index.html">首页</a></li>
+			<li>
+        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div>
+            <a href="#">当前任务</a>
+            <a href="#">历史任务</a>
+          </div>
+        </div>
+      </li>
+			<li>
+        <a href="../news/consult-details.html">资讯活动<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div>
+            <a href="#">新闻资讯</a>
+            <a href="#">活动信息</a>
+          </div>
+          </div>
+      </li>
+			<li>
+				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+				<div>
+					<a href="#">当前兑换</a>
+					<a href="#">历史兑换</a>
+				</div>
+        </div>
+		  </li>
+			<li><a href="../myzp/index.html">我的找拍</a></li>
+	  </ul>
+
+	</div>
+
+  <!--header end-->
+  <!--main start-->
+  <div class="main">
+  <!--tab-->
+  <div class="task-tab">
+   	<div class="control-nav-horizontal">
+        <div class="line"></div>
+    
+        <ol class="control-nav-horizontal-items">
+          <li style="left:25%;" class="active">
+              <a href="#"></a>
+              <div class="content">列表</div>
+          </li>
+          <li style="left:50%;">
+            <a href="#"></a>
+            <div class="content">地图</div>
+          </li>
+          <li style="left:75%;">
+            <a href="#"></a>
+            <div class="content">我的任务</div>
+          </li>
+        </ol>
+    </div>
+    </div>
+    <!--tab-->
+    <div class="padding200-lr" style="margin-top:80px;">
+        <form>
+            <table cellspacing="0" cellpadding="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td width="20%" align="center">
+                            <select style="width:140px;" class="global-input select">
+                                <option>按地区排序</option>
+                             </select>
+                         </td>
+                        <td width="20%" align="center">
+                            <select style="width:140px;" class="global-input select">
+                                <option>智能排序</option>
+                             </select>
+                        </td>
+                        <td width="20%" align="center">
+                            <select style="width:140px;" class="global-input select">
+                                <option selected="selected">任务类别</option>
+                                <option>类别1</option>
+                                <option>类别2</option>
+                                <option>类别3</option>
+                             </select>
+                        </td>
+                        <td width="50%" align="center">
+                        	 <select style="width:140px;" class="global-input select">
+                                <option>2014/11/11</option>
+                             </select>
+                              <select style="width:140px;" class="global-input select">
+                                <option>2014/12/12</option>
+                             </select>
+                           <button class="researchBtn"><i></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <!--任务专区 start-->
+    <div class="bigbox renwu left">
+        <ul>
+        	<li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p style="" class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+            <li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p style="" class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+            <li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+            <li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+            <li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+            <li>
+            	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
+              <div>
+               	  <div class="mapbox">
+					  <i class="map-icon"></i>
+				
+					  <div class="left"><p style="" class="digit">400</p>
+				
+						<p class="dotLocation">点位</p></div>
+				   </div>
+                  <div class="map-title">
+                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                      <span><i class="money-iocn"></i> 2</span>
+                      <span><i class="flower-iocn"></i> 30</span>
+                  </div>
+                </div>
+                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+            </li>
+        </ul>
+        
+    </div>
+    <!--任务专区 end-->
+    <!--分页-->
+    <div class="margin200-l">
+        <ul class="page">
+            <li><a href="#" class="arrow font-orange"> < </a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="current-page"><div>5</div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="default-page"><div></div></a></li>
+            <li><a href="#" class="arrow font-orange"> > </a></li>
+        </ul>
+	</div>
+<!--分页-->
+  </div>
+  <!--main end-->
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="../others/business.html">商务洽谈</a>
+      |
+      <a href="../others/exception.html">免责条款</a>
+      |
+      <a href="../others/AboutUs.html">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  </div>
+  <!--footer end-->
+</div>
+
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
+<script src="../scripts/views/common.js"></script>
+<script src="../scripts/views/platform.js"></script>
+<script src="../scripts/views/index.js"></script>
+<script>
+  $(function () {
+    hopeView.platform.init();
+    hopeView.index.init();
+  });
+</script>
+</body>
+</html>
