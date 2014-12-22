@@ -6,8 +6,11 @@
   margin: 0px;
 }
 .flex-viewport {
-  width: 1284px;
+  width: 1280px;
   margin: 0 auto;
+}
+.flex-control-thumbs {
+  overflow: visible;
 }
 .flex-controls-container {
   padding: 15px 0 0;
@@ -15,16 +18,19 @@
 }
 .flex-controls-container .line {
   border-top: 1px solid #959595;
-  width: 1440px;
+  width: 1280px;
   padding: 0px 0px 15px;
 }
 .flex-control-customer {
   background-color: #eee;
-  width: 1440px;
+  width: 1280px;
   margin: 0 auto;
 }
 .flex-control-customer li {
   width: 20%;
+}
+.flex-control-customer li > .item-container {
+  position: relative;
 }
 .flex-control-customer li > .item-container > a {
   background: url(../images/scorllImg/dot-icon.png) no-repeat;
@@ -32,8 +38,8 @@
   width: 19px;
   display: inline-block;
   position: absolute;
-  margin-top: -35px;
-  margin-left: -6.5px;
+  top: -35px;
+  left: 120px;
 }
 .flex-control-customer li > .item-container .header {
   padding: 5px 12px;
@@ -49,9 +55,8 @@
   background: url("../images/scorllImg/select-dot-icon.png") no-repeat scroll 0% 0% transparent;
   height: 29px;
   width: 29px;
-  margin-top: -40px;
-  margin-left: -11px;
-  display: inline-block;
+  top: -40px;
+  left: 115px;
 }
 .flex-control-customer li.flex-active .item-container .header,
 .flex-control-customer li:hover .item-container .header {
@@ -68,7 +73,7 @@
   display: block;
   position: absolute;
   top: -1.4em;
-  left: 48%;
+  left: 47%;
   border-width: 0.8em 0.6em;
   border-style: solid;
   border-color: transparent transparent #E58024 transparent;
