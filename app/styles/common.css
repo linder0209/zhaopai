@@ -197,7 +197,7 @@ button{cursor: pointer;}
   padding-top: 10px;
   display: none;
 }
-.menNav-ullist .sub-menu>div{
+.menNav-ullist .sub-menu .sub-menu-item{
   background: url(../images/dh-centerbg.jpg) repeat-y;
   width: 120px;
   height: 58px;

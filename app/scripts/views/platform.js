@@ -58,15 +58,13 @@
 
       $('#menuList').on('mouseenter', '>li', function (e) {
         e.stopPropagation();
-        var $el = $(e.target);
-        var $parentEl = $el.closest('ul');
-        //reset
-        $parentEl.find('li>div').hide();
-        $parentEl.find('li>a>i').removeClass().addClass('gray-downArrow');
+        var $el = $(e.currentTarget);
         $el.find('>div').show();
-        $el.find('>a>i').addClass('gray-upArrow');
-      }).on('mouseleave',function(e){
-        var $el = $(e.target);
+        $el.find('>a>i').removeClass().addClass('gray-upArrow');
+        $el.siblings().find('>div').hide();
+        $el.siblings().find('>a>i').removeClass().addClass('gray-downArrow');
+      }).on('mouseleave', '>li',function(e){
+        var $el = $(e.currentTarget);
         $el.find('>div').hide();
         $el.find('>a>i').removeClass().addClass('gray-downArrow');
       });
