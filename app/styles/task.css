@@ -1,7 +1,7 @@
 .task-tab{padding-top:20px; background:#fff;}
 .task-tab .control-nav-horizontal{width:1280px;}
 .task-tab.task-tab2{ position:relative; background:none; top:-40px;}
-.task-dotBox{background:url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
+.task-dotBox{background:#fff url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
 .task-dotBox-a{width:910px; margin:0 auto; background:#eee;}
 .task-dotBox-a1{overflow:hidden; width:960px; position:relative; margin-left:-30px;}
 .task-ullist{ margin-bottom:20px;}
