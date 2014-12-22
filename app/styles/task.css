@@ -16,13 +16,16 @@
 .task-bigBox-a{padding:40px 0;}
 .task-bigBox-a .task-bigBox-a1{text-align:center;}
 .task-bigBox-a .task-bigBox-a1 a{text-align:center; float:none;}
-.task-bigBox-a .task-bigBox-a2 h3{background:#fff;}
+.task-bigBox-a .task-bigBox-a2 h3{ width:300px;}
 .task-bigBox-a .task-bigBox-a3{ padding:50px 200px 20px 200px;}
 .task-bigBox-a .task-bigBox-a3 li{ padding:5px 0}
 
 .task-banner{background:url(../images/task/bg-01.jpg) no-repeat; height:177px; width:1280px; text-align:center;}
 .task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px;}
 .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
+
+.task-banner img,.task-banner { width:1280px; height:589px;}
+.task-bg{background:url(../images/task/bg-04.jpg) no-repeat; height:54px; width:1280px; display:block;}
 
 .link-black {
   width: 100px;
