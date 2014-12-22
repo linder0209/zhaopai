@@ -23,3 +23,74 @@
 .task-banner{background:url(../images/task/bg-01.jpg) no-repeat; height:177px; width:1280px; text-align:center;}
 .task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px;}
 .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
+
+.link-black {
+  width: 100px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 18px;
+  background-color: #060606;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.list-float-layout{
+  padding: 0 200px;
+}
+.list-float-layout li{
+  float: left;
+  text-align: center;
+}
+
+.list-float-layout .col-4{
+  position: relative;
+  min-height: 1px;
+  padding: 0 20px;
+  width: 33.33333333%;
+  box-sizing: border-box;
+}
+.list-float-layout .col-offset-4{
+  margin-left: 33.33333333%;
+}
+
+.list-float-layout .col-4:first-child{
+  padding-left: 0;
+}
+.list-float-layout .col-4:last-child{
+  padding-right: 0;
+}
+.list-float-layout h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.list-float-layout .title{
+  color: #7e7e7e;
+  border-bottom: 1px solid #ababab;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.list-float-layout .info-content{
+  background-color: #fff;
+  padding: 5px 10px;
+  text-align: left;
+  text-indent: 2em;
+}
+
+.list-float-layout .col-2{
+  position: relative;
+  min-height: 1px;
+  padding: 0 20px;
+  width: 16.66666667%;
+  box-sizing: border-box;
+}
+.list-float-layout .col-offset-2{
+  margin-left: 16.66666667%;
+}
+.task-header-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -79,12 +79,23 @@ button{cursor: pointer;}
 .margin-left-lg {
   margin-left: 20px;
 }
-
+.margin-left-vl {
+  margin-left: 30px;
+}
 .margin-right-lg {
   margin-right: 20px;
 }
+.margin-right-vl {
+  margin-right: 30px;
+}
 .margin-right-xs{
   margin-right: 5px;
+}
+.margin-bottom-vl{
+  margin-bottom: 30px;
+}
+.margin-bottom-hg{
+  margin-bottom: 50px;
 }
 .margin200-l{ margin-left:200px;}
 .margin20-b{ margin-bottom:20px;}
