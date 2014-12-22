@@ -24,7 +24,11 @@
 .task-banner-title li{font-size:30px; color:#7e7e7e; margin-bottom:10px; font-weight:bold;}
 .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
 
-.task-banner img{ width:1280px; height:589px; display:block;}
+.task-bannerBox{text-align:center; height:589px;}
+.task-bannerBox img{ width:1280px; height:589px; display:block; float:left;}
+.task-banner-titleBox{position:relative; top:-100px;}
+.task-banner-titleBox .task-banner-title li{font-size:30px; color:#fff; margin-bottom:10px;}
+.task-banner-titleBox .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
 .task-bg{background:url(../images/task/bg-04.jpg) no-repeat; height:54px; width:1280px; display:block;}
 
 .link-black {
@@ -98,9 +102,7 @@
   text-align: center;
 }
 
-.task-banner-titleBox{position:relative; top:-100px;}
-.task-banner-titleBox .task-banner-title li{font-size:30px; color:#fff; margin-bottom:10px;}
-.task-banner-titleBox .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
+
 
 
 .task-ulDivBox div{height:50px; line-height:24px;font-size:18px;}
