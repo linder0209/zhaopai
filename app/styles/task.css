@@ -16,7 +16,7 @@
 .task-bigBox-a{padding:40px 0;}
 .task-bigBox-a .task-bigBox-a1{text-align:center;}
 .task-bigBox-a .task-bigBox-a1 a{text-align:center; float:none;}
-.task-bigBox-a .task-bigBox-a2 h3{background:#fff;}
+.task-bigBox-a .task-bigBox-a2 h3{ width:300px;}
 .task-bigBox-a .task-bigBox-a3{ padding:50px 200px 20px 200px;}
 .task-bigBox-a .task-bigBox-a3 li{ padding:5px 0}
 
