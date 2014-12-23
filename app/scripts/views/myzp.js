@@ -16,7 +16,7 @@
           url:'./templates/'+link + '.html',
           success : function (html) {
             $('#panelContent').html(html);
-            if(link === 'exchange-records.html'){
+            if(link === 'exchange-records'){
               $('#recordsNav').off().on('click', '>li',function(e){
                 var el = $(e.currentTarget);
                 el.addClass('active').siblings().removeClass('active');
@@ -29,15 +29,19 @@
                   $('#cashRecords').show();
                 }
               });
-            }else if(link === 'information.html'){
+            }else if(link === 'information'){
               $('#updateHeadPortrait').unbind('click').click(function(e){
                 $('#myInfo').hide();
                 $('#myHeadPortrait').show();
+                $('.avatar-wrapper img').cropper({
+                  aspectRatio: 1
+                });
+                var example = new CropAvatar($('#cropAvatar'));
               });
-              $('#saveUpload').unbind('click').click(function(e){
-                $('#myInfo').show();
-                $('#myHeadPortrait').hide();
-              });
+              //$('#saveUpload').unbind('click').click(function(e){
+              //  $('#myInfo').show();
+              //  $('#myHeadPortrait').hide();
+              //});
             }
           }
         });

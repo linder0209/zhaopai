@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>cropper demo</title>
+  <link type="text/css" rel="stylesheet" href="../../scripts/components/cropper/css/cropper.css"/>
+  <link type="text/css" rel="stylesheet" href="../../styles/index.css"/>
+  <style>
+    body {
+      margin: 100px auto;
+      width: 80%;
+    }
+
+    .avatar-wrapper {
+      height: 364px;
+      width: 60%;
+      margin-top: 15px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, .25);
+      background-color: #fcfcfc;
+      overflow: hidden;
+    }
+
+    .avatar-wrapper img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+    .loading {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #fff url("./cropper/img/loading.gif") no-repeat center center;
+      opacity: .75;
+      filter: alpha(opacity=75);
+      z-index: 20140628;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cropAvatar">
+  <form class="avatar-form" action="cropper/upload" enctype="multipart/form-data" method="post">
+    <input class="avatar-src" name="avatar_src" type="hidden">
+    <input class="avatar-data" name="avatar_data" type="hidden">
+    <label for="avatarInput">上传头像</label>
+    <input class="avatar-input" id="avatarInput" name="avatar_file" type="file">
+
+    <div class="avatar-wrapper">
+
+    </div>
+
+    <button class="avatar-save" type="submit">保存</button>
+  </form>
+  <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+</div>
+
+
+<script src="../../scripts/components/jquery/jquery.js"></script>
+<script src="../../scripts/components/cropper/js/cropper.js"></script>
+<script src="./cropper/js/cropper-demo.js"></script>
+
+</body>
+</html>

@@ -115,15 +115,35 @@
     <span class="img-container head-portrait-img" style="display: inline-block;">
       <img src="../images/camera-img.png" alt="" class="img-responsive">
     </span>
+
     <div>
       <a href="" class="link-orange">当前头像</a>
     </div>
   </div>
 
-  <form class="register-form text-center margin-top-vl">
-    <h3 class="font-black font-size-xxlarge">设置新头像</h3>
-    <p class="font-gray font-size-large">支持JPG，可在大照片中截取满意部分。</p>
-    <p class="margin-top-lg"><img src="../images/update-head-portrait.png" alt=""/></p>
-    <p class="margin-top-hg"><button class="global-button" id="saveUpload">保存上传</button></p>
-  </form>
+  <div id="cropAvatar">
+    <form class="register-form text-center margin-top-vl avatar-form" action="upload" enctype="multipart/form-data"
+          method="post">
+      <h3 class="font-black font-size-xxlarge">设置新头像</h3>
+
+      <p class="font-gray font-size-large">支持JPG，可在大照片中截取满意部分。</p>
+
+      <div class="margin-top-lg">
+        <input class="avatar-src" name="avatar_src" type="hidden">
+        <input class="avatar-data" name="avatar_data" type="hidden">
+        <label for="avatarInput" class="font-gray">上传头像</label>
+        <input class="avatar-input font-gray" id="avatarInput" name="avatar_file" type="file">
+      </div>
+
+      <div class="avatar-wrapper">
+        <img src="../images/Penguins.jpg" alt=""/>
+      </div>
+
+      <p class="margin-top-lg">
+        <button class="global-button avatar-save" type="submit">保存上传</button>
+      </p>
+
+      <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+    </form>
+  </div>
 </div>
