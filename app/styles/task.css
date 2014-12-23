@@ -1,7 +1,9 @@
 .task-tab{padding-top:20px; background:#fff;}
+.task-tab.task-tabSpecial2{ background:url(../images/task/task-tabS-bg.jpg) no-repeat;}
 .task-tab .control-nav-horizontal{width:1280px;}
 .task-tab.task-tab2{ position:relative; background:none; top:-40px;}
 .task-dotBox{background:#fff url(../images/task/bg-02.jpg) no-repeat; min-height:702px; width:1280px; padding-top:40px}
+.task-dotBox.task-dotBox2{background:#fff url(../images/task/bg-05.jpg) no-repeat;}
 .task-dotBox-a{width:910px; margin:0 auto; background:#eee;}
 .task-dotBox-a1{overflow:hidden; width:960px; position:relative; margin-left:-30px;}
 .task-ullist{ margin-bottom:20px;}
@@ -116,4 +118,5 @@
 
 .dotLocation-a1{width:40px;}
 .dotLocation-a2{width:27px; margin-top:10px;}
+.menNav-special2{background:url(../images/task/task-menu-bg.jpg) no-repeat; height:60px; width:1280px;}
 

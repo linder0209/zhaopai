@@ -92,45 +92,42 @@
     </form>
   </div>
   <div class="menNav">
-    <div class="logo left">
-      <a href="#" title="找拍"></a>
-    </div>
-    <ul id="menuList" class="menNav-ullist right">
-      <li><a href="#">首页</a></li>
-      <li>
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="index.html">首页</a></li>
+			<li>
         <a href="">任务专区<i class="gray-downArrow"></i></a>
-
         <div class="sub-menu">
-          <div>
-            <a href="#">当前任务</a>
-            <a href="#">历史任务</a>
+          <div class="sub-menu-item">
+            <a href="../task/task.html">当前任务</a>
+            <a href="../task/task.html">历史任务</a>
           </div>
         </div>
       </li>
-      <li>
+			<li>
         <a href="">资讯活动<i class="gray-downArrow"></i></a>
-
         <div class="sub-menu">
-          <div>
-            <a href="#">新闻资讯</a>
-            <a href="#">活动信息</a>
+          <div class="sub-menu-item">
+            <a href="../news/consult.html">新闻资讯</a>
+            <a href="../news/consult.html">活动信息</a>
           </div>
-        </div>
+          </div>
       </li>
-      <li>
-        <a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
-
+			<li>
+				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
         <div class="sub-menu">
-          <div>
-            <a href="#">当前兑换</a>
-            <a href="#">历史兑换</a>
-          </div>
+          <div class="sub-menu-item">
+					<a href="../exchange/exchange.html">当前兑换</a>
+					<a href="../exchange/exchange.html">历史兑换</a>
+				</div>
         </div>
-      </li>
-      <li><a href="#">我的找拍</a></li>
-    </ul>
+			</li>
+			<li><a href="../myzp/index.html">我的找拍</a></li>
+		</ul>
 
-  </div>
+	</div>
 
   <!--header end-->
   <!--main start-->
@@ -153,7 +150,7 @@
       <!--left end-->
 
       <!--right start-->
-      <div class="right-paenl exchange-center">
+      <div class="right-panel exchange-center">
         <div class="personal-datum-panel">
           <div class="control-nav-horizontal exchange-nav-horizontal">
             <div class="line"></div>
@@ -342,29 +339,29 @@
             <!--分页-->
 
             <form id="tab2" style="display: none;">
-              <table cellpadding="0" cellspacing="0" style="padding-top:20px;">
-                <tbody>
-                <tr>
-                  <td width="50%">
-                    <label for="" class="global-label">请输入您要变现的金额</label>
-                    <input type="text" placeholder="" class="global-input">
-                  </td>
-                  <td width="50%">
-                    <label for="" class="global-label">请输入您的支付宝账号</label>
-                    <input type="text" placeholder="" class="global-input">
-                  </td>
-
-                </tr>
-                <tr>
-                  <td colspan="2" align="center">
-                    <div class="duihuan">
-                      <button type="submit" class="submitBtn">确认变现</button>
-                      <a href="exchange-sm.html">兑换声明</a>
-                    </div>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
+              <table class="exchange-table" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td width="50%">
+								<label for="" class="global-label">请输入您要变现的金额</label>
+								<input type="text"  placeholder="" class="global-input">
+							 </td>
+							<td width="50%">
+								<label for="" class="global-label">请输入您的支付宝账号</label>
+								<input type="text"  placeholder="" class="global-input">
+							</td>
+							
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<div class="duihuan">
+								 	<button type="submit" class="submitBtn">确认变现</button>
+									<a href="exchange-sm.html">兑换声明</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
             </form>
           </div>
         </div>

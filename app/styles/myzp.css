@@ -1,7 +1,7 @@
 
 .common-panel-ct{
   background-color: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
   min-height: 500px;
 }
 .common-panel{
@@ -20,6 +20,7 @@
 .panel-content{
   width: 80%;
   margin: 0 auto;
+  padding-top:55px;
 }
 .img-container.camera-img{
   width: 150px;
@@ -80,7 +81,7 @@
 }
 .myzp-container {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .left-panel {
@@ -331,6 +332,8 @@
   margin-top: 15px;
 }
 
+.por-top{ position:relative; top:-40px;}
+
 .avatar-wrapper {
   height: 364px;
   width: 60%;
@@ -357,3 +360,4 @@
   filter: alpha(opacity=75);
   z-index: 20140628;
 }
+

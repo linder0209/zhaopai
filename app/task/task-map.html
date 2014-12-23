@@ -6,8 +6,6 @@
   <title>找拍-任务专区</title>
   <meta name="keywords" content="首页，任务专区，咨询活动，兑换中心， 我的找拍"/>
   <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
-  <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
-  <link type="text/css" rel="stylesheet" href="../styles/flex-control-customer.css"/>
 </head>
 <body>
 <!--top-->
@@ -81,36 +79,36 @@
 			<a href="#" title="找拍"></a>
 		</div>
 		<ul id="menuList" class="menNav-ullist right">
-			<li><a href="../index.html">首页</a></li>
+			<li><a href="index.html">首页</a></li>
 			<li>
-        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <a href="" class="current">任务专区<i class="gray-downArrow"></i></a>
         <div class="sub-menu">
-          <div>
-            <a href="#">当前任务</a>
-            <a href="#">历史任务</a>
+          <div class="sub-menu-item">
+            <a href="../task/task.html">当前任务</a>
+            <a href="../task/task.html">历史任务</a>
           </div>
         </div>
       </li>
 			<li>
-        <a href="../news/consult-details.html">资讯活动<i class="gray-downArrow"></i></a>
+        <a href="">资讯活动<i class="gray-downArrow"></i></a>
         <div class="sub-menu">
-          <div>
-            <a href="#">新闻资讯</a>
-            <a href="#">活动信息</a>
+          <div class="sub-menu-item">
+            <a href="../news/consult.html">新闻资讯</a>
+            <a href="../news/consult.html">活动信息</a>
           </div>
           </div>
       </li>
 			<li>
-				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
+				<a href="">兑换中心<i class="gray-downArrow"></i></a>
         <div class="sub-menu">
-				<div>
-					<a href="#">当前兑换</a>
-					<a href="#">历史兑换</a>
+          <div class="sub-menu-item">
+					<a href="../exchange/exchange.html">当前兑换</a>
+					<a href="../exchange/exchange.html">历史兑换</a>
 				</div>
         </div>
-		  </li>
+			</li>
 			<li><a href="../myzp/index.html">我的找拍</a></li>
-	  </ul>
+		</ul>
 
 	</div>
 
@@ -132,16 +130,16 @@
         <div class="control-nav-horizontal">
             <div class="line"></div>
             <ol class="control-nav-horizontal-items">
-              <li style="left:25%;">
-                  <a href="task.html"></a>
+              <li onclick="location.href='task.html';"  style="left:25%;">
+                  <a href=""></a>
                   <div class="content">列表</div>
               </li>
-              <li style="left:50%;" class="active">
-                <a href="task-map.html"></a>
+              <li onclick="location.href='task-map.html';" class="active" style="left:50%;">
+                <a href=""></a>
                 <div class="content">地图</div>
               </li>
-              <li style="left:75%;">
-                <a href="#"></a>
+              <li onclick="location.href='../myzp/index.html#my-task';" style="left:75%;">
+                <a href=""></a>
                 <div class="content">我的任务</div>
               </li>
             </ol>
@@ -229,6 +227,7 @@
         <!---->
   </div>
   <!--main end-->
+  <div class="kongbai clearfix"></div>
   <!--footer start-->
   <div class="footer">
     <div class="partners">
@@ -254,13 +253,12 @@
       |
       <a href="../others/exception.html">免责条款</a>
       |
-      <a href="../others/AboutUs.html">关于我们</a>
+      <a href="../others/aboutUs.html">关于我们</a>
     </div>
     <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
   </div>
   <!--footer end-->
 </div>
-
 <script src="../scripts/components/jquery/jquery.js"></script>
 <script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
 <script src="../scripts/views/common.js"></script>
