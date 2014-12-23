@@ -1,8 +1,9 @@
-.right-panel.exchange-center .personal-datum-panel{left:0; width:1090px}
-.right-panel.exchange-center .control-nav-horizontal{width:1090px; position:relative; top:-40px;}
+.right-panel.exchange-center .personal-datum-panel{left:0; width:880px}
+.right-panel.exchange-center .control-nav-horizontal{width:880px; position:relative; top:-40px;}
 .researchBtn{background:#aaaaaa;border:none; height:48px; width:48px; top:-3px; position:relative; }
 .researchBtn i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-280px 0;  height:30px; width:30px; display:inline-block; vertical-align:middle;}
-.exchange-ul li{ width:200px;padding:30px; overflow:hidden; color:#7e7e7e; float:left;}
+.exchange-ul{margin-bottom:40px; overflow:hidden;}
+.exchange-ul li{ width:200px;padding:10px 5px; overflow:hidden; color:#7e7e7e; float:left;}
 .exchange-ul li a img{ width:200px; height:200px;}
 .bigflower-iocn{ background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-255px 0; width:18px; height:18px; vertical-align:middle; margin:0 2px; display:inline-block}
 .exchange-divb span{ font-size:18px; color:#e58024; height:34px; line-height:34px;}
@@ -24,6 +25,6 @@ width: 650px;}
 .c-r.exchange-deatils li{ color:#7e7e7e; margin-bottom:10px;font-size:14px;}
 .c-r.exchange-deatils li p{color:#7e7e7e;}
 
-.exchange-table{padding-top:20px; width:1000px; text-align:center;}
+.exchange-table{padding-top:20px; width:830px; text-align:center;}
 
 .control-nav-horizontal.exchange-nav-horizontal{width:1090px;}

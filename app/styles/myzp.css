@@ -112,6 +112,7 @@
   position: relative;
   background-color: #eee;
   min-height: 600px;
+  width:880px;
 }
 
 .nav-line {
@@ -181,12 +182,13 @@
 .personal-datum-panel{
   position: relative;
   left: 180px;
-  width: 800px;
+  width: 700px;
   padding: 20px 0;
 }
 .personal-datum{
   margin-bottom: 20px;
   padding-top: 30px;
+  width:600px;
 }
 .personal-datum h2{
   width: 300px;
@@ -198,10 +200,14 @@
 .split-area{
   height: 50px;
   background-color: #fff;
+    left: -180px;
+    position: relative;
+	width:880px;
+    
 }
 
 .control-nav-horizontal{
-   width: 700px;
+   width: 600px;
 }
 .control-nav-horizontal .line{
   border-top: 1px solid #959595;
@@ -290,7 +296,7 @@
 
 .record-list{
   padding-top: 50px;
-  margin: 10px 150px 0 50px;
+  margin: 10px 150px 0 0px;
 }
 .record-list > li{
   border-bottom: 2px solid #7D7D7D;
@@ -316,7 +322,7 @@
 .my-head-portrait{
   position: absolute;
   top: 120px;
-  right: 70px;
+  right:60px;
   text-align: center;
 }
 
