@@ -1,5 +1,5 @@
-.right-paenl.exchange-center .personal-datum-panel{left:180px; width:1090px}
-.right-paenl.exchange-center .control-nav-horizontal{width:1090px;}
+.right-panel.exchange-center .personal-datum-panel{left:0; width:1090px}
+.right-panel.exchange-center .control-nav-horizontal{width:1090px;}
 .researchBtn{background:#aaaaaa;border:none; height:48px; width:48px; top:-3px; position:relative; }
 .researchBtn i{background:url(../styles/images/sprites-icon.png) no-repeat; background-position:-280px 0;  height:30px; width:30px; display:inline-block; vertical-align:middle;}
 .exchange-ul li{ width:200px;padding:30px; overflow:hidden; color:#7e7e7e; float:left;}
@@ -23,3 +23,5 @@ width: 650px;}
 .c-r.exchange-deatils{height:auto; }
 .c-r.exchange-deatils li{ color:#7e7e7e; margin-bottom:10px;font-size:14px;}
 .c-r.exchange-deatils li p{color:#7e7e7e;}
+
+.exchange-table{padding-top:20px; width:1000px; text-align:center;}

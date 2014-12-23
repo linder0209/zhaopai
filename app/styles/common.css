@@ -219,7 +219,7 @@ button{cursor: pointer;}
 .raw p{color:#7e7e7e;}
 
 /*========tabs=============*/
-.tab{ padding:0 200px; margin-top:30px; overflow:hidden; color:#1c1a18;}
+.tab{ padding:0 200px; padding-top:30px; overflow:hidden; color:#1c1a18;}
 .tab ul.title{ height:147px;}
 .zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 70px; float:left;}
 .zixun{ background-position:0 0;}
@@ -287,11 +287,11 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
 
 /*========footer=============*/
 .footer{ background:#c9c9c9;clear: both;height:214px;text-align: center;}
-.partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto; color:#393939;}
-.partners a,.conns a{ padding:0 10px;}
+.partners{ border-bottom:1px dashed #969696; width:900px; height:100px; margin:0 auto; color:#707070;}
+.partners a,.conns a{ padding:0 10px;color:#707070;}
 .partners p{padding:35px 0 10px 0;}
-.conns{ height:62px; line-height:62px;}
-.copyright{background:#A0A0A0; height:52px; line-height:52px;}
+.conns{ height:62px; line-height:62px;color:#707070;}
+.copyright{background:#A0A0A0; height:52px; line-height:52px;color:#707070;}
 
 .img-container{
   border-radius: 50%;

@@ -13,6 +13,7 @@ table.toupiao-table div.city label{ width:120px; display:inline-block;}
 .consult-inner .c-r{float:right; width:540px; color:#393939;}
 .consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939; margin-top:10px; }
 .consult-inner .c-r p{ font-size:14px;color:#393939;}
+.consult-inner .c-r p a{font-size:14px;}
 
 .c-r{height:350px; width:540px;}
 .c-r div{ border-bottom:1px solid #bfbfbf; padding-bottom:10px; margin-bottom:10px;}
@@ -27,6 +28,7 @@ table.toupiao-table div.city label{ width:120px; display:inline-block;}
 .consult-detais{background:url(../images/zixunImg/bg-02.jpg) no-repeat;}
 .consult-d-t{background:#eee; padding:20px; color:#7e7e7e;}
 .menNav-special{background:url(../images/zixunImg/bg-01.jpg) no-repeat; height:60px; width:1280px;}
+
 /*img-slide*/
 .img-slide{ margin-bottom:35px;}
 .img-slide li{ padding:10px; float:left; }
