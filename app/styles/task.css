@@ -27,8 +27,9 @@
 .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
 
 .task-bannerBox{text-align:center; height:589px;}
-.task-bannerBox img{ width:1280px; height:589px; display:block; float:left;}
-.task-banner-titleBox{position:relative; top:-100px;}
+.task-bannerBox img{ width:1280px; height:589px;}
+.task-bannerBox .task-banner-titleBox{position:relative;}
+.task-banner-titleBox .task-banner-title{ position:absolute; bottom:0; width:1280px; text-align:center;}
 .task-banner-titleBox .task-banner-title li{font-size:30px; color:#fff; margin-bottom:10px;}
 .task-banner-titleBox .task-banner-title li div{font-size:18px;  margin-bottom:10px;}
 .task-bg{background:url(../images/task/bg-04.jpg) no-repeat; height:54px; width:1280px; display:block;}
