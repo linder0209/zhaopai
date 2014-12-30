@@ -145,23 +145,53 @@
                 <tbody>
                     <tr>
                         <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option>按地区排序</option>
-                             </select>
+							 <div class="mainCon">
+							 	 <div class="combobox">
+									 <input type="text" class="selectbox" readonly="" placeholder="按地区排序">
+									 <input type="button" class="selBtn" value=" ">
+								 </div>
+								 <div class="selectbox-droplist" style="display:none;">
+									 <ul>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+									 </ul>
+								 </div>
+							 </div>
 							 
                          </td>
                         <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option>智能排序</option>
-                             </select>
+                            <div class="mainCon">
+							 	 <div class="combobox">
+									 <input type="text" class="selectbox" readonly="" placeholder="智能排序">
+									 <input type="button" class="selBtn" value=" ">
+								 </div>
+								 <div class="selectbox-droplist" style="display:none;">
+									 <ul>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+									 </ul>
+								 </div>
+							 </div>
                         </td>
                         <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option selected="selected">任务类别</option>
-                                <option>类别1</option>
-                                <option>类别2</option>
-                                <option>类别3</option>
-                             </select>
+                             <div class="mainCon">
+							 	 <div class="combobox combobox-select">
+									 <input type="text" class="selectbox" readonly="" placeholder="任务类别">
+									 <input type="button" class="selBtn selBtn-arrowUp" value=" ">
+								 </div>
+								 <div class="selectbox-droplist" style="display:block;">
+									 <ul>
+										 <li title="类别1">类别1</li>
+										 <li title="类别2">类别2</li>
+										 <li title="类别1">类别1</li>
+										 <li title="类别2">类别2</li>
+									 </ul>
+								 </div>
+							 </div>
                         </td>
                         <td width="50%" align="center">
                         	 <select style="width:140px;" class="global-input select">
@@ -178,7 +208,7 @@
         </form>
     </div>
     <!--任务专区 start-->
-    <div class="bigbox renwu left">
+    <div class="bigbox renwu">
         <ul>
         	<li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
@@ -293,7 +323,7 @@
     </div>
     <!--任务专区 end-->
     <!--分页-->
-    <div class="margin200-l">
+    <div class="pageBox">
         <ul class="page">
             <li><a href="#" class="arrow font-orange"> < </a></li>
             <li><a href="#" class="default-page"><div></div></a></li>

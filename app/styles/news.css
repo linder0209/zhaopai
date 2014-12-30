@@ -1,3 +1,6 @@
+.consult-details-banner{width:1180px; margin:0 auto;}
+.consult-details-banner h3{ position:absolute; bottom:12px; width:1180px; text-align:center;}
+.consult-details-banner h3{ font-size:24px; color:#fff; font-family:"黑体"; font-weight:bold;}
 .toupiao-ullist{width:350px; margin:0 auto; text-align:center;}
 .toupiao-ullist li{ float:left; width:30%; text-align:center;}
 .toupiao-table div,.toupiao-table{color:#7e7e7e; font-size:14px}
@@ -10,9 +13,9 @@ table.toupiao-table div.city label{ width:120px; display:inline-block;}
 
 .consult-inner .c-img{float:left; width:360px; height:245px;}
 .consult-inner .c-img img{ height:245px; width:360px;}
-.consult-inner .c-r{float:right; width:450px; color:#393939;}
-.consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939; margin-top:10px; }
-.consult-inner .c-r p{ font-size:14px;color:#393939;}
+.consult-inner .c-r{float:left; width:520px; color:#393939;margin-left:20px;}
+.consult-inner .c-r h4{font-size:24px; font-weight:bold;color:#393939;}
+.consult-inner .c-r p{ font-size:14px;color:#393939;margin-top:5px; overflow:hidden; }
 .consult-inner .c-r p a{font-size:14px;}
 
 .c-r{height:350px; width:540px;}
@@ -40,11 +43,13 @@ box-shadow:2px 2px 10px #a7a6a6;/*opera或ie9*/}
 .img-slide .img-slide-d h4{ text-align:center; font-size:20px; font-weight:bold;height:35px; line-height:35px;}
 .img-slide .img-slide-d div{ padding:10px;height:160px; overflow:hidden;}
 /*分页*/
-ul.page{ margin-left:300px; margin-bottom:20px; display:inline-block;}
+.pageBox{margin: 0px auto; text-align: center;}
+ul.page{margin-bottom:20px; display:inline-block;}
 ul.page li{ float:left;}
 ul.page li a.arrow{font-size:30px; margin:0 5px;}
 ul.page li a.current-page{color:#fff; background:#fff;}
 ul.page li a.default-page div{border-radius:50%; background:#7e7e7e; width:5px; height:5px; margin:10px 2px;}
 ul.page li a.current-page div{border-radius:50%; background:#e58024; width:25px; height:25px; text-align:center; color:5px;}
+ul.page li a.arrow-gray{ color:#7e7e7e; cursor:default;}
 .consult-s{ width:100%;	}
 

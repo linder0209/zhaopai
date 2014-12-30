@@ -59,6 +59,11 @@ button{cursor: pointer;}
   text-align: center;
 }
 /**
+* height
+**/
+.height-50{height:50px;}
+.height-70{ height:70px;}
+/**
 * 外边距
 **/
 .margin-top-md {
@@ -173,7 +178,7 @@ button{cursor: pointer;}
 .login{width:295px; height:244px; background:url(../images/login-bg.jpg) no-repeat; border:1px solid #6a6a6a; position:absolute; z-index:0;}
 .login table{padding:30px; text-align:left; font-size:14px;}
 .login table td{padding-bottom:15px;}
-.login table td input[type="text"]{width:214px; height:20px; line-height:20px; border:none; border:1px solid #959595; padding:10px 8px}
+.login table td input[type="text"],.login table td input[type="password"]{width:214px; height:20px; line-height:20px; border:none; border:1px solid #959595; padding:10px 8px}
 .loginBtn{width:93px; height:41px; border:none; background:#e58024; color:#fff;}
 .login table td a{ color:#e58024; padding-right:20px;}
 .auto-login{ width:200px; display:block; margin-left:30px;}
@@ -219,9 +224,10 @@ button{cursor: pointer;}
 .raw p{color:#7e7e7e;}
 
 /*========tabs=============*/
-.tab{ padding:0 200px; padding-top:30px; overflow:hidden; color:#1c1a18;}
-.tab ul.title{ height:147px;}
-.zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 70px; float:left;}
+.tab{ padding:0 200px; padding-top:30px; overflow:hidden; color:#1c1a18;width:880px}
+.tab ul.title{ height:147px; }
+.tab ul.title li{ float:left;}
+.zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 85px; float:left;}
 .zixun{ background-position:0 0;}
 .hot{background-position:-140px 0;}
 .zhaopai{background-position:-280px 0;}
@@ -237,9 +243,9 @@ button{cursor: pointer;}
 .tab-content ul li a:hover i,.paihang a:hover i{background:url(../images/tab/fk-select.png) no-repeat; width:5px; height:5px;}
 .tab-content ul li a span{font-size:14px;}
 .tab-content ul li a:hover span,.paihang a:hover span{color:#fff;}
-.tab-arrow01{background:url(../images/tab/01.png) no-repeat; width:66px; height:45px; left:125px;}
-.tab-arrow02{background:url(../images/tab/02.png) no-repeat; width:131px; height:45px; left:322px;}
-.tab-arrow03{background:url(../images/tab/03.png) no-repeat; width:66px; height:45px; left:580px;}
+.tab-arrow01{background:url(../images/tab/01.png) no-repeat; width:66px; height:45px; left:143px;}
+.tab-arrow02{background:url(../images/tab/02.png) no-repeat; width:131px; height:45px; left:365px;}
+.tab-arrow03{background:url(../images/tab/03.png) no-repeat; width:66px; height:45px; left:656px;}
 
 .paihang{width:343px; background:#FFFFFF;filter:alpha(opacity=50); moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 .paihang li{ padding:9px 0;}
@@ -267,7 +273,7 @@ button{cursor: pointer;}
   cursor: pointer;
 }
 .renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
-.renwu ul li{ float:left; padding:22px 11px;width:270px; text-align:left;}
+.renwu ul li{ float:left; padding:22px 11px;width:270px; text-align:left; height:300px;}
 .mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}
 .map-icon{background:url(images/sprites-icon.png) no-repeat; background-position:-142px 0; width:18px; height:29px; display:inline-block; vertical-align:middle; float:left; margin:5px 5px 0 0}
 .map-title{width:190px; float:left; margin:10px 0;}
