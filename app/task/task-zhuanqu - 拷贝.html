@@ -121,7 +121,7 @@
   <div class="task-tab">
    	<div class="control-nav-horizontal">
         <div class="line"></div>
-    
+
         <ol class="control-nav-horizontal-items">
               <li style="left:25%;" class="active" onclick="location.href='task.html';">
                   <a href=""></a>
@@ -159,7 +159,7 @@
 									 </ul>
 								 </div>
 							 </div>
-							 
+
                          </td>
                         <td width="20%" align="center">
                             <div class="mainCon">
@@ -178,20 +178,20 @@
 							 </div>
                         </td>
                         <td width="20%" align="center">
-                             <div class="mainCon">
-							 	 <div class="combobox combobox-select">
-									 <input type="text" class="selectbox" readonly="" placeholder="任务类别">
-									 <input type="button" class="selBtn selBtn-arrowUp" value=" ">
-								 </div>
-								 <div class="selectbox-droplist" style="display:block;">
-									 <ul>
-										 <li title="类别1">类别1</li>
-										 <li title="类别2">类别2</li>
-										 <li title="类别1">类别1</li>
-										 <li title="类别2">类别2</li>
-									 </ul>
-								 </div>
-							 </div>
+                          <div class="mainCon">
+                           <div class="combobox">
+                             <input type="text" class="selectbox" readonly="readonly" placeholder="任务类别">
+                             <input type="button" class="selBtn" readonly="readonly" >
+                           </div>
+                           <div class="selectbox-droplist">
+                             <ul>
+                               <li title="类别1">类别1</li>
+                               <li title="类别2">类别2</li>
+                               <li title="类别1">类别1</li>
+                               <li title="类别2">类别2</li>
+                             </ul>
+                           </div>
+                         </div>
                         </td>
                         <td width="50%" align="center">
                         	 <select style="width:140px;" class="global-input select">
@@ -215,9 +215,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -233,9 +233,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -251,9 +251,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -269,9 +269,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -287,9 +287,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -305,9 +305,9 @@
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
@@ -319,7 +319,7 @@
                 <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
         </ul>
-        
+
     </div>
     <!--任务专区 end-->
     <!--分页-->
@@ -336,13 +336,13 @@
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
-            
+
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
-            
+
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
@@ -395,6 +395,30 @@
   $(function () {
     hopeView.platform.init();
     hopeView.index.init();
+
+    $('.mainCon').on('click','.combobox',function(e){
+      e.stopPropagation();
+      var $el = $(e.currentTarget);
+      $el.toggleClass('combobox-select');
+      $el.next('.selectbox-droplist').toggle();
+      $('.mainCon .combobox').not($el).removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+    }).on('click','.selectbox-droplist li',function(e){
+      e.stopPropagation();
+      var $el = $(e.currentTarget);
+      var text = $el.text();
+      var $dropList = $el.closest('.selectbox-droplist');
+      var $combobox = $dropList.prev('.combobox')
+      var $input = $combobox.children('input[type="text"]');
+      $dropList.toggle();
+      $combobox.toggleClass('combobox-select');
+      $input.val(text);
+    });
+
+    $(document).click(function(){
+      $('.mainCon .combobox').removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+    });
   });
 </script>
 </body>
