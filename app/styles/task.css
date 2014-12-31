@@ -139,3 +139,4 @@
 .selectbox-droplist ul{ text-align:left;}
 .selectbox-droplist ul li {font-size: 18px; color:#7e7e7e; padding:5px 0; cursor:pointer; text-indent:0.5em; }
 .selectbox-droplist ul li:hover{ background:#fff;}
+.bigbox.task-bigbox{ padding-top:20px;}
