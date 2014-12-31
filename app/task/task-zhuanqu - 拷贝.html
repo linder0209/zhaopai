@@ -8,6 +8,21 @@
   <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
   <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
   <link type="text/css" rel="stylesheet" href="../styles/flex-control-customer.css"/>
+  <script language="javascript" type="text/javascript" src="../scripts/My97DatePicker/WdatePicker.js"></script>
+  <style>
+    .zp-datepater,.zp-datepater-current{width:140px; margin:0 10px;  float:left; }
+    .zp-datepater-current{
+      background:#f2f2f2;
+      border: 1px solid #E58024;
+      border-bottom:none;
+      box-shadow:none;
+      z-index: 1000000;
+    }
+    .input-wadte{ height:43px; background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #e5e5e5;font-family: "黑体";font-size: 18px; color:#7e7e7e; width:139px; text-indent:0.5em; border:none;}
+    .zp-datepater-current .input-wadte{background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #f2f2f2;}
+    .WdateDiv {border: 1px solid #e58024;}
+
+  </style>
 </head>
 <body>
 <!--top-->
@@ -193,20 +208,13 @@
                            </div>
                          </div>
                         </td>
-						<style>
-						.zp-datepater,.zp-datepater-current{width:140px; margin:0 10px;  float:left; }
-						.zp-datepater-current{background:#f2f2f2; height:44px;border: 1px solid #E58024; border-bottom:none; box-shadow:none; z-index:100009; position:relative; left:1px;border-right:none;}
-						.input-wadte{ height:43px; background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #e5e5e5;font-family: "黑体";font-size: 18px; color:#7e7e7e; width:139px; text-indent:0.5em; border:none;}
-						.zp-datepater-current .input-wadte{background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #f2f2f2;position:absolute;z-index:100008; left:0px; top:0; height:42px;  border-right:1px solid #E58024 ;}
-						.WdateDiv {border: 1px solid #e58024;}
-						
-						</style>
+
                         <td width="40%" align="center">
 							<div class="combobox zp-datepater">
-								<input class="Wdate input-wadte" readonly="" type="text" onClick="WdatePicker()">
+								<input class="Wdate input-wadte" readonly="readonly" type="text" onClick="WdatePicker({onpicked:function(){$(document).click();},oncleared:function(){$(document).click();}})">
 							</div>
-							<div class="combobox zp-datepater zp-datepater-current">
-								<input class="Wdate input-wadte" readonly="" type="text" onClick="WdatePicker()">
+							<div class="combobox zp-datepater">
+								<input class="Wdate input-wadte" readonly="readonly" type="text" onClick="WdatePicker({onpicked:function(){$(document).click();},oncleared:function(){$(document).click();}})">
 							</div>
 							<div style="width:5px; height:47px; background:#646464; margin:0 5px; float:left "></div>
 							<button class="researchBtn" style="margin-top:0px; float:left; margin-left:0;"></button>
@@ -400,12 +408,13 @@
 <script src="../scripts/views/common.js"></script>
 <script src="../scripts/views/platform.js"></script>
 <script src="../scripts/views/index.js"></script>
-<script language="javascript" type="text/javascript" src="../scripts/My97DatePicker/WdatePicker.js"></script>
+
 <script>
   $(function () {
     hopeView.platform.init();
     hopeView.index.init();
 
+    // combobox start
     $('.mainCon').on('click','.combobox',function(e){
       e.stopPropagation();
       var $el = $(e.currentTarget);
@@ -413,6 +422,8 @@
       $el.next('.selectbox-droplist').toggle();
       $('.mainCon .combobox').not($el).removeClass('combobox-select')
         .next('.selectbox-droplist').hide();
+
+      $('input.Wdate').parent().removeClass('zp-datepater-current');
     }).on('click','.selectbox-droplist li',function(e){
       e.stopPropagation();
       var $el = $(e.currentTarget);
@@ -429,6 +440,24 @@
       $('.mainCon .combobox').removeClass('combobox-select')
         .next('.selectbox-droplist').hide();
     });
+
+    // combobox end
+
+    // datepicker start
+    $('input.Wdate').click(function(e){
+      var $el = $(e.currentTarget);
+      $el.parent().addClass('zp-datepater-current');
+      $('input.Wdate').not($el).parent().removeClass('zp-datepater-current');
+
+      $('.mainCon .combobox').removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+    });
+
+    $(document).click(function(){
+      $('input.Wdate').parent().removeClass('zp-datepater-current');
+    });
+
+    // datepicker end
   });
 </script>
 </body>
