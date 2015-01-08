@@ -43,7 +43,7 @@
         e.preventDefault();
         e.stopPropagation();
         $(e.currentTarget).find('i').removeClass().addClass('white-upArrow');
-        $('#aboutMenu').show();
+        $('#aboutMenu').toggle();
         $('#loginPanel').hide();
       });
 
