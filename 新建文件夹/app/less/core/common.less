@@ -1,0 +1,72 @@
+*{padding:0; margin:0; list-style:none; font:normal 12px/24px Arial, Helvetica, sans-serif;color:#7e7e7e; }
+html,body{padding:0; margin:0;}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {margin: 0;padding: 0;}
+table, td, tr, th {font-size: 12px;}
+ol, ul {list-style: outside none none;}
+li {list-style-type: none;}
+img{border:none; vertical-align:top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: normal;}
+a {color: #252525;text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {color: #e58024;text-decoration: none;}
+a:active {color: #e58024;}
+button{
+  cursor: pointer;
+}
+/**
+ * 清除浮层
+**/
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.pos-r{position:relative}
+.pos-a{position:absolute;}
+/**
+* 外边距
+**/
+
+.margin-top-md {
+  margin-top: @margin-md;
+}
+
+.margin-top-vl {
+  margin-top: @margin-vl;
+}
+
+.margin-top-hg {
+  margin-top: @margin-hg;
+}
+
+.margin-left-md {
+  margin-left: @margin-md;
+}
+
+.margin-left-lg {
+  margin-left: @margin-lg;
+}
+
+.margin-right-xs{
+  margin-right: @margin-lg;
+}
+/**
+* 段落
+**/
+.paragraph p {
+  line-height: 2em;
+  text-indent: 2em;
+}

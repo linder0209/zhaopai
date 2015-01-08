@@ -10,10 +10,12 @@
         el.addClass('active').siblings().removeClass('active');
         var link = el.data('link');
         document.location.hash = link;
+		$('#zpIframe').attr('src', './iframe-zp/'+link + '.aspx');
+		/**
         $.ajax({
           type: 'get',
           dataType: 'text',
-          url:'./templates/'+link + '.html',
+          url:'./templates/'+link + '.aspx',
           success : function (html) {
             $('#panelContent').html(html);
             if(link === 'exchange-records'){
@@ -45,6 +47,9 @@
             }
           }
         });
+		**/
+		
+		
       });
 
       var link = document.location.hash;

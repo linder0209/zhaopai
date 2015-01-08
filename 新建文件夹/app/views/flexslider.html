@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>flexslider</title>
+  <meta name="keywords" content=""/>
+  <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+  <link type="text/css" rel="stylesheet" href="./styles/flex-control-customer.css"/>
+
+  <style>
+    body {
+      margin: 50px;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="flexslider" data-cutomer-nav="#cutomerNav">
+  <ul class="slides">
+    <li>
+      <img src="images/kitchen_adventurer_cheesecake_brownie.jpg"/>
+    </li>
+    <li>
+      <img src="images/kitchen_adventurer_lemon.jpg"/>
+    </li>
+    <li>
+      <img src="images/kitchen_adventurer_donut.jpg"/>
+    </li>
+    <li>
+      <img src="images/kitchen_adventurer_caramel.jpg"/>
+    </li>
+    <li>
+      <img src="images/kitchen_adventurer_caramel.jpg"/>
+    </li>
+  </ul>
+</div>
+
+<div id="controlsContainer"></div>
+
+<ol id="cutomerNav" style="display: none;">
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+</ol>
+
+<ol class="flex-control-nav flex-control-thumbs flex-control-customer">
+  <li class="flex-active">
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+
+  <li>
+    <div class="item-container">
+      <a href="#"></a>
+
+      <div class="header">RAW 2014.04.22</div>
+      <p>视频回顾上周<br>塞纳河怀亚特家族的比赛。</p>
+    </div>
+  </li>
+</ol>
+
+
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
+
+<script>
+  $(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      controlNav: 'thumbnails',
+      controlsContainer: '#controlsContainer'
+    });
+  });
+</script>
+
+</body>
+</html>

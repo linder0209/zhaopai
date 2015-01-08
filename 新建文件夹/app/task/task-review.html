@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>找拍-任务专区</title>
+  <meta name="keywords" content="首页，任务专区，咨询活动，兑换中心， 我的找拍"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+</head>
+<body>
+<!--top-->
+<div class="topfixed">
+  <div class="top-nav clearfix">
+    <ul class="top-nav-col" id="loginNav">
+      <li>欢迎来到找拍</li>
+      <li class="nav-login" style="position:relative">
+			<a href="#" style="z-index:999" id="login">登录</a>
+			<div class="login" id="loginPanel" style="display:none;">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
+						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
+						<tr><td><button type="submit" class="loginBtn" id="loginBtn">登录</button></td><td>
+              <label class="font-black auto-login"><input type="radio" class="vertical-align-middle">下次自动登录</label></td></tr>
+						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="../register.html">立即注册</a></td></tr>
+					</tbody>
+
+				</table>
+			</div>
+			</li>
+    </ul>
+
+    <ul class="top-nav-col" id="afterLoginNav" style="display: none;">
+      <li>
+        <a href="#">欢迎来到找拍</a>
+      </li>
+      <li class="pos-r"><a href="#"><i class="email"></i> <i class="email-count">99</i></a></li>
+      <li><a href="#">北京 <i class="white-downArrow"></i></a></li>
+      <li><a href="#" style="text-transform:uppercase;">itachix</a></li>
+      <li><a href="" id="logout" class="logout">退出</a></li>
+    </ul>
+
+    <ul class="top-nav-cor">
+      <li><a href="#">客服咨询</a></li>
+			<li class="pos-r" >
+			<a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+			<div id="aboutMenu" class="dropDown" style=" display:none;">
+				<ul class="ulList">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="pos-r" >
+						<a href="#" class="current">找拍微信</a>
+						<div style="position:absolute; right:121px;"><img src="../images/qr-code.jpg" height="120" width="120"></div>
+					</li>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">百度贴吧</a></li>
+				</ul>
+			</div>
+			</li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
+    </ul>
+  </div>
+</div>
+<!--top-->
+<div class="wrap clearfix">
+  <!--header start-->
+  <div class="search">
+		<form>
+			<div>
+				<input type="text" placeholder="请输入点位关键字" class="input-search">
+				<i class="searchBtn"></i>
+			</div>
+		</form>
+  </div>
+	<div class="menNav">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="index.html">首页</a></li>
+			<li>
+        <a href="" class="current">任务专区<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../task/task.html">当前任务</a>
+            <a href="../task/task.html">历史任务</a>
+          </div>
+        </div>
+      </li>
+			<li>
+        <a href="">资讯活动<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../news/consult.html">新闻资讯</a>
+            <a href="../news/consult.html">活动信息</a>
+          </div>
+          </div>
+      </li>
+			<li>
+				<a href="">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+					<a href="../exchange/exchange.html">当前兑换</a>
+					<a href="../exchange/exchange.html">历史兑换</a>
+				</div>
+        </div>
+			</li>
+			<li><a href="../myzp/index.html">我的找拍</a></li>
+		</ul>
+
+	</div>
+
+  <!--header end-->
+  <!--main start-->
+  <div class="main">
+    <div class="task-bannerBox">
+		<div class="task-banner-titleBox">
+			<img width="1280" height="589" src="../images/task/img-01.jpg">
+			<ul class="task-banner-title">
+			<li> 东风日产奇骏轿车</li>
+			<li>
+				<div>共400点位  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2元+30积分/点位</div>
+				<div>开始监测日期：2012/11/01&nbsp;&nbsp;&nbsp;    结束监测日期：2015/11/30</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+    <!--tab bg start-->
+    <div class="task-bg"></div>
+    <!--tab bg end-->
+    <!--tab-->
+    <div class="task-tab task-tab2">
+      <div class="control-nav-horizontal">
+        <div class="line"></div>
+        <ol class="control-nav-horizontal-items">
+              <li style="left:25%;" class="active" onclick="location.href='task.html';">
+                  <a href=""></a>
+                  <div class="content">列表</div>
+              </li>
+              <li style="left:50%;" onclick="location.href='task-map.html';">
+                <a href=""></a>
+                <div class="content">地图</div>
+              </li>
+              <li style="left:75%;" onclick="location.href='../myzp/index.html#my-task';">
+                <a href=""></a>
+                <div class="content">我的任务</div>
+              </li>
+            </ol>
+      </div>
+    </div>
+        <!--tab-->
+        <!---->
+        <div class="task-bigBox clearfix margin-bottom-hg">
+        	<!--监测要求 start-->
+        	<div class="task-bigBox-a">
+            	<div class="task-bigBox-a1"><a href="" class="a-change" onclick="history.go(-1);">返回上一页</a></div>
+            	<div class="task-bigBox-a2 exchange-details-tiltle" ><h3>监测要求</h3></div>
+                <ul class="task-bigBox-a3">
+                	<li>1、监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核对计划，查找指定计划投放的广告并进行相应的记录，包括计划实际播出
+      的时间，播出秒长、和播出的频次。（如果有录像条件的监视员可以同时进行视频录像，以备提供对于误播广告的证据资料）</li>
+     				 <li>2、每周监测5天（周一至周五可休一天，周六周日可休一天）。</li>
+                     <li>3、监视员在观看当天电视的同时，把需要监测的广告实际播出的时间，播出秒长、前节目主题和后节目主题，填写在相应的记录表格里。</li>
+                     <li>4、数据表格文件命名为：品牌名+频道名称+6位数据日期（例新乡一套“松下“11月16日到11月22日周数据，命名为“松下-新乡一套
+      101116-101122”）</li>
+                     <li>5、监视员如果在监测过程中出现故障、停电、无信号或者监视员由于某种原因无法正常监测等异常状况请48小时与报告员沟通</li>
+                </ul>
+            </div>
+            <!--监测要求 end-->
+
+          <!-- 预览详情 start -->
+          <ul class="list-float-layout clearfix">
+            <li class="col-4">
+              <h3>点位地址</h3>
+              <p class="title">广州市越秀区东华北路号</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>设备地点</h3>
+              <p class="title">1层电梯等候厅</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>监视内容</h3>
+              <p class="title">东风日产阳光轿车</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+          </ul>
+          <ul class="list-float-layout clearfix margin-top-vl">
+            <li class="col-4">
+              <h3>开始时间</h3>
+              <p class="title">17:08</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>结束时间</h3>
+              <p class="title">18::11</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>GPS</h3>
+              <p class="title">47.56-183.56</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+          </ul>
+          <ul class="list-float-layout clearfix  margin-top-vl">
+            <li class="col-4">
+              <h3>监视日期</h3>
+              <p class="title">2014/05/06    星期六</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>监视内容</h3>
+              <p class="title">1层电梯等候厅</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+
+            <li class="col-4">
+              <h3>记录类型</h3>
+              <p class="title">正常记录</p>
+              <div class="info-content">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+          </ul>
+
+          <!-- 预览详情 end -->
+
+          <!-- 照片 start -->
+          <h3 class="task-header-title margin-top-vl">拍摄照片</h3>
+          <ul class="list-float-layout clearfix  margin-top-vl">
+            <li class="col-offset-2 col-2">
+              <img src="../images/task/shoot-01.png" alt=""/>
+              <p class="font-size-large font-orange margin-top-md">要求位置</p>
+            </li>
+            <li class="col-2">
+              <img src="../images/task/shoot-02.png" alt=""/>
+              <p class="font-size-large font-orange margin-top-md">要求位置</p>
+            </li>
+            <li class="col-2">
+              <img src="../images/task/shoot-03.png" alt=""/>
+              <p class="font-size-large font-orange margin-top-md">要求位置</p>
+            </li>
+            <li class="col-2">
+              <img src="../images/task/shoot-04.png" alt=""/>
+              <p class="font-size-large font-orange margin-top-md">要求位置</p>
+            </li>
+          </ul>
+
+          <ul class="list-float-layout clearfix margin-top-lg">
+            <li class="col-offset-4 col-4">
+              <img src="../images/task/shoot-05.png" alt=""/>
+            </li>
+          </ul>
+          <!-- 照片 end -->
+
+          <!-- 录音 start -->
+          <h3 class="task-header-title margin-top-vl">录音</h3>
+          <ul class="list-float-layout clearfix  margin-top-vl">
+            <li class="col-offset-4 col-4">
+              <div class="clearfix">
+                <div class="left margin-left-vl">
+                  <img src="../images/task/auto-icon.png" alt=""/>
+                  <p class="font-size-large font-orange margin-top-md">录音1</p>
+                </div>
+                <div class="right margin-right-vl">
+                  <img src="../images/task/auto-icon.png" alt=""/>
+                  <p class="font-size-large font-orange margin-top-md">录音2</p>
+                </div>
+              </div>
+
+              <div class="info-content margin-top-vl">
+                录入说明录入说明录入说明录入说
+                明录入说明录入说明录入说明录入
+                说明，录入说明录入说明录入说明
+                录入说明录入说明录入说明录入说
+                明录入说明，录入说明录入说明录
+                入说明录入说明，录入说明录入说
+                明录入说明录入说明。
+              </div>
+            </li>
+          </ul>
+          <!-- 录音 end -->
+
+          <!-- 录像 start -->
+          <h3 class="task-header-title margin-top-vl">录像</h3>
+          <ul class="list-float-layout clearfix  margin-top-vl">
+            <li class="col-offset-4 col-4">
+              <div class="clearfix">
+                <div class="left">
+                  <img src="../images/task/shoot-03.png" alt=""/>
+                  <p class="font-size-large font-orange margin-top-md">录像1</p>
+                </div>
+                <div class="right">
+                  <img src="../images/task/shoot-04.png" alt=""/>
+                  <p class="font-size-large font-orange margin-top-md">录像2</p>
+                </div>
+              </div>
+
+              <div class="margin-top-vl">
+                <img src="../images/task/shoot-05.png" alt=""/>
+              </div>
+            </li>
+          </ul>
+          <!-- 录像 end -->
+
+
+        </div>
+
+  </div>
+  <!--main end-->
+  <div class="kongbai clearfix"></div>
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="../others/business.html">商务洽谈</a>
+      |
+      <a href="../others/exception.html">免责条款</a>
+      |
+      <a href="../others/aboutUs.html">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  </div>
+  <!--footer end-->
+</div>
+
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
+<script src="../scripts/views/common.js"></script>
+<script src="../scripts/views/platform.js"></script>
+<script src="../scripts/views/index.js"></script>
+<script>
+  $(function () {
+    hopeView.platform.init();
+    hopeView.index.init();
+  });
+</script>
+</body>
+</html>

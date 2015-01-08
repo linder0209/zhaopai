@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>找拍-兑换中心</title>
+  <meta name="keywords" content="首页，任务专区，资讯活动，兑换中心， 我的找拍"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+</head>
+<body>
+<!--top-->
+<div class="topfixed">
+  <div class="top-nav clearfix">
+    <ul class="top-nav-col" id="loginNav">
+      <li>欢迎来到找拍</li>
+      <li class="nav-login" style="position:relative">
+        <a href="#" style="z-index:999" id="login">登录</a>
+
+        <div class="login" id="loginPanel" style="display:none;">
+          <table cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+              <td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" placeholder="密码"></td>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit" class="loginBtn" id="loginBtn">登录</button>
+              </td>
+              <td>
+                <label class="font-black auto-login"><input type="radio" class="vertical-align-middle">下次自动登录</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="#">忘记密码</a> <a href="../register.html">立即注册</a></td>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="top-nav-col" id="afterLoginNav" style="display: none;">
+      <li>
+        <a href="#">欢迎来到找拍</a>
+      </li>
+      <li class="pos-r"><a href="#"><i class="email"></i> <i class="email-count">99</i></a></li>
+      <li><a href="#">北京 <i class="white-downArrow"></i></a></li>
+      <li><a href="#" style="text-transform:uppercase;">itachix</a></li>
+      <li><a href="" id="logout" class="logout">退出</a></li>
+    </ul>
+
+    <ul class="top-nav-cor">
+      <li><a href="#">客服咨询</a></li>
+      <li class="pos-r">
+        <a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+
+        <div id="aboutMenu" class="dropDown" style=" display:none;">
+          <ul class="ulList">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">加入收藏</a></li>
+            <li class="pos-r">
+              <a href="#" class="current">找拍微信</a>
+
+              <div style="position:absolute; right:121px;"><img src="../images/qr-code.jpg" height="120" width="120">
+              </div>
+            </li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">腾讯微博</a></li>
+            <li><a href="#">百度贴吧</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
+    </ul>
+  </div>
+</div>
+<!--top-->
+
+<div class="wrap clearfix">
+  <!--header start-->
+  <div class="search">
+    <form>
+      <div>
+        <input type="text" placeholder="请输入点位关键字" class="input-search">
+        <i class="searchBtn"></i>
+      </div>
+    </form>
+  </div>
+  <div class="menNav">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="index.html">首页</a></li>
+			<li>
+        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../task/task.html">当前任务</a>
+            <a href="../task/task.html">历史任务</a>
+          </div>
+        </div>
+      </li>
+			<li>
+        <a href="">资讯活动<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../news/consult.html">新闻资讯</a>
+            <a href="../news/consult.html">活动信息</a>
+          </div>
+          </div>
+      </li>
+			<li>
+				<a href="" class="current">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+					<a href="../exchange/exchange.html">当前兑换</a>
+					<a href="../exchange/exchange.html">历史兑换</a>
+				</div>
+        </div>
+			</li>
+			<li><a href="../myzp/index.html">我的找拍</a></li>
+		</ul>
+
+	</div>
+
+  <!--header end-->
+  <!--main start-->
+  <div class="main">
+    <div class="clearfix myzp-container">
+      <!--left start-->
+      <div class="left-panel">
+        <div class="personal-info-panel">
+            <span class="img-container img-head-portrait">
+              <img src="../images/head-portrait.png" alt="" class="img-responsive"/>
+            </span>
+          <ul class="personal-info">
+            <li class="font-black font-size-xlarge font-weight">ITACHIX</li>
+            <li class="margin-top-md">积分等级：<span> LV6</span></li>
+            <li>现有积分：<span> 1400分</span></li>
+            <li>现有金钱：<span> 1400元</span></li>
+          </ul>
+        </div>
+      </div>
+      <!--left end-->
+
+      <!--right start-->
+      <div class="right-panel exchange-center">
+        <div class="personal-datum-panel">
+          <div class="control-nav-horizontal exchange-nav-horizontal">
+            <div class="line"></div>
+
+            <ol class="control-nav-horizontal-items" id="navController">
+              <li style="left:25%;" data-link="#tab1">
+                <a href=""></a>
+
+                <div class="content">礼品兑换</div>
+              </li>
+              <li style="left:50%;" data-link="#tab2">
+                <a href=""></a>
+
+                <div class="content">现金兑换</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="margin-top-hg margin-left-lg">
+            <div id="tab1" style="display: none;">
+              <form>
+                <table cellpadding="0" cellspacing="0" style="padding-top:20px;">
+                  <tbody>
+                  <tr>
+                    <td width="20%" align="center">
+                      <div class="mainCon">
+						 <div class="combobox">
+							 <input type="text" class="selectbox" readonly placeholder="全部">
+							 <input type="button" class="selBtn" value=" ">
+						 </div>
+						 <div class="selectbox-droplist" style="display:none;">
+							 <ul>
+								 <li title="地区1">地区1</li>
+								 <li title="地区2">地区2</li>
+								 <li title="地区1">地区1</li>
+								 <li title="地区2">地区2</li>
+							 </ul>
+						 </div>
+					 </div>
+                    </td>
+                    <td width="5%" align="center">——————</td>
+                    <td width="20%" align="center">
+                      <div class="mainCon">
+						 <div class="combobox">
+							 <input type="text" class="selectbox" readonly placeholder="全部">
+							 <input type="button" class="selBtn" value=" ">
+						 </div>
+						 <div class="selectbox-droplist" style="display:none;">
+							 <ul>
+								 <li title="地区1">地区1</li>
+								 <li title="地区2">地区2</li>
+								 <li title="地区1">地区1</li>
+								 <li title="地区2">地区2</li>
+							 </ul>
+						 </div>
+					 </div>
+                    </td>
+                    <td width="45%" align="center">
+                      <input type="text" placeholder="关键字搜索" class="global-input" style="width:310px;">
+                      <button class="researchBtn"></button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </form>
+              <ul class="clearfix exchange-ul">
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/exchange/img-01.jpg" height="200" width="200"></a>
+
+                  <div>万代原装拼装模型RG命运高达元祖强袭正义/自由高达男生礼物</div>
+                  <div class="exchange-divb"><i class="bigflower-iocn"></i><span>1000</span><a href="exchange-deatils.html">立即兑换</a></div>
+                </li>
+              </ul>
+              <!--分页-->
+              <ul class="page">
+                <li><a href="#" class="arrow font-orange"> < </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="current-page">
+                  <div>5</div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="default-page">
+                  <div></div>
+                </a></li>
+                <li><a href="#" class="arrow font-orange"> > </a></li>
+              </ul>
+            </div>
+            <!--分页-->
+
+            <form id="tab2" style="display: none;">
+              <table class="exchange-table" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td width="50%">
+								<label for="" class="global-label">请输入您要变现的金额</label>
+								<input type="text"  placeholder="" class="global-input" style=" width:380px;">
+								 <span class="font-size-xlarge">元 </span>	
+							 </td>
+							<td width="50%">
+								<label for="" class="global-label">请输入您的支付宝账号</label>
+								<input type="text"  placeholder="" class="global-input" style=" width:380px;">
+							</td>
+							
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<div class="duihuan">
+								 	<button type="submit" class="submitBtn">确认变现</button>
+									<a href="exchange-sm.html">兑换声明</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><div class="duihuan">”兑换注意事项“，如兑换最低金额限制、兑换时间等规则。</div></td>
+						</tr>
+					</tbody>
+				</table>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <!--right end-->
+
+    </div>
+
+  </div>
+  <!--main end-->
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="../records/others/business.html">商务洽谈</a>
+      |
+      <a href="../records/others/exception.html">免责条款</a>
+      |
+      <a href="../records/others/AboutUs.html">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  </div>
+  <!--footer end-->
+</div>
+
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/views/common.js"></script>
+<script src="../scripts/views/platform.js"></script>
+<script src="../scripts/views/exchange.js"></script>
+<script>
+  $(function () {
+    hopeView.platform.init();
+    hopeView.exchange.init();
+  });
+</script>
+</body>
+</html>

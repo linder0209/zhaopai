@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>找拍-资讯活动</title>
+  <meta name="keywords" content="首页，任务专区，资讯活动，兑换中心， 我的找拍"/>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
+</head>
+<body>
+<!--top-->
+<div class="topfixed">
+  <div class="top-nav clearfix">
+    <ul class="top-nav-col">
+      <li>欢迎来到找拍</li>
+      <li class="nav-login" style="position:relative">
+			<a href="#" style="z-index:999" id="login">登录</a>
+			<div class="login" id="loginPanel" style="display:none;">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr><td colspan="2"><input type="text" placeholder="邮箱/手机号/用户名"></td></tr>
+						<tr><td colspan="2"><input type="text" placeholder="密码"></td></tr>
+						<tr><td><button type="submit" class="loginBtn" id="loginBtn">登录</button></td><td>
+              <label class="font-black auto-login"><input type="radio" class="vertical-align-middle">下次自动登录</label></td></tr>
+						<tr><td colspan="2"><a href="#">忘记密码</a> <a href="register.html">立即注册</a></td></tr>
+					</tbody>
+
+				</table>
+			</div>
+			</li>
+    </ul>
+    <ul class="top-nav-cor">
+      <li><a href="#">客服咨询</a></li>
+			<li class="pos-r" >
+			<a href="#" id="about">关于找拍 <i class="white-downArrow"></i></a>
+			<div id="aboutMenu" class="dropDown" style=" display:none;">
+				<ul class="ulList">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="pos-r" >
+						<a href="#" class="current">找拍微信</a>
+						<div style="position:absolute; right:121px;"><img src="images/qr-code.jpg" height="120" width="120"></div>
+					</li>
+					<li><a href="#">新浪微博</a></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><a href="#">百度贴吧</a></li>
+				</ul>
+			</div>
+			</li>
+      <li><a href="#">每日签到</a></li>
+      <li><a href="#">手机找拍</a></li>
+    </ul>
+  </div>
+</div>
+<!--top-->
+<div class="wrap clearfix">
+  <!--header start-->
+  <div class="search">
+		<form>
+			<div>
+				<input type="text" placeholder="请输入点位关键字" class="input-search">
+				<i class="searchBtn"></i>
+			</div>
+		</form>
+  </div>
+	<div class="menNav">
+		<div class="logo left">
+			<a href="#" title="找拍"></a>
+		</div>
+		<ul id="menuList" class="menNav-ullist right">
+			<li><a href="index.html">首页</a></li>
+			<li>
+        <a href="">任务专区<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../task/task.html">当前任务</a>
+            <a href="../task/task.html">历史任务</a>
+          </div>
+        </div>
+      </li>
+			<li>
+        <a href="" class="current">资讯活动<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+            <a href="../news/consult.html">新闻资讯</a>
+            <a href="../news/consult.html">活动信息</a>
+          </div>
+          </div>
+      </li>
+			<li>
+				<a href="">兑换中心<i class="gray-downArrow"></i></a>
+        <div class="sub-menu">
+          <div class="sub-menu-item">
+					<a href="../exchange/exchange.html">当前兑换</a>
+					<a href="../exchange/exchange.html">历史兑换</a>
+				</div>
+        </div>
+			</li>
+			<li><a href="../myzp/index.html">我的找拍</a></li>
+		</ul>
+
+	</div>
+
+  <!--header end-->
+  <style>
+
+  </style>
+  <!--main start-->
+  <div class="main">
+    <!--填写信息 start-->
+    <div class="bigTitle register">
+    	<h3 style="width:450px;padding: 0 50px 12px; margin-bottom:10px; ">尊敬的MIO会员，新活动征求您的意见</h3>
+		<ul class="toupiao-ullist clearfix">
+			<li>2014-03-01</li>
+			<li>投票进行中</li>
+			<li>41764人</li>
+		</ul>
+		<div class="toupiao">
+			<h4>活动说明:</h4>
+			<p>新活动预热，提前征求您参与的意愿及意见</p>
+			<p>请先回答问卷中的问题，并确定您是否参加该活动励3元</p>
+			<p>活动要求及奖励请参见活动说明</p>
+		</div>
+		<div class="toupiao">
+			<h4>活动说明:</h4>
+			<p>活动流程：添加微信账号-按照要求拍摄照片-发送照片-获得奖励</p>
+			<p>活动奖励：每组车站照片奖励3元</p>
+			<p>活动要求：按要求拍摄公交候车站的广告牌照片，并对照片文件名按照规范命名，然后将拍摄好的照片用邮箱、微信、在线传送等方式发送给我</p>
+		</div>
+		<div class="toupiao">
+			<h4>话题题目是：</h4>
+			<form>
+			  <table class="toupiao-table" cellpadding="0" cellspacing="0">
+				  <tbody>
+					  <tr>
+						  <td>
+							  <div>1.您的性别是：</div>
+							  <label><input type="radio">男</label>
+							  <label><input type="radio">女</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>2.您的年龄是：</div>
+							  <label><input type="radio">20岁以下</label>
+							  <label><input type="radio">20-30岁</label>
+							  <label><input type="radio">31-40岁</label>
+							  <label><input type="radio"> 40岁以上</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>3.您的学历是：</div>
+							  <label><input type="radio">大专以下</label>
+							  <label><input type="radio">大专</label>
+							  <label><input type="radio">本科 </label>
+							  <label><input type="radio">本科以上</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>4.目前您居住的城市是：</div>
+							  <div class="city">
+								  <label><input type="radio">深圳</label>
+								  <label><input type="radio">沈阳 </label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">宁波</label>
+								  <label><input type="radio">哈尔滨</label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">宁波</label>
+								  <label><input type="radio">哈尔滨</label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">呼和浩特</label>
+								  <label><input type="radio">哈尔滨</label>
+								  <label><input type="radio">深圳</label>
+								  <label><input type="radio">沈阳 </label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">宁波</label>
+								  <label><input type="radio">哈尔滨</label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">宁波</label>
+								  <label><input type="radio">哈尔滨</label>
+								  <label><input type="radio">昆明 </label>
+								  <label><input type="radio">呼和浩特</label>
+								  <label><input type="radio">哈尔滨</label>
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>5.通过对这个活动的了解，您是否愿意参加这个活动？</div>
+							  <label><input type="radio">愿意</label>
+							  <label><input type="radio">愿意</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>6.您在什么时间可以参加活动？</div>
+							  <label><input type="radio">白天可以</label>
+							  <label><input type="radio">晚间可以</label>
+							  <label><input type="radio">其它</label>
+							  <label><input type="radio">不愿意参加这个活动</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>7.您认为这个活动您可以坚持多长时间？</div>
+							  <label><input type="radio">1个小时以内</label>
+							  <label><input type="radio">个小时以内</label>
+							  <label><input type="radio">其它</label>
+							  <label><input type="radio">不愿意参加这个活动</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>8.您希望的到什么样的奖励？</div>
+							  <label><input type="radio">电话充值</label>
+							  <label><input type="radio">物品 </label>
+							  <label><input type="radio">网购卡</label>
+							  <label><input type="radio">不愿意参加这个活动</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>9.您家里是否拥有以下电子产品？可多选</div>
+							  <label><input type="checkbox">摄像机</label>
+							  <label><input type="checkbox">数码相机（卡片） </label>
+							  <label><input type="checkbox">数码相机（单反）</label>
+							  <label><input type="checkbox">智能手机</label>
+							  <label><input type="checkbox">不愿意参加这个活动</label>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>10.您最经常使用的手机是什么品牌的？</div>
+							  <label><input type="radio">苹果</label>
+							  <label><input type="radio">三星</label>
+							  <label><input type="radio">HTC</label>
+							  <label><input type="radio">小米</label>
+							  <label><input type="radio">诺基亚</label>
+							  <label><input type="radio">其它</label>
+							  <label><input type="radio">不愿意参加这个活动</label>
+
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+							  <div>11.您希望能参加哪种类型的活动？</div>
+							  <label><input type="radio">户外拍照项目</label>
+							  <label><input type="radio">室内信息处理</label>
+							  <label><input type="radio">其它</label>
+							  <label><input type="radio">都不愿意参加</label>
+
+						  </td>
+					  </tr>
+				  </tbody>
+			  </table>
+		  </form>
+	  </div>
+    </div>
+    <!--填写信息 end-->
+  </div>
+  <!--main end-->
+  <!--footer start-->
+  <div class="footer">
+    <div class="partners">
+      <p>友情链接</p>
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+      |
+      <a href="#" target="_blank">合作伙伴</a>
+    </div>
+    <div class="conns">
+      <a href="#">商务洽谈</a>
+      |
+      <a href="#">免责条款</a>
+      |
+      <a href="#">关于我们</a>
+    </div>
+    <div class="copyright">版权所有&copy;12014 XXXXX科技有限公司.京ICP 备080XXXX号 京公网安备110108XXXXX</div>
+  </div>
+  <!--footer end-->
+</div>
+<script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/flexslider/js/jquery.flexslider.js"></script>
+<script src="../scripts/views/common.js"></script>
+<script src="../scripts/views/platform.js"></script>
+<script src="../scripts/views/index.js"></script>
+<script>
+  $(function () {
+    hopeView.platform.init();
+    hopeView.index.init();
+  });
+</script>
+</body>
+</html>

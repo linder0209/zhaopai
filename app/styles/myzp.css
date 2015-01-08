@@ -181,14 +181,14 @@
 
 .personal-datum-panel{
   position: relative;
-  left: 180px;
-  width: 700px;
+  left: 150px;/*1.5*/
+  width: 730px;/*1.5*/
   padding: 20px 0;
 }
 .personal-datum{
   margin-bottom: 20px;
   padding-top: 30px;
-  width:600px;
+  width:550px;/*1.5*/
 }
 .personal-datum h2{
   width: 300px;
@@ -200,7 +200,7 @@
 .split-area{
   height: 50px;
   background-color: #fff;
-    left: -180px;
+    left: -150px;
     position: relative;
 	width:880px;
     
@@ -322,7 +322,7 @@
 .my-head-portrait{
   position: absolute;
   top: 120px;
-  right:60px;
+  right:40px;/*1.5*/
   text-align: center;
 }
 
@@ -341,7 +341,7 @@
 .por-top{ position:relative; top:-40px;}
 
 .avatar-wrapper {
-  height: 364px;
+  height:245px;
   width: 60%;
   margin: 10px auto;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, .25);
@@ -366,4 +366,7 @@
   filter: alpha(opacity=75);
   z-index: 20140628;
 }
+
+.myzp-marginLeft{ margin-left:85px;}
+.myzp-pageBox{width: 880px; margin-left: -150px; margin-top: 40px;}
 

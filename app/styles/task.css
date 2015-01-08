@@ -128,15 +128,31 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) inset;
   font-size: 18px;
   height: 46px;
-  line-height: 46px; position:relative;width: 160px; }
+  line-height: 46px; position:relative;width: 150px; }/*1.7*/
 .combobox-select{background:#f5f5f5; height:46px;border: 1px solid #E58024; border-bottom:none; box-shadow:none; }
 .combobox-select .selBtn{
   background:url(../styles/images/combox/select-arrowup.gif) no-repeat;
 }
 .selectbox{width: 110px; border:none; cursor: pointer; height:46px; line-height:46px; float:left; background:none; font-size: 18px; font-family:"黑体"; padding-left:10px;}
 .selBtn{ background:url(../styles/images/combox/select-arrowdown.gif) no-repeat; height:37px; width:37px; display:inline-block; float:left; border:none; position:absolute; top:5px; right:5px; cursor:pointer;}
-.selectbox-droplist{ border:1px solid #E58024;width: 160px; border-top:none; background:url(../styles/images/combox/droplist-bg.jpg) repeat-y;position:absolute; left:0;display: none;}
+.selectbox-droplist{ border:1px solid #E58024;width: 150px; border-top:none; background:url(../styles/images/combox/droplist-bg.jpg) repeat-y;position:absolute; left:0;display: none;}/*1.7*/
 .selectbox-droplist ul{ text-align:left;}
 .selectbox-droplist ul li {font-size: 18px; color:#7e7e7e; padding:5px 0; cursor:pointer; text-indent:0.5em; }
 .selectbox-droplist ul li:hover{ background:#fff;}
 .bigbox.task-bigbox{ padding-top:20px;}
+
+/*datepater*/
+.zp-datepater,.zp-datepater-current{width:140px; margin:0 7px;  float:left; }/*1.7*/
+.zp-datepater-current{
+	background:#f2f2f2;
+	border: 1px solid #E58024;
+	border-bottom:none;
+	box-shadow:none;
+	z-index: 1000010;
+}
+.Wdate.input-wadte{ height:43px; background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #e5e5e5;font-family: "黑体";font-size: 18px; color:#7e7e7e; width:139px; text-indent:0.5em; border:none;}
+.zp-datepater-current .Wdate.input-wadte{background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #f2f2f2;}
+.WdateDiv {border: 1px solid #e58024;}
+.back-line{width:5px; height:47px; background:#646464; margin:0 5px; float:left;}
+.researchBtn.researchBtn-task{margin-top:0px; float:left; margin-left:0;}
+.task-commboxBox{margin-top:80px; padding:0 211px}/*1.7*/
