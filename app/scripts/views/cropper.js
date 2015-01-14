@@ -37,7 +37,7 @@
 
     addListener: function () {
       this.$avatarInput.on('change', $.proxy(this.change, this));
-      this.$avatarForm.on("submit", $.proxy(this.submit, this));
+	  this.$avatarSave.click($.proxy(this.submit, this))
     },
 
     change: function () {
@@ -88,8 +88,12 @@
 
     ajaxUpload: function () {
       var url = this.$avatarForm.attr("action"),
-        data = new FormData(this.$avatarForm[0]),
         _this = this;
+		
+		var data = this.$img.cropper("getImageData");
+		console.info(data);
+		
+		
 
       $.ajax(url, {
         type: "post",

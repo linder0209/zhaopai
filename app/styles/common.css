@@ -171,8 +171,9 @@ button{cursor: pointer;}
 .dropDown{background:url(../images/about-zpbg.jpg) no-repeat; width:120px; height:244px; border:1px solid #6a6a6a; margin-top:23px;}
 .dropDown .ulList a{ border:none; color:#393939; width:120px; padding:11px 0; text-align:center; }
 .dropDown .ulList a:hover{color: #e58024;}
+/*1.8*/
 .dropDown .ulList .qrcode{
-  position:absolute; right:121px;
+  position:absolute;
 }
 .qr-code{
   position: absolute;
@@ -184,7 +185,7 @@ button{cursor: pointer;}
 .dropDown .ulList > li:hover .qr-code{
   display: block;
 }
-
+/*1.8*/
 .login{width:295px; height:244px; background:url(../images/login-bg.jpg) no-repeat; border:1px solid #6a6a6a; position:absolute; z-index:0;}
 .login table{padding:30px; text-align:left; font-size:14px;}
 .login table td{padding-bottom:15px;}
