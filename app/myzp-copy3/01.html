@@ -189,11 +189,11 @@
       </li>
       <li>
         <label class="global-label">生日：</label><br>
-        <select name="year" id="year" class="global-input select">        
+        <select name="year" id="year" class="global-input select">
         </select>
-        <select name="month" id="month" class="global-input select">        
+        <select name="month" id="month" class="global-input select">
          </select>
-        <select name="day" id="day" class="global-input select">       
+        <select name="day" id="day" class="global-input select">
         </select>
       </li>
       <li>
@@ -290,8 +290,6 @@
       <p class="font-gray font-size-large">支持JPG，可在大照片中截取满意部分。</p>
 
       <div class="margin-top-lg">
-        <input class="avatar-src" name="avatar_src" type="hidden">
-        <input class="avatar-data" name="avatar_data" type="hidden">
         <label for="avatarInput" class="font-gray">上传头像</label>
         <input class="avatar-input font-gray" id="avatarInput" name="avatar_file" type="file">
       </div>
@@ -301,7 +299,7 @@
       </div>
 
       <p class="margin-top-lg">
-        <button class="global-button avatar-save" type="submit">保存上传</button>
+        <button id="uploadImage" class="global-button avatar-save" type="button">保存上传</button>
       </p>
 
       <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
@@ -358,25 +356,69 @@
 <script src="../scripts/views/common.js"></script>
 <script src="../scripts/views/platform.js"></script>
 <script src="../scripts/views/myzp.js"></script>
-<script src="../scripts/views/cropper.js"></script>
 
 <script>
   $(function () {
     hopeView.platform.init();
     hopeView.myzp.init();
-	
+
 	$('#updateHeadPortrait').unbind('click').click(function(e){
 		$('#myInfo').hide();
 		$('#myHeadPortrait').show();
-		$('.avatar-wrapper img').cropper({
+		var $image = $('.avatar-wrapper img')
+    $image.cropper({
 		  aspectRatio: 1
 		});
-		var example = new CropAvatar($('#cropAvatar'));
+    $('#uploadImage').click(function(){
+      var imageData = $image.cropper('getData');
+      console.info(imageData);
+    });
+
+    var support = {
+      fileList: !!$('<input type="file">').prop('files'),
+        fileReader: !!window.FileReader,
+        formData: !!window.FormData
+    };
+    var isImageFile = function (file) {
+      if (file.type) {
+        return /^image\/\w+$/.test(file.type);
+      } else {
+        return /\.(jpg|jpeg|png|gif)$/.test(file);
+      }
+    };
+
+    $('#avatarInput').change(function(){
+      var $el = $(this);
+      var files,
+        file;
+
+      if (support.fileList && support.fileReader) {
+        files = $el.prop('files');
+
+        if (files.length > 0) {
+          file = files[0];
+
+          if (isImageFile(file)) {
+            var fileReader = new FileReader();
+
+            fileReader.readAsDataURL(file);
+
+            fileReader.onload = function () {
+              $image.cropper('replace', this.result);
+            };
+          }
+        }
+      }else{
+        /*对于不支持 FileReader 的浏览器，比如ie8
+         * 需要先调用ajax把图片临时上传到服务器端，并返回服务器端图片的url地址，然后再执行以下代码
+         * 假设服务器端返回的图片url地址变量为url
+         * $image.cropper('replace', url)
+        */
+      }
+    });
 	  });
-	
   });
-  
-  
+
 </script>
 </body>
 </html>
