@@ -371,7 +371,9 @@
 		});
     $('#uploadImage').click(function(){
       var imageData = $image.cropper('getData');
-      console.info(imageData);
+	   alert(JSON.stringify(imageData));
+       console.info(imageData);
+	    
     });
 
     var support = {
