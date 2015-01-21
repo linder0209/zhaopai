@@ -10,6 +10,8 @@
     flexSlider: function(){
       // The slider being synced must be initialized first
       $('#flexSlider').flexslider({
+        slideshowSpeed: 3500,
+        animationSpeed: 300,
         animation: 'slide',
         controlNav: 'thumbnails',
         controlsContainer: '#controlsContainer'
