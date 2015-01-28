@@ -290,8 +290,10 @@
       <p class="font-gray font-size-large">支持JPG，可在大照片中截取满意部分。</p>
 
       <div class="margin-top-lg">
-        <label for="avatarInput" class="font-gray">上传头像</label>
-        <input class="avatar-input font-gray" id="avatarInput" name="avatar_file" type="file">
+        <form enctype="multipart/form-data" method="post" id="uploadImageForm">
+          <label for="avatarInput" class="font-gray">上传头像</label>
+          <input class="avatar-input font-gray" id="avatarInput" name="avatar_file" type="file">
+        </form>
       </div>
 
       <div class="avatar-wrapper">
@@ -352,6 +354,7 @@
 </div>
 
 <script src="../scripts/components/jquery/jquery.js"></script>
+<script src="../scripts/components/jquery.form/jquery.form.js"></script>
 <script src="../scripts/components/cropper/js/cropper.js"></script>
 <script src="../scripts/views/common.js"></script>
 <script src="../scripts/views/platform.js"></script>
@@ -414,7 +417,19 @@
          * 需要先调用ajax把图片临时上传到服务器端，并返回服务器端图片的url地址，然后再执行以下代码
          * 假设服务器端返回的图片url地址变量为url
          * $image.cropper('replace', url)
-        */
+         */
+        $('#uploadImageForm').ajaxSubmit({
+          url: '',//上传图片服务器url
+          type: 'POST',
+          dataType: 'json',
+          success: function (data) {
+            if(data.success !== false){
+              $image.cropper('replace', data.url);
+            }
+          }, failure: function (data) {
+            console.info(data);
+          }
+        });
       }
     });
 	  });
