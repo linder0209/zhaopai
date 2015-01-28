@@ -150,8 +150,23 @@
 	box-shadow:none;
 	z-index: 1000010;
 }
-.Wdate.input-wadte{ height:43px; background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #e5e5e5;font-family: "黑体";font-size: 18px; color:#7e7e7e; width:139px; text-indent:0.5em; border:none;}
-.zp-datepater-current .Wdate.input-wadte{background:url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right 5px center #f2f2f2;}
+
+.Wdate.input-wadte {
+  height: 43px;
+  background: url("../scripts/My97DatePicker/skin/datePicker.gif") no-repeat scroll right center #E5E5E5;
+  vertical-align: middle;
+  font-family: "黑体";
+  font-size: 18px;
+  color: #7e7e7e;
+  width: 139px;
+  text-indent: 0.5em;
+  border: none;
+}
+
+.zp-datepater-current .Wdate.input-wadte {
+  background: url(../scripts/My97DatePicker/skin/datePicker.gif) no-repeat scroll right center #f2f2f2;
+}
+
 .WdateDiv {border: 1px solid #e58024;}
 .back-line{width:5px; height:47px; background:#646464; margin:0 5px; float:left;}
 .researchBtn.researchBtn-task{margin-top:0px; float:left; margin-left:0;}
