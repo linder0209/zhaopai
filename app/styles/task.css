@@ -117,8 +117,8 @@
 .task-ullist li a:hover .task-ulDivBox-a2 i.money-iocn{ background-position:-345px 0; width:19px; height:24px;}
 .task-ullist li a:hover .task-ulDivBox-a2 i.flower-iocn{ background-position:-376px 0; width:24px; height:25px;}
 
-.dotLocation-a1{width:37px;}
-.dotLocation-a2{width:45px; margin-top:10px;}
+.dotLocation-a1{width:40px;}
+.dotLocation-a2{width:27px; margin-top:10px;}
 .menNav-special2{background:url(../images/task/task-menu-bg.jpg) no-repeat; height:60px; width:1280px;}
 
 /*combox*/

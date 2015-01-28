@@ -285,9 +285,9 @@ button{cursor: pointer;}
 }
 .renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
 .renwu ul li{ float:left; padding:22px 11px;width:270px; text-align:left; height:300px;}
-.mapbox{width:82px; float:left; border-right:2px solid #e58024; margin:10px 5px 0 0;}
+.mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}
 .map-icon{background:url(images/sprites-icon.png) no-repeat; background-position:-142px 0; width:18px; height:29px; display:inline-block; vertical-align:middle; float:left; margin:5px 5px 0 0}
-.map-title{width:180px; float:left; margin:10px 0;}
+.map-title{width:190px; float:left; margin:10px 0;}
 .money-iocn,.flower-iocn{background:url(images/sprites-icon.png) no-repeat; width:14px; height:17px; display:inline-block; vertical-align:middle; margin:0 2px;}
 .money-iocn{background-position:-167px 0; }
 .flower-iocn{background-position:-187px 0; height:18px; width:17px; }
