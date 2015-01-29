@@ -6,7 +6,7 @@
   margin: 0px;
 }
 .flex-viewport {
-  width: 1280px;
+  width: 1140px;/*1.29*/
   margin: 0 auto;
 }
 .flex-control-thumbs {
@@ -27,7 +27,7 @@
   margin: 0 auto;
 }
 .flex-control-customer li {
-  width: 18%;
+  width: 20%;
 }
 .flex-control-customer li > .item-container {
   position: relative;
@@ -39,7 +39,7 @@
   display: inline-block;
   position: absolute;
   top: -35px;
-  left: 150px;
+  left: 120px;
 }
 .flex-control-customer li > .item-container .header {
   padding: 5px 12px;
@@ -56,7 +56,7 @@
   height: 29px;
   width: 29px;
   top: -40px;
-  left: 145px;
+  left: 115px;
 }
 .flex-control-customer li.flex-active .item-container .header,
 .flex-control-customer li:hover .item-container .header {
@@ -73,7 +73,7 @@
   display: block;
   position: absolute;
   top: -1.4em;
-  left: 70%;
+  left: 47%;
   border-width: 0.8em 0.6em;
   border-style: solid;
   border-color: transparent transparent #E58024 transparent;

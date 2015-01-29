@@ -62,8 +62,7 @@ button{cursor: pointer;}
 * height
 **/
 .height-50{height:50px;}
-.height-120{height:120px;}
-.height-60{height:55px;}
+.height-70{ height:70px;}
 /**
 * 外边距
 **/
@@ -105,17 +104,17 @@ button{cursor: pointer;}
 }
 .margin200-l{ margin-left:200px;}
 .margin20-b{ margin-bottom:20px;}
+.margin55-l{ margin-left:55px;}
 /**
 * 内边距
 **/
 .padding200-lr{ padding:0 200px}
-.padding180-lr{ padding:0 185px}
 .padding20-tb{ padding:20px 0;}
 .wrap{width:1280px; margin:0 auto; overflow:hidden; background:#eeeeee;}
 .wrap * a:hover{color: #e58024;}
 
 /*========header=============*/
-.topfixed{ background:#E58024; height:31px;left: 0;line-height:31px;margin: 0 auto;position: fixed;top: 0;width: 100%;z-index: 9999;}
+.topfixed{ background:#E58024; height:31px;left: 0;line-height:31px;margin: 0 auto;position: fixed;top: 0;width: 100%;z-index: 1000020;}
 .top-nav{ width:1280px; margin:0 auto; color:#ffffff }
 .top-nav a{color:#ffffff;
 }
@@ -187,11 +186,6 @@ button{cursor: pointer;}
   display: block;
 }
 /*1.8*/
-.dropDown .ulList a.current{color:#e58024; background:#fff;}
-.dropDown .ulList .qrcode{
-  position:absolute; right:121px;
-}
-
 .login{width:295px; height:244px; background:url(../images/login-bg.jpg) no-repeat; border:1px solid #6a6a6a; position:absolute; z-index:0;}
 .login table{padding:30px; text-align:left; font-size:14px;}
 .login table td{padding-bottom:15px;}
@@ -241,8 +235,9 @@ button{cursor: pointer;}
 .raw p{color:#7e7e7e;}
 
 /*========tabs=============*/
-.tab{ padding:0 200px; padding-top:30px; overflow:hidden; color:#1c1a18;width: 880px;}
-.tab ul.title{ height:147px;}
+.tab{ padding:0 200px; padding-top:30px; overflow:hidden; color:#1c1a18;width:880px}
+.tab ul.title{ height:147px; }
+.tab ul.title li{ float:left;}
 .zixun,.hot,.zhaopai{background:url(../images/tab/tab-icon.png) no-repeat; width:120px; height:140px; display:block; margin:0 85px; float:left;}
 .zixun{ background-position:0 0;}
 .hot{background-position:-140px 0;}
@@ -256,7 +251,6 @@ button{cursor: pointer;}
 .tab-content ul li a i,.paihang a i{background:url(../images/tab/fk.png) no-repeat; width:4px; height:4px; }
 .tab-content ul li a:hover{background:#e58024; padding:12px 100px; color:#fff;}
 .paihang a:hover{background:#e58024; color:#fff;}
-.paihang{ height:300px;}
 .tab-content ul li a:hover i,.paihang a:hover i{background:url(../images/tab/fk-select.png) no-repeat; width:5px; height:5px;}
 .tab-content ul li a span{font-size:14px;}
 .tab-content ul li a:hover span,.paihang a:hover span{color:#fff;}
@@ -266,7 +260,7 @@ button{cursor: pointer;}
 
 .paihang{width:343px; background:#FFFFFF;filter:alpha(opacity=50); moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 .paihang li{ padding:9px 0;}
-.paihang a{ padding:0 15px; display:block; color:Black;}
+.paihang a{ padding:0 15px; display:block; color:#1c1a18;}
 .paihang a span{ padding:0 8px; float:right;}
 .banner-smallbox{padding:50px 200px; overflow:hidden;}
 
@@ -291,13 +285,12 @@ button{cursor: pointer;}
 }
 .renwu h3,.tuijian h3,.ruanjian h3{width:96px; height:23px; display:block; border-bottom: 3px solid #e58024;  padding:0 150px 12px 150px; margin:0 auto;}
 .renwu ul li{ float:left; padding:22px 11px;width:270px; text-align:left; height:300px;}
-.mapbox{width:62px; float:left; border-right:2px solid #e58024; margin:10px 5px 0 0;}
+.mapbox{width:67px; float:left; border-right:2px solid #e58024; margin:10px 5px}
 .map-icon{background:url(images/sprites-icon.png) no-repeat; background-position:-142px 0; width:18px; height:29px; display:inline-block; vertical-align:middle; float:left; margin:5px 5px 0 0}
-.map-title{width:200px; float:left; margin:10px 0;}
+.map-title{width:190px; float:left; margin:10px 0;}
 .money-iocn,.flower-iocn{background:url(images/sprites-icon.png) no-repeat; width:14px; height:17px; display:inline-block; vertical-align:middle; margin:0 2px;}
 .money-iocn{background-position:-167px 0; }
 .flower-iocn{background-position:-187px 0; height:18px; width:17px; }
-.digit2{font-size:14px; color:#e58024;}
 p.digit{font-size:20px; color:#e58024;}
 p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
 .renwu a.map-content{font-size:14px; color:#7e7e7e}
@@ -344,6 +337,4 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
   height: 37px;
   vertical-align: middle;
 }
-.margin50-l{ margin-left:50px;}
-/**
-* 内边距
+
