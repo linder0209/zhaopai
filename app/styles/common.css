@@ -341,15 +341,13 @@ p.dotLocation,.renwu a.map-content:hover{color:#e58024;}
 }
 .img-responsive{
   border-radius: 50%;
-  width:94px;
-  height:94px;
 }
 
 .register-form .radio-label{
   font-size:16px; margin-right:20px
 }
 .register-form .select{
-  width:135px; margin-right:5px;
+  width:112px; margin-right:5px;
 }
 .register-form .checkcode-input{
   width: 200px;
