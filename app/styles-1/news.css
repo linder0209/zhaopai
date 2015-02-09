@@ -53,12 +53,3 @@ ul.page li a.current-page div{border-radius:50%; background:#e58024; width:25px;
 ul.page li a.arrow-gray{ color:#7e7e7e; cursor:default;}
 .consult-s{ width:100%;	}
 
-
-ul.page2{margin-bottom:20px; display:inline-block;}
-ul.page2 li{ float:left;}
-ul.page2 li a.arrow{font-size:30px; margin:0 5px;}
-ul.page2 li a.current-page{color:#fff; background:#fff;}
-ul.page2 li a.default-page div{border-radius:50%; background:#7e7e7e; width:5px; height:5px; margin:10px 2px;}
-ul.page2 li a.current-page div{border-radius:50%; background:#e58024; width:25px; height:25px; text-align:center; color:5px;}
-ul.page2 li a.arrow-gray{ color:#7e7e7e; cursor:default;}
-

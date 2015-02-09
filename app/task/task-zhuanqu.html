@@ -8,6 +8,7 @@
   <link type="text/css" rel="stylesheet" href="../styles/index.css"/>
   <link type="text/css" rel="stylesheet" href="../scripts/components/flexslider/css/flexslider.css"/>
   <link type="text/css" rel="stylesheet" href="../styles/flex-control-customer.css"/>
+  
 </head>
 <body>
 <!--top-->
@@ -121,17 +122,17 @@
   <div class="task-tab">
    	<div class="control-nav-horizontal">
         <div class="line"></div>
-    
+
         <ol class="control-nav-horizontal-items">
-              <li style="left:25%;" class="active" onclick="location.href='task.html';">
+              <li style="left:25%;" class="active" onClick="location.href='task.html';">
                   <a href=""></a>
                   <div class="content">列表</div>
               </li>
-              <li style="left:50%;" onclick="location.href='task-map.html';">
+              <li style="left:50%;" onClick="location.href='task-map.html';">
                 <a href=""></a>
                 <div class="content">地图</div>
               </li>
-              <li style="left:75%;" onclick="location.href='../myzp/index.html#my-task';">
+              <li onclick="location.href='../myzp-copy3/01.html';" style="left:75%;">
                 <a href=""></a>
                 <div class="content">我的任务</div>
               </li>
@@ -139,38 +140,70 @@
     </div>
     </div>
     <!--tab-->
-    <div class="padding200-lr" style="margin-top:80px;">
+    <div class="task-commboxBox">
         <form>
             <table cellspacing="0" cellpadding="0" width="100%">
                 <tbody>
                     <tr>
-                        <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option>按地区排序</option>
-                             </select>
-							 
+                        <td align="left">
+							 <div class="mainCon">
+							 	 <div class="combobox">
+									 <input type="text" class="selectbox" readonly placeholder="按地区排序">
+									 <input type="button" class="selBtn" value=" ">
+								 </div>
+								 <div class="selectbox-droplist" style="display:none;">
+									 <ul>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+									 </ul>
+								 </div>
+							 </div>
+
                          </td>
-                        <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option>智能排序</option>
-                             </select>
+                        <td align="left">
+                            <div class="mainCon">
+							 	 <div class="combobox">
+									 <input type="text" class="selectbox" readonly placeholder="智能排序">
+									 <input type="button" class="selBtn" value=" ">
+								 </div>
+								 <div class="selectbox-droplist" style="display:none;">
+									 <ul>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+										 <li title="地区1">地区1</li>
+										 <li title="地区2">地区2</li>
+									 </ul>
+								 </div>
+							 </div>
                         </td>
-                        <td width="20%" align="center">
-                            <select style="width:140px;" class="global-input select">
-                                <option selected="selected">任务类别</option>
-                                <option>类别1</option>
-                                <option>类别2</option>
-                                <option>类别3</option>
-                             </select>
+                        <td align="left">
+                          <div class="mainCon">
+                           <div class="combobox">
+                             <input type="text" class="selectbox" readonly placeholder="任务类别">
+                             <input type="button" class="selBtn" readonly >
+                           </div>
+                           <div class="selectbox-droplist">
+                             <ul>
+                               <li title="类别1">类别1</li>
+                               <li title="类别2">类别2</li>
+                               <li title="类别1">类别1</li>
+                               <li title="类别2">类别2</li>
+                             </ul>
+                           </div>
+                         </div>
                         </td>
-                        <td width="50%" align="center">
-                        	 <select style="width:140px;" class="global-input select">
-                                <option>2014/11/11</option>
-                             </select>
-                              <select style="width:140px;" class="global-input select">
-                                <option>2014/12/12</option>
-                             </select>
-                           <button class="researchBtn"><i></i></button>
+
+                        <td align="left">
+							<div class="combobox zp-datepater">
+								<input class="Wdate input-wadte" readonly type="text" onClick="WdatePicker({onpicked:function(){$(document).click();},oncleared:function(){$(document).click();}})">
+							</div>
+							<div class="combobox zp-datepater">
+								<input class="Wdate input-wadte" readonly type="text" onClick="WdatePicker({onpicked:function(){$(document).click();},oncleared:function(){$(document).click();}})">
+							</div>
+							<div class="back-line"></div>
+							<button class="researchBtn researchBtn-task"></button>
                         </td>
                     </tr>
                 </tbody>
@@ -178,122 +211,122 @@
         </form>
     </div>
     <!--任务专区 start-->
-    <div class="bigbox renwu left">
+    <div class="bigbox renwu task-bigbox">
         <ul>
         	<li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员在接到通通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
             <li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
             <li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员在在过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
             <li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员在观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
             <li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员在接通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
             <li>
             	<a href="#"><img src="../images/img-01.jpg" height="175" width="270" alt=""></a>
               <div>
                	  <div class="mapbox">
 					  <i class="map-icon"></i>
-				
+
 					  <div class="left"><p style="" class="digit">400</p>
-				
+
 						<p class="dotLocation">点位</p></div>
 				   </div>
                   <div class="map-title">
-                   	  <p><a href="#" style="font-size:20px;">斯巴鲁汽车广告投放</a></p>
+                   	  <p><a href="#" class="map-title-a">斯巴鲁汽车广告投放</a></p>
                       <span><i class="money-iocn"></i> 2</span>
                       <span><i class="flower-iocn"></i> 30</span>
                   </div>
                 </div>
-                <p><a href="#" class="map-content">监视员在接到通知计划后，在要求监测的时间范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
+                <p><a href="#" class="map-content">监视员在接在范围内通过观看电视核...<br>2014/05/08-2014/06/08</a></p>
             </li>
         </ul>
-        
+
     </div>
     <!--任务专区 end-->
     <!--分页-->
-    <div class="margin200-l">
+    <div class="pageBox">
         <ul class="page">
             <li><a href="#" class="arrow font-orange"> < </a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
@@ -306,13 +339,13 @@
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
-            
+
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
-            
+
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
             <li><a href="#" class="default-page"><div></div></a></li>
@@ -361,10 +394,56 @@
 <script src="../scripts/views/common.js"></script>
 <script src="../scripts/views/platform.js"></script>
 <script src="../scripts/views/index.js"></script>
+<script language="javascript" type="text/javascript" src="../scripts/My97DatePicker/WdatePicker.js"></script>
 <script>
   $(function () {
     hopeView.platform.init();
     hopeView.index.init();
+
+    // combobox start
+    $('.mainCon').on('click','.combobox',function(e){
+      e.stopPropagation();
+      var $el = $(e.currentTarget);
+      $el.toggleClass('combobox-select');
+      $el.next('.selectbox-droplist').toggle();
+      $('.mainCon .combobox').not($el).removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+
+      $('input.Wdate').parent().removeClass('zp-datepater-current');
+    }).on('click','.selectbox-droplist li',function(e){
+      e.stopPropagation();
+      var $el = $(e.currentTarget);
+      var text = $el.text();
+      var $dropList = $el.closest('.selectbox-droplist');
+      var $combobox = $dropList.prev('.combobox')
+      var $input = $combobox.children('input[type="text"]');
+      $dropList.toggle();
+      $combobox.toggleClass('combobox-select');
+      $input.val(text);
+    });
+
+    $(document).click(function(){
+      $('.mainCon .combobox').removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+    });
+
+    // combobox end
+
+    // datepicker start
+    $('input.Wdate').click(function(e){
+      var $el = $(e.currentTarget);
+      $el.parent().addClass('zp-datepater-current');
+      $('input.Wdate').not($el).parent().removeClass('zp-datepater-current');
+
+      $('.mainCon .combobox').removeClass('combobox-select')
+        .next('.selectbox-droplist').hide();
+    });
+
+    $(document).click(function(){
+      $('input.Wdate').parent().removeClass('zp-datepater-current');
+    });
+
+    // datepicker end
   });
 </script>
 </body>

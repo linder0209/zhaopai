@@ -8,9 +8,10 @@
 .exchange-divb span{ font-size:18px; color:#e58024; height:34px; line-height:34px;}
 .exchange-divb a,.c-r ul li .a-change,a.a-change{width:100px; height:33px;  font-size:18px; border:1px solid #7E7E7E; color:#7e7e7e; text-align:center; float:right; display:inline-block; line-height:33px; padding:0}
 .exchange-divb a:hover,.c-r ul li .a-change:hover,a.a-change:hover{ background:#e58024; color:#fff;padding:0}
-.duihuan{color: #7e7e7e;font-size: 18px;margin-top: 35px; text-align:center;}
+
+.duihuan{color: #7e7e7e;font-size: 18px;margin-top: 35px;}
 .duihuan a{ font-size:14px; font-weight:bold; color:#e58024; margin:20px 0 0 0; float:right;}
-.exchange-details-tiltle{border-bottom:1px solid #ababab; text-align:center; width:70%; margin:0 auto;}
+.exchange-details-tiltle{border-bottom:1px solid #ababab; text-align:center; width:90%; margin:0 auto;}
 .exchange-details-tiltle h3{font-size:20px; font-weight:bold;background: none repeat scroll 0 0 #eee;
 font-size: 20px;
 font-weight: bold;
@@ -20,11 +21,10 @@ text-align: center;
 top: 15px;
 padding:0 15px; display:inline-block;}
 .exchange-details-tiltle2 h3{ background:#fff;}
-.c-r.exchange-deatils{height:auto;width:450px;}
+.c-r.exchange-deatils{height:auto;width:450px; }
 .c-r.exchange-deatils li{ color:#7e7e7e; margin-bottom:10px;font-size:14px;}
 .c-r.exchange-deatils li p{color:#7e7e7e;}
-
-.c-r.exchange-deatils li p.deatils-text{ height:130px;}
+.c-r.exchange-deatils li p.deatils-text{ height:70px;}
 .exchange-table{padding-top:20px; width:840px; text-align:left;}
 
 .control-nav-horizontal.exchange-nav-horizontal{width:1090px;}

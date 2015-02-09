@@ -4,11 +4,11 @@
   border-width: 1px 0 0;
   background-color: #eee;
   margin: 0 auto;
-  width: 880px;
+  width: 1140px;
   top: -1px;
 }
 .flex-viewport {
-  width: 880px;
+  width: 1140px;
   margin: 0 auto;
 }
 .flex-control-thumbs {
@@ -20,12 +20,12 @@
 }
 .flex-controls-container .line {
   border-top: 1px solid #959595;
-  width: 1003px;
+  width: 1280px;
   padding: 0px 0px 15px;
 }
 .flex-control-customer {
   background-color: #eee;
-  width: 880px;
+  width: 1140px;
   margin: 0 auto;
 }
 .flex-control-customer li {
@@ -40,8 +40,8 @@
   width: 19px;
   display: inline-block;
   position: absolute;
-  top: -25px;
-  left: 85px;
+  top: -35px;
+  left: 105px;
 }
 .flex-control-customer li > .item-container .header {
   padding: 5px 12px;
@@ -57,8 +57,8 @@
   background: url("../images/scorllImg/select-dot-icon.png") no-repeat scroll 0% 0% transparent;
   height: 29px;
   width: 29px;
-  top: -30px;
-  left: 80px;
+  top: -40px;
+  left: 100px;
 }
 .flex-control-customer li.flex-active .item-container .header,
 .flex-control-customer li:hover .item-container .header {
@@ -86,4 +86,3 @@
   margin-top: .201em;
   border-color: transparent transparent #E58024;
 }
-.flexslider .slides img{ width:880px; margin:0 auto;}
