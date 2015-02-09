@@ -209,7 +209,7 @@ button{cursor: pointer;}
 .menNav{height:60px; background:#fff;}
 .menNav-ullist{padding-right:190px;}
 .menNav-ullist li{ float:left; padding:0 20px; margin-top:18px;position: relative;}
-.menNav-ullist li a{ padding:0 10px; color:#7e7e7e;}
+.menNav-ullist li a{ padding:0 10px; color:#7e7e7e; font-size:14px; }
 .menNav-ullist li a.current{ color:#e58024;}
 .menNav-ullist li a:hover{ border-bottom:2px solid #e58024; padding-bottom:5px;}
 .menNav-ullist .sub-menu{
@@ -227,6 +227,7 @@ button{cursor: pointer;}
 }
 .menNav-ullist li div a{ width:120px; text-align:center; height:29px; display:block; padding:0}
 .menNav-ullist li div a:hover{ border:none; background:#fff; border-bottom:none; padding:0}
+.menNav-ullist .sub-menu-item a{ font-size:12px;}
 /*========icon=============*/
 .white-downArrow,.white-upArrow,.gray-downArrow,.gray-upArrow{vertical-align:middle; background:url(images/sprites-icon.png) no-repeat; background-position:-123px -31px; width:8px; height:4px; display:inline-block; margin:0 0 0 5px; }
 .white-downArrow{background-position:-123px -31px;}
